@@ -1,0 +1,23 @@
+﻿@model Business
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+}
+<div style="height:667px;">
+    <table>
+        <tr>
+            <td style="text-align:center; padding-bottom:5px;"><h5>@Model.Bus_Name</h5></td>
+        </tr>
+        <tr>
+            <td>@Html.Raw(Model.Bus_Intro)</td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+</style>

@@ -1,0 +1,81 @@
+﻿@{
+    string controller = ViewContext.RouteData.Values["controller"].ToString();
+}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <!--设定不被快照和搜索引擎抓取 content contect-->
+    <meta name="robots" content="none">
+    <meta name="Baiduspider" content="noarchive">
+    <script type="text/javascript" src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/bootstrapDatepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="~/bootstrapDatepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="~/dataTables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/Common.js"></script>
+    <script type="text/javascript" src="~/Scripts/citydata.js"></script>
+    <script type="text/javascript" src="~/Scripts/cityPicker-1.0.0.js"></script>
+    <script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/citydata.js"></script>
+    <script type="text/javascript" src="~/Scripts/cityPicker-1.0.0.js"></script>
+    <link rel="stylesheet" href="~/css/city-picker.css" />
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/bootstrap/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/bootstrapDatepicker/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="~/dataTables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="~/Scripts/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap_Extend.css" />
+    <link rel="stylesheet" href="~/css/dataTables_Extend.css" />
+    <link rel="stylesheet" href="~/css/SiteStyle.css?@DateTime.Now" />
+    <style>
+        .modal-header {
+            height: 35px;
+            line-height: 35px;
+            padding: 0px;
+            border-bottom: 1px solid #e5e5e5;
+            background-color: white;
+            overflow: hidden;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+            .modal-header:hover {
+                background-color: #e5e5e5;
+            }
+
+            .modal-header table {
+                width: 100%;
+            }
+
+            .modal-header .close {
+                height: 35px;
+                line-height: 35px;
+                width: 35px;
+                background-color: #808080;
+                color: white;
+                overflow: hidden;
+                text-align: center;
+                display: block;
+                padding: 0px;
+                margin: 0px;
+            }
+
+        .modal-title {
+            margin: 0;
+            line-height: 35px;
+            text-indent: 20px;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(".modal-header").css('cursor', 'move');
+            $(".modal-dialog").draggable({ handle: ".modal-header" });
+        });
+    </script>
+</head>

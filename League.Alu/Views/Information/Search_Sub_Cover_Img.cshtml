@@ -1,0 +1,24 @@
+﻿@model Information
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>
+        <td style="width:150px; height:100px; vertical-align:middle; text-align:center; padding-bottom:5px; background-color:#ededed">
+            @if (Model.Cover_Img != string.Empty)
+            {
+                <img src="@Host_Domain.Host()@Model.Cover_Img" style="max-width:100%; max-height:100%; " />
+            }
+            else
+            {
+                <img src="~/Images/NotImg.jpg" style="max-width:100%; max-height:100%;" />
+            }
+        </td>
+        <td>
+            <input type="file" id="File_Input" name="File_Input" />
+            <button type="button" onclick="Ajax_Img_Upload(this)">上传图片</button>
+        </td>
+    </tr>
+</table>
+

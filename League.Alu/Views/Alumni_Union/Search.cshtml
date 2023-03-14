@@ -1,0 +1,57 @@
+﻿@model Alumni_Union
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Set_ID = "Search_Set_Form";
+    string Form_Set_Action = Controller + "/Search_Post/" + Model.AUID;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('账号')</script>
+
+<div style="width:100%; padding:15px; height:100%; overflow-y:auto;">
+    <form id="@Form_Set_ID" action="~/@Form_Set_Action" method="post">
+        <table class="table table-sm table-borderless text-nowrap" style="width:25%">
+            <tr>
+                <th style="width:10px; vertical-align:top; padding-top:12px;">* @Html.DisplayNameFor(m => m.Name)</th>
+                <td style="width:280px;"><input name="Name" value="@Model.Name" class="form-control form-control-sm" readonly type="text" style="width:100%;" autocomplete="off" /></td>
+            </tr>
+
+            <tr>
+                <th style="vertical-align:top; padding-top:12px;">* @Html.DisplayNameFor(m => m.Name_Short)</th>
+                <td><input name="Name_Short" value="@Model.Name_Short" class="form-control form-control-sm" readonly type="text" style="width:100%;" autocomplete="off" /></td>
+            </tr>
+
+            <tr>
+                <th style="vertical-align:top; padding-top:12px;">管理员姓名</th>
+                <td><input name="Real_Name" value="@Model.Real_Name" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+            </tr>
+
+            <tr>
+                <th style="vertical-align:top; padding-top:12px;">* 用户名</th>
+                <td><input name="User_Name" value="@Model.User_Name" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+            </tr>
+
+            <tr>
+                <th style="vertical-align:top; padding-top:12px;">* 密码</th>
+                <td><input name="Password" value="@Model.Password" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+            </tr>
+
+            <tr>
+                <th style="vertical-align:top; padding-top:12px;">* PinCode</th>
+                <td><input name="PinCode" value="@Model.PinCode" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+            </tr>
+
+            <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <button type="button" onclick="Ajax_Form_Reload('@Form_Set_ID',this)" class="btn btn-primary btn-sm" style="width:50%;">确认递交</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+
+

@@ -1,0 +1,120 @@
+﻿@model Business_Coupon
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Add_ID = "Add_Form";
+    string Form_Add_Action = Controller + "/Business_Coupon_Add_Post";
+}
+<form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+    <input type="hidden" name="Link_BID" value="@Model.Link_BID" />
+    <table class="table table-sm table-borderless text-nowrap">
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Coupon_Name)</td>
+            <td colspan="3"><input name="Coupon_Name" value="@Model.Coupon_Name"  class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        @*<tr>
+            <td style="text-align:right; vertical-align:middle;">* 适用范围</td>
+            <td colspan="3">
+                <div class="city-picker-selector" id="Coupon-picker" style="display:flex;"></div>
+                <input type="hidden" id="Coupon_Province" name="Coupon_Province" value="">
+                <input type="hidden" id="Coupon_City" name="Coupon_City" value="">
+            </td>
+        </tr>*@
+
+        <tr>
+            <td style="width:80px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Coupon_Type)</td>
+            <td>
+                <div style="display:flex; justify-content:space-between;">
+                    <select name="Coupon_Type" class="form-control" style="width:45%;">
+                        @foreach (var x in Model.Coupon_Type_List)
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    </select>
+                    <input class="form-control" name="Coupon_Price" value="@Model.Coupon_Price.ToString("0.0")" type="number" style="width:45%;" autocomplete="off" />
+                </div>
+            </td>
+
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Coupon_Quantity)</td>
+            <td>
+                <input class="form-control" name="Coupon_Quantity" value="@Model.Coupon_Quantity" type="number" style="width:100%;" autocomplete="off" />
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Expiry_DT)</td>
+            <td>
+                <input name="Expiry_DT" value="@Model.Expiry_DT.ToString("yyyy-MM-dd")" class="form_date form-control form-control-sm" data-date-format="yyyy-mm-dd" autocomplete="off" />
+            </td>
+
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Coupon_Status)</td>
+            <td>
+                <select name="Coupon_Status" class="form-control" style="width:100%;">
+                    @foreach (var x in Model.Coupon_Status_List)
+                    {
+                        <option value="@x">@x</option>
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Coupon_Remark)</td>
+            <td colspan="3">
+                <input name="Coupon_Remark" value="@Model.Coupon_Remark" class="form-control" autocomplete="off" />
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4" style="text-align:right;">
+                <button type="button" onclick="Create_Item(this)" class="btn btn-primary btn-sm" style="width:120px;">创建递交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+ 
+<script>
+    $('.form_date').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        startDate: new Date()
+    })
+</script>
+
+<script>
+    //$(function () {
+    //    //模拟城市-联动/搜索
+    //    $('#Coupon-picker').cityPicker({
+    //        dataJson: cityData,
+    //        renderMode: true,
+    //        search: true,
+    //        linkage: true,
+    //        level:2,
+    //    });
+    //});
+
+    function Create_Item(Btn_Obj) {
+        //Set_City();
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj, CallBack);
+    }
+
+    function CallBack() {
+        $("#MyForm").submit();
+    }
+
+    function Set_City() {
+        var Province = $(".province .selector-name:first").text();
+        var City = $(".city .selector-name:first").text();
+        $("#Coupon_Province").val(Province);
+        $("#Coupon_City").val(City);
+    }
+</script>

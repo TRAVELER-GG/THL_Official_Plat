@@ -1,0 +1,64 @@
+﻿@model Business_Dues
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Add_ID = "Add_Form";
+    string Form_Add_Action = Controller + "/Business_Dues_Add_Post";
+}
+<form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+    <input type="hidden" name="Link_BID" value="@Model.Link_BID" />
+    <table class="table table-sm table-borderless text-nowrap">
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Dues_Start_DT)</td>
+            <td>
+                <input name="Dues_Start_DT" value="@Model.Dues_Start_DT.ToString("yyyy-MM-dd HH:mm")" class="form_date form-control form-control-sm" data-date-format="yyyy-mm-dd" autocomplete="off" />
+            </td>
+            <td style="text-align:right; vertical-align:middle;"> ~ </td>
+            <td>
+                <input name="Dues_End_DT" value="@Model.Dues_End_DT.ToString("yyyy-MM-dd HH:mm")" class="form_date form-control form-control-sm" data-date-format="yyyy-mm-dd" autocomplete="off" />
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Dues)</td>
+            <td colspan="3"><input name="Dues" value="@Model.Dues.ToString("0.00")" class="form-control form-control-sm" type="number" style="width:45%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Dues_Remark)</td>
+            <td colspan="3"><input name="Dues_Remark" value="@Model.Dues_Remark" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td colspan="4" style="text-align:right;">
+                <button type="button" onclick="Create_Item(this)" class="btn btn-primary btn-sm" style="width:120px;">创建递交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+ 
+<script>
+    $('.form_date').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 1,
+        forceParse: 0,
+        startDate: new Date()
+    })
+</script>
+
+<script>
+    function Create_Item(Btn_Obj) {
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj, CallBack);
+    }
+
+    function CallBack() {
+        $("#MyForm").submit();
+    }
+</script>

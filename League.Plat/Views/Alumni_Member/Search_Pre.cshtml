@@ -1,0 +1,105 @@
+﻿@model Alumni_Member
+@{
+    Layout = null;
+}
+
+<table class="table table-sm table-borderless text-nowrap" style="width:95%;">
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Member_Name)</th>
+        <td><input name="Member_Name" value="@Model.Member_Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Gender)</th>
+        <td>
+            <select class="form-control form-control-sm" name="Gender">
+                @foreach (var x in Enum.GetNames(typeof(Gender_Enum)))
+                {
+                    if (x == Model.Gender)
+                    {
+                        <option selected value="@x">@x</option>
+                    }
+                    else
+                    {
+                        <option value="@x">@x</option>
+                    }
+                }
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Mobile)</th>
+        <td><input name="Mobile" value="@Model.Mobile" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">@Html.DisplayNameFor(m => m.Interest)</th>
+        <td><input name="Interest" value="@Model.Interest" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Year)</th>
+        <td><input name="Year" value="@Model.Year" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Faculty)</th>
+        <td><input name="Faculty" value="@Model.Faculty" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Degree)</th>
+        <td><input name="Degree" value="@Model.Degree" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">@Html.DisplayNameFor(m => m.Profession)</th>
+        <td><input name="Profession" value="@Model.Profession" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+    </tr>
+
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.Native_Province)</th>
+        <td>
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:33%; padding:0px;"><input id="Native_Province" name="Native_Province" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.Native_Province" placeholder="省份" /></td>
+                    <td style="width:33%; padding:0px;"><input id="Native_City" name="Native_City" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.Native_City" placeholder="城市" /></td>
+                    <td style="width:33%; padding:0px;"><input id="Native_District" name="Native_District" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.Native_District" placeholder="区县" /></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.Province)</th>
+        <td>
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:33%; padding:0px;"><input id="Province" name="Province" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.Province" placeholder="省份" /></td>
+                    <td style="width:33%; padding:0px;"><input id="City" name="City" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.City" placeholder="城市" /></td>
+                    <td style="width:33%; padding:0px;"><input id="District" name="District" class="form-control form-control-sm" readonly style="border-radius:0px;" value="@Model.District" placeholder="区县" /></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <th style="width:10px;">账号状态</th>
+        <td>
+            <select class="form-control form-control-sm" name="Is_Frozen" style="width:30%">
+                @foreach (var x in Enum.GetNames(typeof(Alumni_Is_Frozen_Enum)))
+                {
+                    if (x == Model.Is_Frozen)
+                    {
+                        <option selected value="@x">@x</option>
+                    }
+                    else
+                    {
+                        <option value="@x">@x</option>
+                    }
+                }
+            </select>
+        </td>
+    </tr>
+</table>

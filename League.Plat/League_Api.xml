@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>League.Plat</name>
+    </assembly>
+    <members>
+        <member name="T:League.Plat.FunTree">
+            <summary>
+            应用功能树形结构
+            </summary>
+        </member>
+        <member name="M:League.Plat.Get_And_Post.GetWebRequest(System.String)">
+            <summary>
+            GET请求方式
+            </summary>
+            <param name="postUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Get_And_Post.PostMoths(System.String,System.String)">
+            <summary>
+            Post获取数据流
+            </summary>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_App_Association">
+            <summary>
+            获取分会列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Association_Info(System.String,System.String)">
+            <summary>
+            获取当前分会详情
+            </summary>
+            <param name="AUID">分会ID</param>
+            <param name="OpenID">用户OpenID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Join_Association(System.String,System.String)">
+            <summary>
+            加入校友分会
+            </summary>
+            <param name="AUID"></param>
+            <param name="OpenID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Add_PV(System.String,System.String)">
+            <summary>
+            浏览量+1
+            </summary>
+            <param name="PV_Type">浏览页类型(Information、Activity、Business、Alumni_Union)</param>
+            <param name="ID">传入不同页面的ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Label(System.String,System.String)">
+            <summary>
+            搜索标签
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Mark">Member(校友)、Member_Company(校企)、Mini(微服坊)、Business(商家)</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Alumnus_List(System.String,System.String)">
+            <summary>
+            搜索校友
+            </summary>
+            <param name="OpenID">OpenID</param>
+            <param name="Keyword">校友姓名/院系/行业/籍贯/兴趣关键词</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Member(System.String,System.String)">
+            <summary>
+            查看其他校友资料
+            </summary>
+            <param name="AMID">查询校友ID</param>
+            <param name="UID">当前用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Follow_Member(System.String,System.String)">
+            <summary>
+            关注/取关校友
+            </summary>
+            <param name="Follow_AMID">对方校友ID</param>
+            <param name="Fans_AMID">当前校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.News_List(System.String,System.Int32)">
+            <summary>
+            获取新鲜事列表
+            </summary>
+            <param name="ID">关联校友会ID</param>
+            <param name="pageindex">页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.News(System.Guid)">
+            <summary>
+            获取新鲜事详情
+            </summary>
+            <param name="ID">新鲜事ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Activity_List(System.String,System.Int32)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="OpenID">OpenID</param>
+            <param name="PageIndex">页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Activity(System.String,System.String)">
+            <summary>
+            获取活动详情
+            </summary>
+            <param name="AID">活动ID</param>
+            <param name="AMID">校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Activity_Post(System.String,System.String)">
+            <summary>
+            一键报名
+            </summary>
+            <param name="ID">活动ID</param>
+            <param name="AMID">校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_App_Home(System.String,System.Int32)">
+            <summary>
+            获取首页信息
+            </summary>
+            <param name="openid">用户的openid</param>
+            <param name="pageindex">页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Company_List(System.String,System.String,System.Int32)">
+            <summary>
+            获取校友企业列表
+            </summary>
+            <param name="openid">openid</param>
+            <param name="keyword">企业名称/行业关键词</param>
+            <param name="pageindex">页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Company(System.String)">
+            <summary>
+            获取企业资料详情
+            </summary>
+            <param name="MEID">企业ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Member_Info(System.String)">
+            <summary>
+            获取用户资料
+            </summary>
+            <param name="openid">openid有值可获取用户资料，无值可用作用户注册界面</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Alumnus_Wrap_Mine(System.String)">
+            <summary>
+            获取找校友列表
+            </summary>
+            <param name="openid">openid</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Member_Info_Brief(System.String)">
+            <summary>
+            获取用户简略信息
+            </summary>
+            <param name="openid">校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Event_List(System.String,System.Int32)">
+            <summary>
+            获取我参与的活动列表
+            </summary>
+            <param name="AMID">校友ID</param>
+            <param name="PageIndex">页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Verifty_List(System.String)">
+            <summary>
+            获取待认证校友列表
+            </summary>
+            <param name="OpenID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Pass_Verifty(System.String)">
+            <summary>
+            认证通过
+            </summary>
+            <param name="AMID">校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Attention(System.String)">
+            <summary>
+            我的关注
+            </summary>
+            <param name="openid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Signin_Union_Name">
+            <summary>
+            获取注册所需高校列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Signin_Faculty_Name(System.String)">
+            <summary>
+            获取高校下所有院系
+            </summary>
+            <param name="Union_Name">高校名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Signin_Years_List">
+            <summary>
+            获取毕业年份
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Get_Degree_List">
+            <summary>
+            获取所获学历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_Alumni_UnionController.Submit_Signin(League.Api.Alumni_Member,System.Int32)">
+            <summary>
+            注册提交
+            </summary>
+            <param name="Member"></param>
+            <param name="Year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Get_Business_List(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取吃住行数据
+            </summary>
+            <param name="Keyword">搜索关键词</param>
+            <param name="Keyword_Area">商家区域</param>
+            <param name="Keyword_Type">商家类型</param>
+            <param name="PageIndex">当前页码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Get_Business_Info(System.String,System.String)">
+            <summary>
+            获取商家详情
+            </summary>
+            <param name="BID">商户ID</param>
+            <param name="OpenID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Join_Association(System.String,System.String)">
+            <summary>
+            领取卡券
+            </summary>
+            <param name="Coupon_ID">卡券ID</param>
+            <param name="OpenID">用户OpenID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Get_Business_Coupon_Mine(System.String,System.String,System.String)">
+            <summary>
+            我的优惠券
+            </summary>
+            <param name="Keyword_Area">市区关键词</param>
+            <param name="Keyword_Name">商家关键词</param>
+            <param name="OpenID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Get_Business_Coupon_Mine_Info(System.String,System.String)">
+            <summary>
+            获取优惠券详情
+            </summary>
+            <param name="Coupon_ID">优惠券ID</param>
+            <param name="OpenID">用户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_BusinessController.Cancel_Business_Coupon(System.String)">
+            <summary>
+            核销使用
+            </summary>
+            <param name="Cou_Mem_ID">使用券ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_ExcellenceController.Get(System.String)">
+            <summary>
+            微服坊搜索
+            </summary>
+            <param name="Keyword">服务类型关键词</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_ExcellenceController.Mini_Service">
+            <summary>
+            微服坊列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_ExcellenceController.Service_Item(System.String,System.String)">
+            <summary>
+            微服坊详情
+            </summary>
+            <param name="MSID">展位ID</param>
+            <param name="UID">当前校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_ExcellenceController.Service_Follow(System.Guid)">
+            <summary>
+            获取已关注的微服坊列表
+            </summary>
+            <param name="ID">当前校友ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_ExcellenceController.Service_Post(System.Guid,System.Guid)">
+            <summary>
+            关注/取关微服坊
+            </summary>
+            <param name="Follow_MSID">对方企业ID</param>
+            <param name="Fans_AMID">当前校友ID(*required)</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.App_Personal(System.String)">
+            <summary>
+            获取可修改数据
+            </summary>
+            <param name="OpenID">openid</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Mobile(System.String,System.String)">
+            <summary>
+            修改手机号码
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Mobile">手机号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Gender(System.String,System.String)">
+            <summary>
+            修改性别
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Gender">性别</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Interest(System.String,System.String)">
+            <summary>
+            修改兴趣爱好
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Interest">兴趣爱好</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Year(System.String,System.Int32)">
+            <summary>
+            修改毕业年份
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Year">毕业年份</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Degree(System.String,System.String)">
+            <summary>
+            修改所获学位
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Degree">所获学位</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Faculty(System.String,System.String)">
+            <summary>
+            修改所属院系
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Faculty">所属院系</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Profession(System.String,System.String)">
+            <summary>
+            修改所处行业
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Profession">所处行业</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Company(System.String,System.String)">
+            <summary>
+            修改所在公司
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Company">所在公司</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Position(System.String,System.String)">
+            <summary>
+            修改当前职位
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Position">当前职位</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_City(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改所在城市
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Province">省</param>
+            <param name="City">市</param>
+            <param name="District">区</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_PersonalController.Update_Native_City(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改出生籍贯
+            </summary>
+            <param name="OpenID">openid</param>
+            <param name="Native_Province">省</param>
+            <param name="Native_City">市</param>
+            <param name="Native_District">区</param>
+            <returns></returns>
+        </member>
+        <member name="M:League.Plat.Controllers.Api_RegisterController.Get_App_User_OpenID_By_Code(System.String)">
+            <summary>
+            获取OpenID
+            </summary>
+            <param name="Code">前端传code，后台发送请求</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

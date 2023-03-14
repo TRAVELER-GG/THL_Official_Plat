@@ -1,0 +1,57 @@
+﻿@model Alumni_Union_User
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Alumni_Union_User U = ViewData["U"] as Alumni_Union_User;
+}
+
+<table style="margin-top:80px; margin-left:80px">
+    <tr>
+        <td>
+            <p style="color:#1263a5; font-size:20px; font-weight:bold; margin:10px 0px;">欢迎登录 &nbsp;&nbsp;</p>
+        </td>
+        <td>
+            <p style="color:#1263a5; font-size:20px; font-weight:bold; margin:10px 0px;">江苏校友会平台</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top;">
+            <img src="@Host_Domain.Host()@U.Logo" style="max-height:85px;" />
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <span>角色权限：</span>
+                        <span>管理员</span>
+                        @if (Model.Is_Admin == Alumni_Is_Admin_Enum.Admin.ToString())
+                        {
+                            <span>管理员</span>
+                        }
+                        <span style="padding-left:20px;">上次登录：2019-10-28 19:56</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px;">
+                        <table>
+                            <tr>
+                                <td style="padding-bottom:25px;">
+                                    <a href="~/Framework/User_Info"><img src="~/Images/Index_A01.png" style="padding:14px; width:55px;  border-radius:5px; border:2px solid #c3c3c3" /></a>
+                                </td>
+                                <td style="vertical-align:middle; padding-left:10px; padding-bottom:30px;">
+                                    <a href="~/Alumni_Union/Search">修改<br />我的密码</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+

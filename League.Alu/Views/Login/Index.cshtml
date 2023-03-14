@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>League.Alu</title>
+    <!--设定不被快照和搜索引擎抓取 content contect-->
+    <meta name="robots" content="none">
+    <meta name="Baiduspider" content="noarchive">
+    <style>
+        body {
+            background-color: #f3f3f3;
+        }
+
+        table {
+            width: 400px;
+            margin: auto;
+            color: white;
+            font-size: 12px;
+            font-family: Arial 'Microsoft YaHei UI';
+            white-space: normal;
+            word-break: keep-all;
+            border-collapse: collapse;
+        }
+
+            table td {
+                padding: 0px;
+                height: 45px;
+            }
+
+        .Icon_TD {
+            text-align: center;
+            vertical-align: middle;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: #2f6eaa;
+            width: 50px;
+        }
+
+        .Input {
+            border: 1px solid #2f6eaa;
+            font-size: 18px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        img {
+            max-height: 70%;
+        }
+
+        table input {
+            height: 45px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        table button {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 20px;
+            border: 0px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #2f6eaa;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function Show_Load_Text() {
+            BTN = document.getElementById("Sub_Btn");
+            BTN.innerHTML = "Loading";
+        }
+    </script>
+</head>
+<body style="padding-top:100px">
+    <form action="~/Login/Login_Post" method="post" target="_top" onsubmit="Show_Load_Text()">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <img src="~/Images/Logo.png" style="max-height:120px;" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center; padding-bottom:20px;"><strong style="color:#2f6eaa; font-size:24px; line-height:50px;">苏州卓越高校联盟校友管理系统</strong></td>
+            </tr>
+
+            <tr>
+                <td class="Icon_TD"><img src="~/Images/Icon_Login/user.png" /></td>
+                <td>
+                    <input class="Input" name="User_Name" id="User_Name" value="@TempData["User_Name"]" type="text" autocomplete="off" placeholder="用户名" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height:20px;border:none;"></td>
+            </tr>
+            <tr>
+                <td class="Icon_TD"><img src="~/Images/Icon_Login/lock.png" /></td>
+                <td>
+                    <input class="Input" name="PassWord" id="PassWord" value="@TempData["Password"]" type="password" autocomplete="off" placeholder="密码" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height:20px;border:none;"></td>
+            </tr>
+            <tr>
+                <td class="Icon_TD"><img src="~/Images/Icon_Login/key.png" /></td>
+                <td>
+                    <input class="Input" name="PinCode" id="PinCode" value="@TempData["PinCode"]" type="text" autocomplete="off" placeholder="登陆口令" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height:20px; border:none;"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding-top:15px;">
+                    <button type="submit" id="Sub_Btn">登 录</button>
+                </td>
+            </tr>
+            @if (TempData["Error_Login"] != null)
+            {
+                <tr>
+                    <td colspan="2" style="color:red; font-weight:bold; text-align:center; font-size:14px;">@TempData["Error_Login"]</td>
+                </tr>
+            }
+        </table>
+    </form>
+</body>
+</html>

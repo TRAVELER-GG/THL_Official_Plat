@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/League.Api/bin
+/League.Api/.vs
+/League.Api/obj
+
+/League.Plat/bin
+/League.Plat/.vs
+/League.Plat/obj
+/League.Plat/wwwroot/Upload_File
+/League.Plat/upload/image
+/League.Plat/Properties/PublishProfiles
+
+/League.Alu/bin
+/League.Alu/.vs
+/League.Alu/obj
+/League.Alu/Properties/PublishProfiles
+

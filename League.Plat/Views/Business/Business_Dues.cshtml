@@ -1,0 +1,124 @@
+﻿@model PageList<Business_Dues>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+
+    Business Bus = ViewData["Bus"] as Business;
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Business_Filter MF = ViewData["MF"] as Business_Filter;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('商家资料')</script>
+
+<p class="Crumbs Search_Table">
+    <a href="~/@Controller/Business">商家资料</a>
+    <span> > </span>
+    <span>@Bus.Bus_Name</span>
+    <span> > </span>
+    <span>会费记录</span>
+</p>
+
+<form id="MyForm" action="~/@Controller/@action/@MF.Link_BID" method="get">
+    <table class="Search_Table">
+        <tr>
+            @*<td style="width:200px; padding-right:0px;">
+                <input class="form-control form-control-sm" style="border-top-right-radius:0px; border-bottom-right-radius:0px;" name="" value="@MF." placeholder="优惠卡券名称关键词" />
+            </td>
+            <td style="width:100px; padding-left:0px;">
+                <button class="btn btn-danger btn-sm Search-Btn" style="border-top-left-radius:0px; border-bottom-left-radius:0px;" type="submit"><i class="icon-search"></i> 搜索</button>
+            </td>*@
+
+            <td style="width:200px;">
+                <button type="button" class="btn btn-sm btn-primary" onclick="Show_Add_Modal()"><i class="icon-plus"></i> 新增会费</button>
+            </td>
+
+            <td>
+                <input type="hidden" name="PageIndex" id="PageIndex" class="PageIndex" value="" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:5px;">&nbsp;</th>
+            <th style="width:150px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Dues_Start_DT)</th>
+            <th style="width:100px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Dues)</th>
+            <th style="width:200px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Dues_Remark)</th>
+            <th style="width:50px; text-align:center;">更新</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>&nbsp;</td>
+                <td style="vertical-align:top;">@x.Dues_Start_DT.ToString("yyyy-MM-dd") ~ @x.Dues_End_DT.ToString("yyyy-MM-dd")</td>
+                <td style="vertical-align:top;">@x.Dues.ToString("0.00")</td>
+                <td style="vertical-align:top;">@x.Dues_Remark</td>
+                <td style="text-align:center; vertical-align:top;">
+                    <button type="button" class="btn btn-xs btn-info" onclick="Show_Sub_Modal('@x.Dues_ID')">更新</button>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />
+
+<script>
+    function Submit_Form() {
+        $("#MyForm").submit();
+    }
+</script>
+
+<script>
+    function Show_Add_Modal() {
+        $('#Add_Modal').modal({ backdrop: 'static' });
+        Reload_Add_Context();
+    }
+
+    function Reload_Add_Context() {
+        $("#Add_Context").text("Loading...");
+        $("#Add_Context").load("/@Controller/Business_Dues_Add/@MF.Link_BID");
+    }
+</script>
+<div class="modal fade" id="Add_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:480px;">
+            <div class="modal-header" style="height:45px;">
+                <h5 class="modal-title">新增会费</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Add_Context"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Show_Sub_Modal(Dues_ID) {
+        $('#Sub_Modal').modal({ backdrop: 'static' });
+        Reload_Sub_Context(Dues_ID);
+    }
+
+    function Reload_Sub_Context(Dues_ID) {
+        $("#Sub_Context").text("Loading...");
+        $("#Sub_Context").load("/@Controller/Business_Dues_Sub/"+ Dues_ID);
+    }
+</script>
+<div class="modal fade" id="Sub_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:480px;">
+                <div class="modal-header" style="height:45px;">
+                    <h5 class="modal-title">更新会费</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body" id="Sub_Context"></div>
+            </div>
+    </div>
+</div>

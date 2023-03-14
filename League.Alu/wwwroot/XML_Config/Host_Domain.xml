@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+  <API_URL_OFF VAL="https://xjtua.mrodt.com/"></API_URL_OFF>
+  <API_URL VAL="https://localhost:44307/"></API_URL>
+</ROOT>

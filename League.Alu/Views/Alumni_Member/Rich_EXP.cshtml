@@ -1,0 +1,56 @@
+﻿@model PageList<Alumni_Member_Style>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Alumni_Member_Filter MF = ViewData["MF"] as Alumni_Member_Filter;
+}
+<partial name="_SubMenu_Style" />
+<script>Change_Top_Menu('查询更新')</script>
+
+<form id="MyForm" action="~/@Controller/@action" method="get">
+    <table class="Search_Table">
+        <tr>
+            <td style="width:200px; padding-right:0;">
+                <input class="form-control form-control-sm" style="border-top-right-radius:0px; border-bottom-right-radius:0px;" name="Keyword_Name" id="Keyword_Name" value="@MF.Keyword_Name" placeholder="标题关键词" />
+            </td>
+            <td style="width:50px; padding-left:0px;">
+                <button class="btn btn-danger btn-sm Search-Btn" style="border-top-left-radius:0px; border-bottom-left-radius:0px;" type="submit"><i class="icon-search"></i> 搜索</button>
+            </td>
+            <td>
+                <input type="hidden" name="PageIndex" id="PageIndex" class="PageIndex" value="" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:5px;">&nbsp;</th>
+            <th style="width:180px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Title)</th>
+            <th style="width:100px;">创建日期</th>
+            <th style="width:80px;">大咖校友</th>
+            <th style="width:60px; text-align:center;">&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>&nbsp;</td>
+                <td style="vertical-align:top;">@x.Title</td>
+                <td style="vertical-align:top;">@x.Create_DT.ToString("yyyy-MM-dd")</td>
+                <td style="vertical-align:top;">@x.Member_Name</td>
+                <td style="text-align:center; vertical-align:top;"><a href="~/@Controller/Rich_EXP_Sub/@x.MSID" class="btn btn-info btn-xs">更新</a></td>
+                <td>&nbsp;</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />
+
+

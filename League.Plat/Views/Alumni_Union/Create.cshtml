@@ -1,0 +1,126 @@
+﻿@model Alumni_Union
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    ViewBag.Title = ViewContext.RouteData.Values["action"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Add_ID = "User_Add_Form";
+    string Form_Add_Action = Controller + "/Create_Post/";
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('分会设置')</script>
+<style>
+    .city-picker-selector .selector-item {
+        width: 45% !important;
+    }
+</style>
+<p class="Crumbs">
+    <a href="~/@Controller/Search">分会设置</a>
+    <span> > </span>
+    <span>新增</span>
+</p>
+<form id="@Form_Add_ID" action="~/@Form_Add_Action" method="post">
+    <div style="height:650px; overflow-y:auto;">
+        <table class="table table-sm table-borderless" style="width:920px;">
+            <tr>
+                <th style="width:80px;">@Html.DisplayNameFor(m => m.Name)</th>
+                <td style="width:300px;"><input name="Name" value="@Model.Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="请填写分会的中文全称" /></td>
+                <th style="width:80px;">@Html.DisplayNameFor(m => m.Name_Short)</th>
+                <td><input name="Name_Short" value="@Model.Name_Short" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="请填写分会的中文简称" /></td>
+                <th style="width:80px;">@Html.DisplayNameFor(m => m.Establish_DT)</th>
+                <td><input name="Establish_DT" value="@Model.Establish_DT" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="例:1998年" /></td>
+            </tr>
+
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.Contact)</th>
+                <td>
+                    <div style="display:flex; justify-content:space-between">
+                        <input name="Contact" value="@Model.Contact" class="form-control" style="width:35%;" type="text" autocomplete="off" placeholder="联系人" />
+                        <input name="Phone" value="@Model.Phone" class="form-control" style="width:55%;" type="text" autocomplete="off" placeholder="手机号码" />
+                    </div>
+                </td>
+
+                <th>分会区域</th>
+                <td>
+                    <div class="city-picker-selector" id="Native-picker" style="display:flex;"></div>
+                    <input type="hidden" id="Native_Province" name="Province" value="">
+                    <input type="hidden" id="Native_City" name="City" value="">
+                </td>
+                <th>@Html.DisplayNameFor(m => m.Union_Type)</th>
+                <td>
+                    <select class="form-control form-control-sm" name="Union_Type" id="Union_Type">
+                        @foreach (var x in Model.Union_Type_List)
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6">
+                    <span>编辑分会介绍</span>
+                    <span>(成立时间、分会宗旨、业务范围、里程碑事件等)</span>
+                    <script name="Content" id="Content" type="text/plain">
+                        @Html.Raw(Model.Content)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" style="text-align:right;">
+                    <button type="button" onclick="Add_Alumni_Union(this)" class="btn btn-primary btn-sm" style="width:100px;">确认递交</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Content', {
+        initialFrameHeight: 400,
+        zIndex: 50,
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Content').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#Native-picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true,
+            level:2,
+        });
+    });
+
+    function Add_Alumni_Union(Btn_Obj) {
+        Set_City();
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj, CallBack);
+    }
+
+    function CallBack() {
+        JumpPage("/@Controller/Search");
+    }
+
+    function Set_City() {
+        var Province = $(".province .selector-name:first").text();
+        var City = $(".city .selector-name:first").text();
+        $("#Native_Province").val(Province);
+        $("#Native_City").val(City);
+    }
+</script>
+

@@ -1,0 +1,22 @@
+﻿@model List<Regional>
+@{
+    Layout = null;
+}
+
+<table style="width:100%;">
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td style="border-bottom:1px solid #d7d7d7; padding-bottom:2px; padding-top:10px;"><strong style="font-size:14px; cursor:pointer;" onclick="Select_Regional('@x.Province', '')">@x.Province</strong></td>
+        </tr>
+
+        <tr>
+            <td style="padding-top:5px; font-size:14px;">
+                @foreach (var xx in x.City_List)
+                {
+                    <a href="javascript:void(0);" title="@xx.City_Name" style="float:left; display:block; width:100px; white-space:nowrap; text-overflow:ellipsis; margin-bottom:5px; margin-right:10px; overflow:hidden;" onclick="Select_Regional('@x.Province', '@xx.City_Name','')"><span style="color:#0953c2; font-weight:bold; ">@xx.City_Name</span></a>
+                }
+            </td>
+        </tr>
+    }
+</table>

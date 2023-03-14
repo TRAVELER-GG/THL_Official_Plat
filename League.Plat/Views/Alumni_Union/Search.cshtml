@@ -1,0 +1,90 @@
+﻿@model PageList<Alumni_Union>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Alumni_Union_Filter MF = ViewData["MF"] as Alumni_Union_Filter;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('分会设置')</script>
+
+<form id="MyForm" action="~/@Controller/@action" method="get">
+    <table class="Search_Table">
+        <tr>
+            <td style="width:120px;">
+                <select name="Union_Type" class="form-control" onchange="Submit_Form()">
+                    <option value="">分会类型</option>
+                    @foreach (var x in MF.Union_Type_List)
+                    {
+                        if (x == MF.Union_Type)
+                        {
+                            <option selected value="@x">@x</option>
+                        }
+                        else
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    }
+                </select>
+            </td>
+
+            <td style="width:250px; padding-right:0px;">
+                <input class="form-control form-control-sm" style="border-top-right-radius:0px; border-bottom-right-radius:0px;" name="Keyword_Name" id="Keyword_Name" value="@MF.Keyword_Name" placeholder="分会名称关键词" />
+            </td>
+            <td style="width:50px; padding-left:0px;">
+                <button class="btn btn-danger btn-sm Search-Btn" style="border-top-left-radius:0px; border-bottom-left-radius:0px;" type="submit"><i class="icon-search"></i> 搜索</button>
+            </td>
+
+            <td style="width:30px;"></td>
+            <td>
+                <a href="~/@Controller/Create" class="btn btn-primary btn-sm"><i class="icon-plus"></i> 新增分会</a>
+            </td>
+            <td>
+                <input type="hidden" name="PageIndex" id="PageIndex" class="PageIndex" value="" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:5px;">&nbsp;</th>
+            <th style="width:160px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Name)</th>
+            <th style="width:140px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Name_Short)</th>
+            <th style="width:100px;">分会区域</th>
+            <th style="width:80px; text-align:center;">分会类型</th>
+            <th style="width:60px; text-align:center;">会员人数</th>
+            <th style="width:80px; text-align:center;">创立时间</th>
+            <th style="width:60px; text-align:center;">浏览量</th>
+            <th style="width:60px; text-align:center;">&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>&nbsp;</td>
+                <td style="vertical-align:top;">@x.Name</td>
+                <td style="vertical-align:top;">@x.Name_Short</td>
+                <td style="vertical-align:top;">@x.Province @x.City</td>
+                <td style="vertical-align:top; text-align:center;">@x.Union_Type</td>
+                <td style="vertical-align:top; text-align:center;">@x.Member_Count</td>
+                <td style="vertical-align:top; text-align:center;">@x.Establish_DT</td>
+                <td style="vertical-align:top; text-align:center;">@x.Union_PV</td>
+                <td style="vertical-align:top; text-align:center;"><a href="~/@Controller/Search_Sub/@x.AUID" class="btn btn-info btn-xs">更新</a></td>
+                <td>&nbsp;</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />
+
+<script>
+    function Submit_Form() {
+        $("#MyForm").submit();
+    }
+</script>

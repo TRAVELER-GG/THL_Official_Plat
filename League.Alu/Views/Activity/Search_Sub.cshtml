@@ -1,0 +1,231 @@
+﻿@model Activity
+@{ string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    List<Activity_Sponsor> Sponsor_List = ViewData["Sponsor_List"] as List<Activity_Sponsor>;
+
+    string Form_Add_ID = "Act_Add_Form";
+    string Form_Add_Action = Controller + "/Search_Sub_Add_Post/" + Model.AID;
+    string Form_Set_Action = Controller + "/Search_Sub_Post/" + Model.AID;
+
+    string Form_Del_ID = "Infor_Del_Form";
+    string Form_Del_Action = Controller + "/Search_Sub_Delete_Post/" + Model.AID;
+
+    string Form_Cover_Img_ID = "Form_Cover_Img_ID";
+    string Form_Cover_Img_Action = Host_Domain.Host() + "Upload_Files/Activity_Poster_Post/" + Model.AID; }
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('活动查询')</script>
+
+<style>
+    .calendar {
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        font-size: 18px;
+        color: #666;
+    }
+</style>
+<div style="height:100%; padding:15px; overflow:auto;">
+    <form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+        <table class="table table-borderless text-nowrap" style="width:800px;">
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Title)</td>
+                <td colspan="3"><input name="Title" value="@Model.Title" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+            </tr>
+
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Start_DT)</td>
+                <td style="position:relative;"><input type="text" name="@Html.NameFor(m => m.Start_DT)" value="@Model.Start_DT.ToString("yyyy-MM-dd HH:mm")" class="form_date form-control form-control-sm" data-date-format="yyyy-mm-dd" autocomplete="off" /><i class="icon-calendar calendar"></i></td>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.End_DT)</td>
+                <td style="position:relative;"><input type="text" name="@Html.NameFor(m => m.End_DT)" value="@Model.End_DT.ToString("yyyy-MM-dd HH:mm")" class="form_date form-control form-control-sm" data-date-format="yyyy-mm-dd" autocomplete="off" /><i class="icon-calendar calendar"></i></td>
+            </tr>
+
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Num_of_people)</td>
+                <td><input name="Num_of_people" value="@Model.Num_of_people" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="请填阿拉伯数字，默认为无限制" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Location)</td>
+                <td colspan="3"><input name="Location" value="@Model.Location" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+            </tr>
+
+
+            <tr>
+                <td style="text-align:right; vertical-align:top;">@Html.DisplayNameFor(m => m.Poster)</td>
+                <td colspan="3">
+                    <div id="Img_Cover"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* 选择主办方</td>
+                <td>
+                    <select class="form-control form-control-sm" name="Link_ASID">
+                        <option value="@Guid.Empty">请选择</option>
+                        @foreach (var x in Sponsor_List)
+                        {
+                            if (x.ASID == Model.Link_ASID)
+                            {
+                                <option selected value="@x.ASID">@x.Name</option>
+                            }
+                            else
+                            {
+                                <option value="@x.ASID">@x.Name</option>
+                            }
+                        }
+                    </select>
+                </td>
+                <td style="padding-left:0px; padding-right:0px;"><button type="button" class="btn btn-default btn-sm" onclick="Show_Add_Modal()">新增主办方</button></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Scope)</td>
+                <td>
+                    <select class="form-control form-control-sm" name="Scope">
+                        @foreach (var x in Enum.GetNames(typeof(Act_Scope_Enum)))
+                        {
+                            if (x == Model.Scope)
+                            {
+                                <option selected value="@x">@x</option>
+                            }
+                            else
+                            {
+                                <option value="@x">@x</option>
+                            }
+                        }
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right;">* @Html.DisplayNameFor(m => m.Content)</td>
+                <td colspan="3" class="text-break-all">
+                    <script name="Content" id="Content" type="text/plain">
+                        @Html.Raw(Model.Content)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><button type="button" onclick="Delete_Info(this)" class="btn btn-danger btn-sm" style="width:50%;">删除</button></td>
+                <td>&nbsp;</td>
+                <td style="text-align:right;">
+                    @if (Model.Status == Act_Status_Enum.待发布.ToString())
+                    {
+                        <button type="button" onclick="Publish_Info(this)" class="btn btn-primary btn-sm" style="width:40%;">确认发布</button> }
+                    else
+                    {
+                        <button type="button" onclick="Set_Info(this)" class="btn btn-primary btn-sm" style="width:40%;">更 新</button>}
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Content', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Content').getContent();
+        document.editForm.submit();
+    }
+</script>
+<script>
+    $('.form_date').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language: 'zh-CN',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    })
+</script>
+
+<!--封面图片-->
+<form id="@Form_Cover_Img_ID" action="@Form_Cover_Img_Action" method="post" enctype="multipart/form-data"></form>
+<script>
+    function Ajax_Img_Upload(Btn_Obj) {
+        var File_OBJ = $("#File_Input");
+        $("#@Form_Cover_Img_ID").html(File_OBJ);
+        Ajax_Form_Upload("@Form_Cover_Img_ID", Btn_Obj, Ajax_Img_Upload_Callback);
+    }
+
+    function Reload_Img_Cover() {
+        $("#Img_Cover").load("/@Controller/Search_Sub_Poster/" + "@Model.AID");
+    }
+
+    function Ajax_Img_Upload_Callback() {
+        Reload_Img_Cover();
+    }
+
+    Reload_Img_Cover();
+</script>
+<!--封面图片-->
+<!--ADD-->
+<script>
+    function Show_Add_Modal() {
+        $('#Add_Modal').modal({ backdrop: 'static' });
+        Reload_Add_Context();
+    }
+
+    function Reload_Add_Context() {
+        $("#Add_Context").text("Loading...");
+        $("#Add_Context").load("/@Controller/Publish_Sub");
+    }
+</script>
+<div class="modal fade" id="Add_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:580px;">
+            <div class="modal-header">
+                <h5 class="modal-title">新增主办方</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Add_Context"></div>
+        </div>
+    </div>
+</div>
+<!--ADD-->
+
+<script>
+    function Publish_Info(Btn_Obj) {
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<script>
+    function Set_Info(Btn_Obj) {
+        $("#@Form_Add_ID").attr("action","/@Form_Set_Action");
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<form id="@Form_Del_ID" action="/@Form_Del_Action" method="post"></form>
+<script>
+    function Delete_Info(Btn_Obj) {
+        var Count = '@Model.People';
+        if (confirm("已有" + Count + "名校友参加活动\n确认删除？") == false) { return false; }
+        Ajax_Form_Callback('@Form_Del_ID', Btn_Obj,Call_Back)
+    }
+
+    function Call_Back() {
+        JumpPage("/@Controller/Search")
+    }
+</script>

@@ -1,0 +1,187 @@
+﻿@model Business
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Set_ID = "Set_Form";
+    string Form_Set_Action = Controller + "/Business_Sub_Post/" + Model.BID;
+
+    string Form_Del_ID = "Delete_Form";
+    string Form_Del_Action = Controller + "/Business_Sub_Delete_Post/" + Model.BID;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('商家资料')</script>
+
+<p class="Crumbs Search_Table">
+    <a href="~/@Controller/Business">商家资料</a>
+    <span> > </span>
+    <span>商家维护</span>
+</p>
+
+<div style="height:650px; overflow-y:auto;">
+    <table>
+        <tr>
+            <td style="width:55%;">
+                <form id="@Form_Set_ID" action="/@Form_Set_Action" method="post">
+                    <table class="table table-sm table-borderless text-nowrap">
+                        <tr>
+                            <td style="width:100px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Name)</td>
+                            <td style="width:350px;"><input name="Bus_Name" value="@Model.Bus_Name" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写店名" /></td>
+                            <td style="width:100px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Name_Register)</td>
+                            <td><input name="Bus_Name_Register" value="@Model.Bus_Name_Register" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写商家的供商注册名称" /></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* 所在区域</td>
+                            <td>
+                                <div class="city-picker-selector" id="Bus-picker" style="display:flex;"></div>
+                                <input type="hidden" id="Bus_Province" name="Bus_Province" value="">
+                                <input type="hidden" id="Bus_City" name="Bus_City" value="">
+                                <input type="hidden" id="Bus_District" name="Bus_District" value="">
+                            </td>
+
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Address)</td>
+                            <td><input name="Bus_Address" value="@Model.Bus_Address" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写店铺所在地址" /></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* 联系方式</td>
+                            <td>
+                                <div style="display:flex; justify-content:space-between">
+                                    <input name="Bus_Contact" value="@Model.Bus_Contact" required class="form-control" style="width:35%;" type="text" autocomplete="off" placeholder="联系人" />
+                                    <input name="Bus_Phone" value="@Model.Bus_Phone" required class="form-control" style="width:55%;" type="text" autocomplete="off" placeholder="手机号码" />
+                                </div>
+                            </td>
+
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Type)</td>
+                            <td>
+                                <select class="form-control" required name="Bus_Type">
+                                    @foreach (var x in Model.Bus_Type_List)
+                                    {
+                                        if (x == Model.Bus_Type)
+                                        {
+                                            <option selected value="@x">@x</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@x">@x</option>
+                                        }
+                                    }
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Bus_Recommend)</td>
+                            <td><input name="Bus_Recommend" value="@Model.Bus_Recommend" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写一句推荐语" /></td>
+                            <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Bus_Hours)</td>
+                            <td><input name="Bus_Hours" value="@Model.Bus_Hours" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="例：全年 周一至周日 9:00~22:00" /></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4" class="text-break-all">
+                                <span>商家介绍</span>
+                                <script name="Bus_Intro" id="Bus_Intro" type="text/plain">
+                                    @Html.Raw(Model.Bus_Intro)
+                                </script>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <button type="button" onclick="Delete_Bus(this)" class="btn btn-danger btn-sm" style="width:120px;">删除/冻结</button>
+                                <button type="button" onclick="Set_Bus(this)" class="btn btn-primary btn-sm" style="width:120px; float:right;">递交更新</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+            <td style="width:2%;"></td>
+            <td style="vertical-align:top;">
+                <div id="Div_Certificate_Context" style="height:230px; overflow:hidden;"></div>
+                <p></p>
+                <div id="Div_Album_Context" style="height:380px; overflow:hidden;"></div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    Reload_Div_Certificate_Context();
+    Reload_Div_Album_Context();
+
+    function Reload_Div_Certificate_Context() {
+        $("#Div_Certificate_Context").text("Loading...");
+        $("#Div_Certificate_Context").load("/@Controller/Business_Sub_Certificate/@Model.BID");
+    }
+
+    function Reload_Div_Album_Context() {
+        $("#Div_Album_Context").text("Loading...");
+        $("#Div_Album_Context").load("/@Controller/Business_Sub_Album/@Model.BID");
+    }
+</script>
+
+
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Bus_Intro', {
+        initialFrameHeight: 240,
+        zIndex:50,
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Bus_Intro').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#Bus-picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true,
+        });
+
+        if ("@Model.Bus_Province"!="")
+        {
+            $(".province .selector-name").text("@Model.Bus_Province");
+            $(".city .selector-name").text("@Model.Bus_City");
+            $(".district .selector-name").text("@Model.Bus_District");
+        }
+    });
+
+    function Set_Bus(Btn_Obj) {
+        Set_City();
+        $("#Bus_Intro").val(UE.getEditor('Bus_Intro').getContent());
+        Ajax_Form_Reload('@Form_Set_ID', Btn_Obj);
+    }
+
+    function Set_City() {
+        var Province = $(".province .selector-name:first").text();
+        var City = $(".city .selector-name:first").text();
+        var District = $(".district .selector-name:first").text();
+        $("#Bus_Province").val(Province);
+        $("#Bus_City").val(City);
+        $("#Bus_District").val(District);
+    }
+</script>
+
+<form id="@Form_Del_ID" action="/@Form_Del_Action" method="post"></form>
+<script>
+    function Delete_Bus(Btn_Obj) {
+        if (confirm("确认删除/冻结？") == false) { return false; }
+        Ajax_Form_Callback('@Form_Del_ID', Btn_Obj, CallBack)
+    }
+
+    function CallBack() {
+        JumpPage("/@Controller/Business");
+    }
+</script>

@@ -1,0 +1,134 @@
+﻿@model Business
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Add_ID = "Add_Form";
+    string Form_Add_Action = Controller + "/Business_Add_Post";
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('商家资料')</script>
+
+<p class="Crumbs">
+    <a href="~/@Controller/Business">商家资料</a>
+    <span> > </span>
+    <span>新增商家</span>
+</p>
+<div style="height:650px; overflow-y:auto;">
+    <form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+        <table class="table table-sm table-borderless text-nowrap" style="width: 860px;">
+            <tr>
+                <td style="width:100px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Name)</td>
+                <td style="width:350px;"><input name="Bus_Name" value="@Model.Bus_Name" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写店名" /></td>
+                <td style="width:100px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Name_Register)</td>
+                <td><input name="Bus_Name_Register" value="@Model.Bus_Name_Register" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写商家的供商注册名称" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* 所在区域</td>
+                <td>
+                    <div class="city-picker-selector" id="Bus-picker" style="display:flex;"></div>
+                    <input type="hidden" id="Bus_Province" name="Bus_Province" value="">
+                    <input type="hidden" id="Bus_City" name="Bus_City" value="">
+                    <input type="hidden" id="Bus_District" name="Bus_District" value="">
+                </td>
+
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Address)</td>
+                <td><input name="Bus_Address" value="@Model.Bus_Address" required class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写店铺所在地址" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; vertical-align:middle;">* 联系方式</td>
+                <td>
+                    <div style="display:flex; justify-content:space-between">
+                        <input name="Bus_Contact" value="@Model.Bus_Contact" required class="form-control" style="width:35%;" type="text" autocomplete="off" placeholder="联系人" />
+                        <input name="Bus_Phone" value="@Model.Bus_Phone" required class="form-control" style="width:55%;" type="text" autocomplete="off" placeholder="手机号码" />
+                    </div>
+                </td>
+
+                <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Bus_Type)</td>
+                <td>
+                    <select class="form-control" required name="Bus_Type">
+                        <option value="">请选择</option>
+                        @foreach (var x in Model.Bus_Type_List)
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Bus_Recommend)</td>
+                <td><input name="Bus_Recommend" value="@Model.Bus_Recommend" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="填写一句推荐语" /></td>
+                <td style="text-align:right; vertical-align:middle;">@Html.DisplayNameFor(m => m.Bus_Hours)</td>
+                <td><input name="Bus_Hours" value="@Model.Bus_Hours" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" placeholder="例：全年 周一至周日 9:00~22:00" /></td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="text-break-all">
+                    <span>商家介绍</span>
+                    <script name="Bus_Intro" id="Bus_Intro" type="text/plain">
+                        @Html.Raw(Model.Bus_Intro)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="text-align:right;">
+                    <button type="button" onclick="Create_Bus(this)" class="btn btn-primary btn-sm" style="width:120px;">创建递交</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Bus_Intro', {
+        initialFrameHeight: 400,
+        zIndex: 50,
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Bus_Intro').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#Bus-picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true,
+        });
+    });
+
+    function Create_Bus(Btn_Obj) {
+        Set_City();
+        $("#Bus_Intro").val(UE.getEditor('Bus_Intro').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj, CallBack);
+    }
+
+    function CallBack() {
+        JumpPage("/@Controller/Business");
+    }
+
+    function Set_City() {
+        var Province = $(".province .selector-name:first").text();
+        var City = $(".city .selector-name:first").text();
+        var District = $(".district .selector-name:first").text();
+
+        $("#Bus_Province").val(Province);
+        $("#Bus_City").val(City);
+        $("#Bus_District").val(District);
+    }
+</script>

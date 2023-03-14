@@ -1,0 +1,85 @@
+﻿@model Alumni_Union
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Set_ID = "Introduce_Set_Form";
+    string Form_Set_Action = Controller + "/Union_Introduce_Post/" + Model.AUID;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('简介')</script>
+
+<div style="padding:10px 0 30px 0; height:100%;  overflow-y:auto; overflow-x:hidden;">
+    <form id="@Form_Set_ID" action="/@Form_Set_Action" method="post">
+        <table style="height:100%">
+            <tr>
+                <td colspan="3" style="word-break:break-all; width:95%">
+                    <script name="Content" id="Content" type="text/plain">
+                        @Html.Raw(Model.Content)
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:15px;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Set_Info(this)" class="btn btn-primary btn-sm" style="width:30%;">确认递交</button>
+                </td>
+                <td style="text-align:right;">
+                    <button type="button" class="btn btn-default btn-sm" onclick="Show_Pre_Modal('@Model.AUID')" style="width:25%">预览</button>
+                </td>
+                <td style="width:4%"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Content', {
+        initialFrameHeight: 550
+    });
+</script>
+
+<script>
+    function Set_Info(Btn_Obj) {
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Reload('@Form_Set_ID',Btn_Obj);
+    }
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Content').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+<!--Pre-->
+<script>
+    function Show_Pre_Modal(AUID) {
+        $('#Pre_Modal').modal({ backdrop: 'static' });
+        Reload_Pre_Context(AUID);
+    }
+
+    function Reload_Pre_Context(AUID) {
+        $("#Pre_Context").text("Loading...");
+        $("#Pre_Context").load("/@Controller/Union_Introduce_Pre/"+ AUID);
+    }
+</script>
+
+<div class="modal fade" id="Pre_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:380px; height:580px;">
+            <div class="modal-header" style="height:45px;">
+                <h5 class="modal-title">预览效果</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Pre_Context" style="width:375px; overflow:auto; background:#f9f9f9"></div>
+        </div>
+    </div>
+</div>
+<!--Pre-->

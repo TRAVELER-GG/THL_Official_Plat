@@ -1,0 +1,3261 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root Name="中国">
+  <Province Name="江苏" Postcode="320000" >
+    <City Name="南京" Postcode="320100" >
+      <District Name="玄武区" Postcode="320102" />
+      <District Name="白下区" Postcode="320103" />
+      <District Name="秦淮区" Postcode="320104" />
+      <District Name="建邺区" Postcode="320105" />
+      <District Name="鼓楼区" Postcode="320106" />
+      <District Name="下关区" Postcode="320107" />
+      <District Name="浦口区" Postcode="320111" />
+      <District Name="栖霞区" Postcode="320113" />
+      <District Name="雨花台区" Postcode="320114" />
+      <District Name="江宁区" Postcode="320115" />
+      <District Name="六合区" Postcode="320116" />
+      <District Name="溧水县" Postcode="320124" />
+      <District Name="高淳县" Postcode="320125" />
+    </City>
+    <City Name="无锡" Postcode="320200" >
+      <District Name="崇安区" Postcode="320202" />
+      <District Name="南长区" Postcode="320203" />
+      <District Name="北塘区" Postcode="320204" />
+      <District Name="锡山区" Postcode="320205" />
+      <District Name="惠山区" Postcode="320206" />
+      <District Name="滨湖区" Postcode="320211" />
+      <District Name="江阴" Postcode="320281" />
+      <District Name="宜兴" Postcode="320282" />
+    </City>
+    <City Name="徐州" Postcode="320300" >
+      <District Name="鼓楼区" Postcode="320302" />
+      <District Name="云龙区" Postcode="320303" />
+      <District Name="九里区" Postcode="320304" />
+      <District Name="贾汪区" Postcode="320305" />
+      <District Name="泉山区" Postcode="320311" />
+      <District Name="丰县" Postcode="320321" />
+      <District Name="沛县" Postcode="320322" />
+      <District Name="铜山县" Postcode="320323" />
+      <District Name="睢宁县" Postcode="320324" />
+      <District Name="新沂" Postcode="320381" />
+      <District Name="邳州" Postcode="320382" />
+    </City>
+    <City Name="常州" Postcode="320400" >
+      <District Name="天宁区" Postcode="320402" />
+      <District Name="钟楼区" Postcode="320404" />
+      <District Name="戚墅堰区" Postcode="320405" />
+      <District Name="新北区" Postcode="320411" />
+      <District Name="武进区" Postcode="320412" />
+      <District Name="溧阳" Postcode="320481" />
+      <District Name="金坛" Postcode="320482" />
+    </City>
+    <City Name="苏州" Postcode="320500" >
+      <District Name="沧浪区" Postcode="320502" />
+      <District Name="平江区" Postcode="320503" />
+      <District Name="金阊区" Postcode="320504" />
+      <District Name="虎丘区" Postcode="320505" />
+      <District Name="吴中区" Postcode="320506" />
+      <District Name="相城区" Postcode="320507" />
+      <District Name="工业园区" Postcode="215021" />
+      <District Name="高新区" Postcode="215011" />
+    </City>
+    <City Name="常熟" Postcode="" ></City>
+    <City Name="昆山" Postcode="" ></City>
+    <City Name="吴江" Postcode="" ></City>
+    <City Name="太仓" Postcode="" ></City>
+    <City Name="张家港" Postcode="" ></City>
+
+    <City Name="南通" Postcode="320600" >
+      <District Name="崇川区" Postcode="320602" />
+      <District Name="港闸区" Postcode="320611" />
+      <District Name="海安县" Postcode="320621" />
+      <District Name="如东县" Postcode="320623" />
+      <District Name="启东" Postcode="320681" />
+      <District Name="如皋" Postcode="320682" />
+      <District Name="通州" Postcode="320683" />
+      <District Name="海门" Postcode="320684" />
+    </City>
+    <City Name="连云港" Postcode="320700" >
+      <District Name="连云区" Postcode="320703" />
+      <District Name="新浦区" Postcode="320705" />
+      <District Name="海州区" Postcode="320706" />
+      <District Name="赣榆县" Postcode="320721" />
+      <District Name="东海县" Postcode="320722" />
+      <District Name="灌云县" Postcode="320723" />
+      <District Name="灌南县" Postcode="320724" />
+    </City>
+    <City Name="淮安" Postcode="320800" >
+      <District Name="清河区" Postcode="320802" />
+      <District Name="楚州区" Postcode="320803" />
+      <District Name="淮阴区" Postcode="320804" />
+      <District Name="清浦区" Postcode="320811" />
+      <District Name="涟水县" Postcode="320826" />
+      <District Name="洪泽县" Postcode="320829" />
+      <District Name="盱眙县" Postcode="320830" />
+      <District Name="金湖县" Postcode="320831" />
+    </City>
+    <City Name="盐城" Postcode="320900" >
+      <District Name="亭湖区" Postcode="320902" />
+      <District Name="盐都区" Postcode="320903" />
+      <District Name="响水县" Postcode="320921" />
+      <District Name="滨海县" Postcode="320922" />
+      <District Name="阜宁县" Postcode="320923" />
+      <District Name="射阳县" Postcode="320924" />
+      <District Name="建湖县" Postcode="320925" />
+      <District Name="东台" Postcode="320981" />
+      <District Name="大丰" Postcode="320982" />
+    </City>
+    <City Name="扬州" Postcode="321000" >
+      <District Name="广陵区" Postcode="321002" />
+      <District Name="邗江区" Postcode="321003" />
+      <District Name="维扬区" Postcode="321011" />
+      <District Name="宝应县" Postcode="321023" />
+      <District Name="仪征" Postcode="321081" />
+      <District Name="高邮" Postcode="321084" />
+      <District Name="江都" Postcode="321088" />
+    </City>
+    <City Name="镇江" Postcode="321100" >
+      <District Name="京口区" Postcode="321102" />
+      <District Name="润州区" Postcode="321111" />
+      <District Name="丹徒区" Postcode="321112" />
+      <District Name="丹阳" Postcode="321181" />
+      <District Name="扬中" Postcode="321182" />
+      <District Name="句容" Postcode="321183" />
+    </City>
+    <City Name="泰州" Postcode="321200" >
+      <District Name="海陵区" Postcode="321202" />
+      <District Name="高港区" Postcode="321203" />
+      <District Name="兴化" Postcode="321281" />
+      <District Name="靖江" Postcode="321282" />
+      <District Name="泰兴" Postcode="321283" />
+      <District Name="姜堰" Postcode="321284" />
+    </City>
+    <City Name="宿迁" Postcode="321300" >
+      <District Name="宿城区" Postcode="321302" />
+      <District Name="宿豫区" Postcode="321311" />
+      <District Name="沭阳县" Postcode="321322" />
+      <District Name="泗阳县" Postcode="321323" />
+      <District Name="泗洪县" Postcode="321324" />
+    </City>
+  </Province>
+
+  <Province Name="上海" Postcode="310000" >
+    <City Name="黄浦区" Postcode="310101" />
+    <City Name="卢湾区" Postcode="310103" />
+    <City Name="徐汇区" Postcode="310104" />
+    <City Name="长宁区" Postcode="310105" />
+    <City Name="静安区" Postcode="310106" />
+    <City Name="普陀区" Postcode="310107" />
+    <City Name="闸北区" Postcode="310108" />
+    <City Name="虹口区" Postcode="310109" />
+    <City Name="杨浦区" Postcode="310110" />
+    <City Name="闵行区" Postcode="310112" />
+    <City Name="宝山区" Postcode="310113" />
+    <City Name="嘉定区" Postcode="310114" />
+    <City Name="浦东新区" Postcode="310115" />
+    <City Name="金山区" Postcode="310116" />
+    <City Name="松江区" Postcode="310117" />
+    <City Name="青浦区" Postcode="310118" />
+    <City Name="南汇区" Postcode="310119" />
+    <City Name="奉贤区" Postcode="310120" />
+    <City Name="崇明县" Postcode="310230" />     
+  </Province>
+
+  <Province Name="浙江" Postcode="330000" >
+    <City Name="杭州" Postcode="330100" >
+      <District Name="上城区" Postcode="330102" />
+      <District Name="下城区" Postcode="330103" />
+      <District Name="江干区" Postcode="330104" />
+      <District Name="拱墅区" Postcode="330105" />
+      <District Name="西湖区" Postcode="330106" />
+      <District Name="滨江区" Postcode="330108" />
+      <District Name="萧山区" Postcode="330109" />
+      <District Name="余杭区" Postcode="330110" />
+      <District Name="桐庐县" Postcode="330122" />
+      <District Name="淳安县" Postcode="330127" />
+      <District Name="建德" Postcode="330182" />
+      <District Name="富阳" Postcode="330183" />
+      <District Name="临安" Postcode="330185" />
+    </City>
+    <City Name="宁波" Postcode="330200" >
+      <District Name="海曙区" Postcode="330203" />
+      <District Name="江东区" Postcode="330204" />
+      <District Name="江北区" Postcode="330205" />
+      <District Name="北仑区" Postcode="330206" />
+      <District Name="镇海区" Postcode="330211" />
+      <District Name="鄞州区" Postcode="330212" />
+      <District Name="象山县" Postcode="330225" />
+      <District Name="宁海县" Postcode="330226" />
+      <District Name="余姚" Postcode="330281" />
+      <District Name="慈溪" Postcode="330282" />
+      <District Name="奉化" Postcode="330283" />
+    </City>
+    <City Name="温州" Postcode="330300" >
+      <District Name="鹿城区" Postcode="330302" />
+      <District Name="龙湾区" Postcode="330303" />
+      <District Name="瓯海区" Postcode="330304" />
+      <District Name="洞头县" Postcode="330322" />
+      <District Name="永嘉县" Postcode="330324" />
+      <District Name="平阳县" Postcode="330326" />
+      <District Name="苍南县" Postcode="330327" />
+      <District Name="文成县" Postcode="330328" />
+      <District Name="泰顺县" Postcode="330329" />
+      <District Name="瑞安" Postcode="330381" />
+      <District Name="乐清" Postcode="330382" />
+    </City>
+    <City Name="嘉兴" Postcode="330400" >
+      <District Name="秀城区" Postcode="330402" />
+      <District Name="秀洲区" Postcode="330411" />
+      <District Name="嘉善县" Postcode="330421" />
+      <District Name="海盐县" Postcode="330424" />
+      <District Name="海宁" Postcode="330481" />
+      <District Name="平湖" Postcode="330482" />
+      <District Name="桐乡" Postcode="330483" />
+    </City>
+    <City Name="湖州" Postcode="330500" >
+      <District Name="吴兴区" Postcode="330502" />
+      <District Name="南浔区" Postcode="330503" />
+      <District Name="德清县" Postcode="330521" />
+      <District Name="长兴县" Postcode="330522" />
+      <District Name="安吉县" Postcode="330523" />
+    </City>
+    <City Name="绍兴" Postcode="330600" >
+      <District Name="越城区" Postcode="330602" />
+      <District Name="绍兴县" Postcode="330621" />
+      <District Name="新昌县" Postcode="330624" />
+      <District Name="诸暨" Postcode="330681" />
+      <District Name="上虞" Postcode="330682" />
+      <District Name="嵊州" Postcode="330683" />
+    </City>
+    <City Name="金华" Postcode="330700" >
+      <District Name="婺城区" Postcode="330702" />
+      <District Name="金东区" Postcode="330703" />
+      <District Name="武义县" Postcode="330723" />
+      <District Name="浦江县" Postcode="330726" />
+      <District Name="磐安县" Postcode="330727" />
+      <District Name="兰溪" Postcode="330781" />
+      <District Name="义乌" Postcode="330782" />
+      <District Name="东阳" Postcode="330783" />
+      <District Name="永康" Postcode="330784" />
+    </City>
+    <City Name="衢州" Postcode="330800" >
+      <District Name="柯城区" Postcode="330802" />
+      <District Name="衢江区" Postcode="330803" />
+      <District Name="常山县" Postcode="330822" />
+      <District Name="开化县" Postcode="330824" />
+      <District Name="龙游县" Postcode="330825" />
+      <District Name="江山" Postcode="330881" />
+    </City>
+    <City Name="舟山" Postcode="330900" >
+      <District Name="定海区" Postcode="330902" />
+      <District Name="普陀区" Postcode="330903" />
+      <District Name="岱山县" Postcode="330921" />
+      <District Name="嵊泗县" Postcode="330922" />
+    </City>
+    <City Name="台州" Postcode="331000" >
+      <District Name="椒江区" Postcode="331002" />
+      <District Name="黄岩区" Postcode="331003" />
+      <District Name="路桥区" Postcode="331004" />
+      <District Name="玉环县" Postcode="331021" />
+      <District Name="三门县" Postcode="331022" />
+      <District Name="天台县" Postcode="331023" />
+      <District Name="仙居县" Postcode="331024" />
+      <District Name="温岭" Postcode="331081" />
+      <District Name="临海" Postcode="331082" />
+    </City>
+    <City Name="丽水" Postcode="331100" >
+      <District Name="莲都区" Postcode="331102" />
+      <District Name="青田县" Postcode="331121" />
+      <District Name="缙云县" Postcode="331122" />
+      <District Name="遂昌县" Postcode="331123" />
+      <District Name="松阳县" Postcode="331124" />
+      <District Name="云和县" Postcode="331125" />
+      <District Name="庆元县" Postcode="331126" />
+      <District Name="景宁畲族自治县" Postcode="331127" />
+      <District Name="龙泉" Postcode="331181" />
+    </City>
+  </Province>
+
+  <Province Name="北京" Postcode="110000" >
+    <City Name="东城区" Postcode="110101" />
+    <City Name="西城区" Postcode="110102" />
+    <City Name="崇文区" Postcode="110103" />
+    <City Name="宣武区" Postcode="110104" />
+    <City Name="朝阳区" Postcode="110105" />
+    <City Name="丰台区" Postcode="110106" />
+    <City Name="石景山区" Postcode="110107" />
+    <City Name="海淀区" Postcode="110108" />
+    <City Name="门头沟区" Postcode="110109" />
+    <City Name="房山区" Postcode="110111" />
+    <City Name="通州区" Postcode="110112" />
+    <City Name="顺义区" Postcode="110113" />
+    <City Name="昌平区" Postcode="110114" />
+    <City Name="大兴区" Postcode="110115" />
+    <City Name="怀柔区" Postcode="110116" />
+    <City Name="平谷区" Postcode="110117" />
+    <City Name="密云县" Postcode="110228" />
+    <City Name="延庆县" Postcode="110229" />
+  </Province>
+  
+  <Province Name="天津" Postcode="120000" >
+    <City Name="和平区" Postcode="120101" />
+    <City Name="河东区" Postcode="120102" />
+    <City Name="河西区" Postcode="120103" />
+    <City Name="南开区" Postcode="120104" />
+    <City Name="河北区" Postcode="120105" />
+    <City Name="红桥区" Postcode="120106" />
+    <City Name="塘沽区" Postcode="120107" />
+    <City Name="汉沽区" Postcode="120108" />
+    <City Name="大港区" Postcode="120109" />
+    <City Name="东丽区" Postcode="120110" />
+    <City Name="西青区" Postcode="120111" />
+    <City Name="津南区" Postcode="120112" />
+    <City Name="北辰区" Postcode="120113" />
+    <City Name="武清区" Postcode="120114" />
+    <City Name="宝坻区" Postcode="120115" />
+    <City Name="宁河县" Postcode="120221" />
+    <City Name="静海县" Postcode="120223" />
+    <City Name="蓟县" Postcode="120225" />
+  </Province>
+
+  <Province Name="河北" Postcode="130000" >
+    <City Name="石家庄" Postcode="130100" >
+      <District Name="长安区" Postcode="130102" />
+      <District Name="桥东区" Postcode="130103" />
+      <District Name="桥西区" Postcode="130104" />
+      <District Name="新华区" Postcode="130105" />
+      <District Name="井陉矿区" Postcode="130107" />
+      <District Name="裕华区" Postcode="130108" />
+      <District Name="井陉县" Postcode="130121" />
+      <District Name="正定县" Postcode="130123" />
+      <District Name="栾城县" Postcode="130124" />
+      <District Name="行唐县" Postcode="130125" />
+      <District Name="灵寿县" Postcode="130126" />
+      <District Name="高邑县" Postcode="130127" />
+      <District Name="深泽县" Postcode="130128" />
+      <District Name="赞皇县" Postcode="130129" />
+      <District Name="无极县" Postcode="130130" />
+      <District Name="平山县" Postcode="130131" />
+      <District Name="元氏县" Postcode="130132" />
+      <District Name="赵县" Postcode="130133" />
+      <District Name="辛集" Postcode="130181" />
+      <District Name="藁城" Postcode="130182" />
+      <District Name="晋州" Postcode="130183" />
+      <District Name="新乐" Postcode="130184" />
+      <District Name="鹿泉" Postcode="130185" />
+    </City>
+    <City Name="唐山" Postcode="130200" >
+      <District Name="路南区" Postcode="130202" />
+      <District Name="路北区" Postcode="130203" />
+      <District Name="古冶区" Postcode="130204" />
+      <District Name="开平区" Postcode="130205" />
+      <District Name="丰南区" Postcode="130207" />
+      <District Name="丰润区" Postcode="130208" />
+      <District Name="滦县" Postcode="130223" />
+      <District Name="滦南县" Postcode="130224" />
+      <District Name="乐亭县" Postcode="130225" />
+      <District Name="迁西县" Postcode="130227" />
+      <District Name="玉田县" Postcode="130229" />
+      <District Name="唐海县" Postcode="130230" />
+      <District Name="遵化" Postcode="130281" />
+      <District Name="迁安" Postcode="130283" />
+    </City>
+    <City Name="秦皇岛" Postcode="130300" >
+      <District Name="海港区" Postcode="130302" />
+      <District Name="山海关区" Postcode="130303" />
+      <District Name="北戴河区" Postcode="130304" />
+      <District Name="青龙满族自治县" Postcode="130321" />
+      <District Name="昌黎县" Postcode="130322" />
+      <District Name="抚宁县" Postcode="130323" />
+      <District Name="卢龙县" Postcode="130324" />
+    </City>
+    <City Name="邯郸" Postcode="130400" >
+      <District Name="邯山区" Postcode="130402" />
+      <District Name="丛台区" Postcode="130403" />
+      <District Name="复兴区" Postcode="130404" />
+      <District Name="峰峰矿区" Postcode="130406" />
+      <District Name="邯郸县" Postcode="130421" />
+      <District Name="临漳县" Postcode="130423" />
+      <District Name="成安县" Postcode="130424" />
+      <District Name="大名县" Postcode="130425" />
+      <District Name="涉县" Postcode="130426" />
+      <District Name="磁县" Postcode="130427" />
+      <District Name="肥乡县" Postcode="130428" />
+      <District Name="永年县" Postcode="130429" />
+      <District Name="邱县" Postcode="130430" />
+      <District Name="鸡泽县" Postcode="130431" />
+      <District Name="广平县" Postcode="130432" />
+      <District Name="馆陶县" Postcode="130433" />
+      <District Name="魏县" Postcode="130434" />
+      <District Name="曲周县" Postcode="130435" />
+      <District Name="武安" Postcode="130481" />
+    </City>
+    <City Name="邢台" Postcode="130500" >
+      <District Name="桥东区" Postcode="130502" />
+      <District Name="桥西区" Postcode="130503" />
+      <District Name="邢台县" Postcode="130521" />
+      <District Name="临城县" Postcode="130522" />
+      <District Name="内丘县" Postcode="130523" />
+      <District Name="柏乡县" Postcode="130524" />
+      <District Name="隆尧县" Postcode="130525" />
+      <District Name="任县" Postcode="130526" />
+      <District Name="南和县" Postcode="130527" />
+      <District Name="宁晋县" Postcode="130528" />
+      <District Name="巨鹿县" Postcode="130529" />
+      <District Name="新河县" Postcode="130530" />
+      <District Name="广宗县" Postcode="130531" />
+      <District Name="平乡县" Postcode="130532" />
+      <District Name="威县" Postcode="130533" />
+      <District Name="清河县" Postcode="130534" />
+      <District Name="临西县" Postcode="130535" />
+      <District Name="南宫" Postcode="130581" />
+      <District Name="沙河" Postcode="130582" />
+    </City>
+    <City Name="保定" Postcode="130600" >
+      <District Name="新市区" Postcode="130602" />
+      <District Name="北市区" Postcode="130603" />
+      <District Name="南市区" Postcode="130604" />
+      <District Name="满城县" Postcode="130621" />
+      <District Name="清苑县" Postcode="130622" />
+      <District Name="涞水县" Postcode="130623" />
+      <District Name="阜平县" Postcode="130624" />
+      <District Name="徐水县" Postcode="130625" />
+      <District Name="定兴县" Postcode="130626" />
+      <District Name="唐县" Postcode="130627" />
+      <District Name="高阳县" Postcode="130628" />
+      <District Name="容城县" Postcode="130629" />
+      <District Name="涞源县" Postcode="130630" />
+      <District Name="望都县" Postcode="130631" />
+      <District Name="安新县" Postcode="130632" />
+      <District Name="易县" Postcode="130633" />
+      <District Name="曲阳县" Postcode="130634" />
+      <District Name="蠡县" Postcode="130635" />
+      <District Name="顺平县" Postcode="130636" />
+      <District Name="博野县" Postcode="130637" />
+      <District Name="雄县" Postcode="130638" />
+      <District Name="涿州" Postcode="130681" />
+      <District Name="定州" Postcode="130682" />
+      <District Name="安国" Postcode="130683" />
+      <District Name="高碑店" Postcode="130684" />
+    </City>
+    <City Name="张家口" Postcode="130700" >
+      <District Name="桥东区" Postcode="130702" />
+      <District Name="桥西区" Postcode="130703" />
+      <District Name="宣化区" Postcode="130705" />
+      <District Name="下花园区" Postcode="130706" />
+      <District Name="宣化县" Postcode="130721" />
+      <District Name="张北县" Postcode="130722" />
+      <District Name="康保县" Postcode="130723" />
+      <District Name="沽源县" Postcode="130724" />
+      <District Name="尚义县" Postcode="130725" />
+      <District Name="蔚县" Postcode="130726" />
+      <District Name="阳原县" Postcode="130727" />
+      <District Name="怀安县" Postcode="130728" />
+      <District Name="万全县" Postcode="130729" />
+      <District Name="怀来县" Postcode="130730" />
+      <District Name="涿鹿县" Postcode="130731" />
+      <District Name="赤城县" Postcode="130732" />
+      <District Name="崇礼县" Postcode="130733" />
+    </City>
+    <City Name="承德" Postcode="130800" >
+      <District Name="双桥区" Postcode="130802" />
+      <District Name="双滦区" Postcode="130803" />
+      <District Name="鹰手营子矿区" Postcode="130804" />
+      <District Name="承德县" Postcode="130821" />
+      <District Name="兴隆县" Postcode="130822" />
+      <District Name="平泉县" Postcode="130823" />
+      <District Name="滦平县" Postcode="130824" />
+      <District Name="隆化县" Postcode="130825" />
+      <District Name="丰宁满族自治县" Postcode="130826" />
+      <District Name="宽城满族自治县" Postcode="130827" />
+      <District Name="围场满族蒙古族自治县" Postcode="130828" />
+    </City>
+    <City Name="沧州" Postcode="130900" >
+      <District Name="新华区" Postcode="130902" />
+      <District Name="运河区" Postcode="130903" />
+      <District Name="沧县" Postcode="130921" />
+      <District Name="青县" Postcode="130922" />
+      <District Name="东光县" Postcode="130923" />
+      <District Name="海兴县" Postcode="130924" />
+      <District Name="盐山县" Postcode="130925" />
+      <District Name="肃宁县" Postcode="130926" />
+      <District Name="南皮县" Postcode="130927" />
+      <District Name="吴桥县" Postcode="130928" />
+      <District Name="献县" Postcode="130929" />
+      <District Name="孟村回族自治县" Postcode="130930" />
+      <District Name="泊头" Postcode="130981" />
+      <District Name="任丘" Postcode="130982" />
+      <District Name="黄骅" Postcode="130983" />
+      <District Name="河间" Postcode="130984" />
+    </City>
+    <City Name="廊坊" Postcode="131000" >
+      <District Name="安次区" Postcode="131002" />
+      <District Name="广阳区" Postcode="131003" />
+      <District Name="固安县" Postcode="131022" />
+      <District Name="永清县" Postcode="131023" />
+      <District Name="香河县" Postcode="131024" />
+      <District Name="大城县" Postcode="131025" />
+      <District Name="文安县" Postcode="131026" />
+      <District Name="大厂回族自治县" Postcode="131028" />
+      <District Name="霸州" Postcode="131081" />
+      <District Name="三河" Postcode="131082" />
+    </City>
+    <City Name="衡水" Postcode="131100" >
+      <District Name="桃城区" Postcode="131102" />
+      <District Name="枣强县" Postcode="131121" />
+      <District Name="武邑县" Postcode="131122" />
+      <District Name="武强县" Postcode="131123" />
+      <District Name="饶阳县" Postcode="131124" />
+      <District Name="安平县" Postcode="131125" />
+      <District Name="故城县" Postcode="131126" />
+      <District Name="景县" Postcode="131127" />
+      <District Name="阜城县" Postcode="131128" />
+      <District Name="冀州" Postcode="131181" />
+      <District Name="深州" Postcode="131182" />
+    </City>
+  </Province>
+
+  <Province Name="山西" Postcode="140000" >
+    <City Name="太原" Postcode="140100" >
+      <District Name="小店区" Postcode="140105" />
+      <District Name="迎泽区" Postcode="140106" />
+      <District Name="杏花岭区" Postcode="140107" />
+      <District Name="尖草坪区" Postcode="140108" />
+      <District Name="万柏林区" Postcode="140109" />
+      <District Name="晋源区" Postcode="140110" />
+      <District Name="清徐县" Postcode="140121" />
+      <District Name="阳曲县" Postcode="140122" />
+      <District Name="娄烦县" Postcode="140123" />
+      <District Name="古交" Postcode="140181" />
+    </City>
+    <City Name="大同" Postcode="140200" >
+      <District Name="城区" Postcode="140202" />
+      <District Name="矿区" Postcode="140203" />
+      <District Name="南郊区" Postcode="140211" />
+      <District Name="新荣区" Postcode="140212" />
+      <District Name="阳高县" Postcode="140221" />
+      <District Name="天镇县" Postcode="140222" />
+      <District Name="广灵县" Postcode="140223" />
+      <District Name="灵丘县" Postcode="140224" />
+      <District Name="浑源县" Postcode="140225" />
+      <District Name="左云县" Postcode="140226" />
+      <District Name="大同县" Postcode="140227" />
+    </City>
+    <City Name="阳泉" Postcode="140300" >
+      <District Name="城区" Postcode="140302" />
+      <District Name="矿区" Postcode="140303" />
+      <District Name="郊区" Postcode="140311" />
+      <District Name="平定县" Postcode="140321" />
+      <District Name="盂县" Postcode="140322" />
+    </City>
+    <City Name="长治" Postcode="140400" >
+      <District Name="城区" Postcode="140402" />
+      <District Name="郊区" Postcode="140411" />
+      <District Name="长治县" Postcode="140421" />
+      <District Name="襄垣县" Postcode="140423" />
+      <District Name="屯留县" Postcode="140424" />
+      <District Name="平顺县" Postcode="140425" />
+      <District Name="黎城县" Postcode="140426" />
+      <District Name="壶关县" Postcode="140427" />
+      <District Name="长子县" Postcode="140428" />
+      <District Name="武乡县" Postcode="140429" />
+      <District Name="沁县" Postcode="140430" />
+      <District Name="沁源县" Postcode="140431" />
+      <District Name="潞城" Postcode="140481" />
+    </City>
+    <City Name="晋城" Postcode="140500" >
+      <District Name="城区" Postcode="140502" />
+      <District Name="沁水县" Postcode="140521" />
+      <District Name="阳城县" Postcode="140522" />
+      <District Name="陵川县" Postcode="140524" />
+      <District Name="泽州县" Postcode="140525" />
+      <District Name="高平" Postcode="140581" />
+    </City>
+    <City Name="朔州" Postcode="140600" >
+      <District Name="朔城区" Postcode="140602" />
+      <District Name="平鲁区" Postcode="140603" />
+      <District Name="山阴县" Postcode="140621" />
+      <District Name="应县" Postcode="140622" />
+      <District Name="右玉县" Postcode="140623" />
+      <District Name="怀仁县" Postcode="140624" />
+    </City>
+    <City Name="晋中" Postcode="140700" >
+      <District Name="榆次区" Postcode="140702" />
+      <District Name="榆社县" Postcode="140721" />
+      <District Name="左权县" Postcode="140722" />
+      <District Name="和顺县" Postcode="140723" />
+      <District Name="昔阳县" Postcode="140724" />
+      <District Name="寿阳县" Postcode="140725" />
+      <District Name="太谷县" Postcode="140726" />
+      <District Name="祁县" Postcode="140727" />
+      <District Name="平遥县" Postcode="140728" />
+      <District Name="灵石县" Postcode="140729" />
+      <District Name="介休" Postcode="140781" />
+    </City>
+    <City Name="运城" Postcode="140800" >
+      <District Name="盐湖区" Postcode="140802" />
+      <District Name="临猗县" Postcode="140821" />
+      <District Name="万荣县" Postcode="140822" />
+      <District Name="闻喜县" Postcode="140823" />
+      <District Name="稷山县" Postcode="140824" />
+      <District Name="新绛县" Postcode="140825" />
+      <District Name="绛县" Postcode="140826" />
+      <District Name="垣曲县" Postcode="140827" />
+      <District Name="夏县" Postcode="140828" />
+      <District Name="平陆县" Postcode="140829" />
+      <District Name="芮城县" Postcode="140830" />
+      <District Name="永济" Postcode="140881" />
+      <District Name="河津" Postcode="140882" />
+    </City>
+    <City Name="忻州" Postcode="140900" >
+      <District Name="忻府区" Postcode="140902" />
+      <District Name="定襄县" Postcode="140921" />
+      <District Name="五台县" Postcode="140922" />
+      <District Name="代县" Postcode="140923" />
+      <District Name="繁峙县" Postcode="140924" />
+      <District Name="宁武县" Postcode="140925" />
+      <District Name="静乐县" Postcode="140926" />
+      <District Name="神池县" Postcode="140927" />
+      <District Name="五寨县" Postcode="140928" />
+      <District Name="岢岚县" Postcode="140929" />
+      <District Name="河曲县" Postcode="140930" />
+      <District Name="保德县" Postcode="140931" />
+      <District Name="偏关县" Postcode="140932" />
+      <District Name="原平" Postcode="140981" />
+    </City>
+    <City Name="临汾" Postcode="141000" >
+      <District Name="尧都区" Postcode="141002" />
+      <District Name="曲沃县" Postcode="141021" />
+      <District Name="翼城县" Postcode="141022" />
+      <District Name="襄汾县" Postcode="141023" />
+      <District Name="洪洞县" Postcode="141024" />
+      <District Name="古县" Postcode="141025" />
+      <District Name="安泽县" Postcode="141026" />
+      <District Name="浮山县" Postcode="141027" />
+      <District Name="吉县" Postcode="141028" />
+      <District Name="乡宁县" Postcode="141029" />
+      <District Name="大宁县" Postcode="141030" />
+      <District Name="隰县" Postcode="141031" />
+      <District Name="永和县" Postcode="141032" />
+      <District Name="蒲县" Postcode="141033" />
+      <District Name="汾西县" Postcode="141034" />
+      <District Name="侯马" Postcode="141081" />
+      <District Name="霍州" Postcode="141082" />
+    </City>
+    <City Name="吕梁" Postcode="141100" >
+      <District Name="离石区" Postcode="141102" />
+      <District Name="文水县" Postcode="141121" />
+      <District Name="交城县" Postcode="141122" />
+      <District Name="兴县" Postcode="141123" />
+      <District Name="临县" Postcode="141124" />
+      <District Name="柳林县" Postcode="141125" />
+      <District Name="石楼县" Postcode="141126" />
+      <District Name="岚县" Postcode="141127" />
+      <District Name="方山县" Postcode="141128" />
+      <District Name="中阳县" Postcode="141129" />
+      <District Name="交口县" Postcode="141130" />
+      <District Name="孝义" Postcode="141181" />
+      <District Name="汾阳" Postcode="141182" />
+    </City>
+  </Province>
+
+  <Province Name="辽宁" Postcode="210000" >
+    <City Name="沈阳" Postcode="210100" >
+      <District Name="和平区" Postcode="210102" />
+      <District Name="沈河区" Postcode="210103" />
+      <District Name="大东区" Postcode="210104" />
+      <District Name="皇姑区" Postcode="210105" />
+      <District Name="铁西区" Postcode="210106" />
+      <District Name="东陵区" Postcode="210112" />
+      <District Name="沈北新区" Postcode="210113" />
+      <District Name="于洪区" Postcode="210114" />
+      <District Name="辽中县" Postcode="210122" />
+      <District Name="康平县" Postcode="210123" />
+      <District Name="法库县" Postcode="210124" />
+      <District Name="新民" Postcode="210181" />
+    </City>
+    <City Name="大连" Postcode="210200" >
+      <District Name="中山区" Postcode="210202" />
+      <District Name="西岗区" Postcode="210203" />
+      <District Name="沙河口区" Postcode="210204" />
+      <District Name="甘井子区" Postcode="210211" />
+      <District Name="旅顺口区" Postcode="210212" />
+      <District Name="金州区" Postcode="210213" />
+      <District Name="长海县" Postcode="210224" />
+      <District Name="瓦房店" Postcode="210281" />
+      <District Name="普兰店" Postcode="210282" />
+      <District Name="庄河" Postcode="210283" />
+    </City>
+    <City Name="鞍山" Postcode="210300" >
+      <District Name="铁东区" Postcode="210302" />
+      <District Name="铁西区" Postcode="210303" />
+      <District Name="立山区" Postcode="210304" />
+      <District Name="千山区" Postcode="210311" />
+      <District Name="台安县" Postcode="210321" />
+      <District Name="岫岩满族自治县" Postcode="210323" />
+      <District Name="海城" Postcode="210381" />
+    </City>
+    <City Name="抚顺" Postcode="210400" >
+      <District Name="新抚区" Postcode="210402" />
+      <District Name="东洲区" Postcode="210403" />
+      <District Name="望花区" Postcode="210404" />
+      <District Name="顺城区" Postcode="210411" />
+      <District Name="抚顺县" Postcode="210421" />
+      <District Name="新宾满族自治县" Postcode="210422" />
+      <District Name="清原满族自治县" Postcode="210423" />
+    </City>
+    <City Name="本溪" Postcode="210500" >
+      <District Name="平山区" Postcode="210502" />
+      <District Name="溪湖区" Postcode="210503" />
+      <District Name="明山区" Postcode="210504" />
+      <District Name="南芬区" Postcode="210505" />
+      <District Name="本溪满族自治县" Postcode="210521" />
+      <District Name="桓仁满族自治县" Postcode="210522" />
+    </City>
+    <City Name="丹东" Postcode="210600" >
+      <District Name="元宝区" Postcode="210602" />
+      <District Name="振兴区" Postcode="210603" />
+      <District Name="振安区" Postcode="210604" />
+      <District Name="宽甸满族自治县" Postcode="210624" />
+      <District Name="东港" Postcode="210681" />
+      <District Name="凤城" Postcode="210682" />
+    </City>
+    <City Name="锦州" Postcode="210700" >
+      <District Name="古塔区" Postcode="210702" />
+      <District Name="凌河区" Postcode="210703" />
+      <District Name="太和区" Postcode="210711" />
+      <District Name="黑山县" Postcode="210726" />
+      <District Name="义县" Postcode="210727" />
+      <District Name="凌海" Postcode="210781" />
+      <District Name="北镇" Postcode="210782" />
+    </City>
+    <City Name="营口" Postcode="210800" >
+      <District Name="站前区" Postcode="210802" />
+      <District Name="西市区" Postcode="210803" />
+      <District Name="鲅鱼圈区" Postcode="210804" />
+      <District Name="老边区" Postcode="210811" />
+      <District Name="盖州" Postcode="210881" />
+      <District Name="大石桥" Postcode="210882" />
+    </City>
+    <City Name="阜新" Postcode="210900" >
+      <District Name="海州区" Postcode="210902" />
+      <District Name="新邱区" Postcode="210903" />
+      <District Name="太平区" Postcode="210904" />
+      <District Name="清河门区" Postcode="210905" />
+      <District Name="细河区" Postcode="210911" />
+      <District Name="阜新蒙古族自治县" Postcode="210921" />
+      <District Name="彰武县" Postcode="210922" />
+    </City>
+    <City Name="辽阳" Postcode="211000" >
+      <District Name="白塔区" Postcode="211002" />
+      <District Name="文圣区" Postcode="211003" />
+      <District Name="宏伟区" Postcode="211004" />
+      <District Name="弓长岭区" Postcode="211005" />
+      <District Name="太子河区" Postcode="211011" />
+      <District Name="辽阳县" Postcode="211021" />
+      <District Name="灯塔" Postcode="211081" />
+    </City>
+    <City Name="盘锦" Postcode="211100" >
+      <District Name="双台子区" Postcode="211102" />
+      <District Name="兴隆台区" Postcode="211103" />
+      <District Name="大洼县" Postcode="211121" />
+      <District Name="盘山县" Postcode="211122" />
+    </City>
+    <City Name="铁岭" Postcode="211200" >
+      <District Name="银州区" Postcode="211202" />
+      <District Name="清河区" Postcode="211204" />
+      <District Name="铁岭县" Postcode="211221" />
+      <District Name="西丰县" Postcode="211223" />
+      <District Name="昌图县" Postcode="211224" />
+      <District Name="调兵山" Postcode="211281" />
+      <District Name="开原" Postcode="211282" />
+    </City>
+    <City Name="朝阳" Postcode="211300" >
+      <District Name="双塔区" Postcode="211302" />
+      <District Name="龙城区" Postcode="211303" />
+      <District Name="朝阳县" Postcode="211321" />
+      <District Name="建平县" Postcode="211322" />
+      <District Name="喀喇沁左翼蒙古族自治县" Postcode="211324" />
+      <District Name="北票" Postcode="211381" />
+      <District Name="凌源" Postcode="211382" />
+    </City>
+    <City Name="葫芦岛" Postcode="211400" >
+      <District Name="连山区" Postcode="211402" />
+      <District Name="龙港区" Postcode="211403" />
+      <District Name="南票区" Postcode="211404" />
+      <District Name="绥中县" Postcode="211421" />
+      <District Name="建昌县" Postcode="211422" />
+      <District Name="兴城" Postcode="211481" />
+    </City>
+  </Province>
+
+  <Province Name="吉林" Postcode="220000" >
+    <City Name="长春" Postcode="220100" >
+      <District Name="南关区" Postcode="220102" />
+      <District Name="宽城区" Postcode="220103" />
+      <District Name="朝阳区" Postcode="220104" />
+      <District Name="二道区" Postcode="220105" />
+      <District Name="绿园区" Postcode="220106" />
+      <District Name="双阳区" Postcode="220112" />
+      <District Name="农安县" Postcode="220122" />
+      <District Name="九台" Postcode="220181" />
+      <District Name="榆树" Postcode="220182" />
+      <District Name="德惠" Postcode="220183" />
+    </City>
+    <City Name="吉林" Postcode="220200" >
+      <District Name="昌邑区" Postcode="220202" />
+      <District Name="龙潭区" Postcode="220203" />
+      <District Name="船营区" Postcode="220204" />
+      <District Name="丰满区" Postcode="220211" />
+      <District Name="永吉县" Postcode="220221" />
+      <District Name="蛟河" Postcode="220281" />
+      <District Name="桦甸" Postcode="220282" />
+      <District Name="舒兰" Postcode="220283" />
+      <District Name="磐石" Postcode="220284" />
+    </City>
+    <City Name="四平" Postcode="220300" >
+      <District Name="铁西区" Postcode="220302" />
+      <District Name="铁东区" Postcode="220303" />
+      <District Name="梨树县" Postcode="220322" />
+      <District Name="伊通满族自治县" Postcode="220323" />
+      <District Name="公主岭" Postcode="220381" />
+      <District Name="双辽" Postcode="220382" />
+    </City>
+    <City Name="辽源" Postcode="220400" >
+      <District Name="龙山区" Postcode="220402" />
+      <District Name="西安区" Postcode="220403" />
+      <District Name="东丰县" Postcode="220421" />
+      <District Name="东辽县" Postcode="220422" />
+    </City>
+    <City Name="通化" Postcode="220500" >
+      <District Name="东昌区" Postcode="220502" />
+      <District Name="二道江区" Postcode="220503" />
+      <District Name="通化县" Postcode="220521" />
+      <District Name="辉南县" Postcode="220523" />
+      <District Name="柳河县" Postcode="220524" />
+      <District Name="梅河口" Postcode="220581" />
+      <District Name="集安" Postcode="220582" />
+    </City>
+    <City Name="白山" Postcode="220600" >
+      <District Name="八道江区" Postcode="220602" />
+      <District Name="江源区" Postcode="220604" />
+      <District Name="抚松县" Postcode="220621" />
+      <District Name="靖宇县" Postcode="220622" />
+      <District Name="长白朝鲜族自治县" Postcode="220623" />
+      <District Name="临江" Postcode="220681" />
+    </City>
+    <City Name="松原" Postcode="220700" >
+      <District Name="宁江区" Postcode="220702" />
+      <District Name="前郭尔罗斯蒙古族自治县" Postcode="220721" />
+      <District Name="长岭县" Postcode="220722" />
+      <District Name="乾安县" Postcode="220723" />
+      <District Name="扶余县" Postcode="220724" />
+    </City>
+    <City Name="白城" Postcode="220800" >
+      <District Name="洮北区" Postcode="220802" />
+      <District Name="镇赉县" Postcode="220821" />
+      <District Name="通榆县" Postcode="220822" />
+      <District Name="洮南" Postcode="220881" />
+      <District Name="大安" Postcode="220882" />
+    </City>
+    <City Name="延边朝鲜族自治州" Postcode="222400" >
+      <District Name="延吉" Postcode="222401" />
+      <District Name="图们" Postcode="222402" />
+      <District Name="敦化" Postcode="222403" />
+      <District Name="珲春" Postcode="222404" />
+      <District Name="龙井" Postcode="222405" />
+      <District Name="和龙" Postcode="222406" />
+      <District Name="汪清县" Postcode="222424" />
+      <District Name="安图县" Postcode="222426" />
+    </City>
+  </Province>
+
+  <Province Name="黑龙江" Postcode="230000" >
+    <City Name="哈尔滨" Postcode="230100" >
+      <District Name="道里区" Postcode="230102" />
+      <District Name="南岗区" Postcode="230103" />
+      <District Name="道外区" Postcode="230104" />
+      <District Name="平房区" Postcode="230108" />
+      <District Name="松北区" Postcode="230109" />
+      <District Name="香坊区" Postcode="230110" />
+      <District Name="呼兰区" Postcode="230111" />
+      <District Name="阿城区" Postcode="230112" />
+      <District Name="依兰县" Postcode="230123" />
+      <District Name="方正县" Postcode="230124" />
+      <District Name="宾县" Postcode="230125" />
+      <District Name="巴彦县" Postcode="230126" />
+      <District Name="木兰县" Postcode="230127" />
+      <District Name="通河县" Postcode="230128" />
+      <District Name="延寿县" Postcode="230129" />
+      <District Name="双城" Postcode="230182" />
+      <District Name="尚志" Postcode="230183" />
+      <District Name="五常" Postcode="230184" />
+    </City>
+    <City Name="齐齐哈尔" Postcode="230200" >
+      <District Name="龙沙区" Postcode="230202" />
+      <District Name="建华区" Postcode="230203" />
+      <District Name="铁锋区" Postcode="230204" />
+      <District Name="昂昂溪区" Postcode="230205" />
+      <District Name="富拉尔基区" Postcode="230206" />
+      <District Name="碾子山区" Postcode="230207" />
+      <District Name="梅里斯达斡尔族区" Postcode="230208" />
+      <District Name="龙江县" Postcode="230221" />
+      <District Name="依安县" Postcode="230223" />
+      <District Name="泰来县" Postcode="230224" />
+      <District Name="甘南县" Postcode="230225" />
+      <District Name="富裕县" Postcode="230227" />
+      <District Name="克山县" Postcode="230229" />
+      <District Name="克东县" Postcode="230230" />
+      <District Name="拜泉县" Postcode="230231" />
+      <District Name="讷河" Postcode="230281" />
+    </City>
+    <City Name="鸡西" Postcode="230300" >
+      <District Name="鸡冠区" Postcode="230302" />
+      <District Name="恒山区" Postcode="230303" />
+      <District Name="滴道区" Postcode="230304" />
+      <District Name="梨树区" Postcode="230305" />
+      <District Name="城子河区" Postcode="230306" />
+      <District Name="麻山区" Postcode="230307" />
+      <District Name="鸡东县" Postcode="230321" />
+      <District Name="虎林" Postcode="230381" />
+      <District Name="密山" Postcode="230382" />
+    </City>
+    <City Name="鹤岗" Postcode="230400" >
+      <District Name="向阳区" Postcode="230402" />
+      <District Name="工农区" Postcode="230403" />
+      <District Name="南山区" Postcode="230404" />
+      <District Name="兴安区" Postcode="230405" />
+      <District Name="东山区" Postcode="230406" />
+      <District Name="兴山区" Postcode="230407" />
+      <District Name="萝北县" Postcode="230421" />
+      <District Name="绥滨县" Postcode="230422" />
+    </City>
+    <City Name="双鸭山" Postcode="230500" >
+      <District Name="尖山区" Postcode="230502" />
+      <District Name="岭东区" Postcode="230503" />
+      <District Name="四方台区" Postcode="230505" />
+      <District Name="宝山区" Postcode="230506" />
+      <District Name="集贤县" Postcode="230521" />
+      <District Name="友谊县" Postcode="230522" />
+      <District Name="宝清县" Postcode="230523" />
+      <District Name="饶河县" Postcode="230524" />
+    </City>
+    <City Name="大庆" Postcode="230600" >
+      <District Name="萨尔图区" Postcode="230602" />
+      <District Name="龙凤区" Postcode="230603" />
+      <District Name="让胡路区" Postcode="230604" />
+      <District Name="红岗区" Postcode="230605" />
+      <District Name="大同区" Postcode="230606" />
+      <District Name="肇州县" Postcode="230621" />
+      <District Name="肇源县" Postcode="230622" />
+      <District Name="林甸县" Postcode="230623" />
+      <District Name="杜尔伯特蒙古族自治县" Postcode="230624" />
+    </City>
+    <City Name="伊春" Postcode="230700" >
+      <District Name="伊春区" Postcode="230702" />
+      <District Name="南岔区" Postcode="230703" />
+      <District Name="友好区" Postcode="230704" />
+      <District Name="西林区" Postcode="230705" />
+      <District Name="翠峦区" Postcode="230706" />
+      <District Name="新青区" Postcode="230707" />
+      <District Name="美溪区" Postcode="230708" />
+      <District Name="金山屯区" Postcode="230709" />
+      <District Name="五营区" Postcode="230710" />
+      <District Name="乌马河区" Postcode="230711" />
+      <District Name="汤旺河区" Postcode="230712" />
+      <District Name="带岭区" Postcode="230713" />
+      <District Name="乌伊岭区" Postcode="230714" />
+      <District Name="红星区" Postcode="230715" />
+      <District Name="上甘岭区" Postcode="230716" />
+      <District Name="嘉荫县" Postcode="230722" />
+      <District Name="铁力" Postcode="230781" />
+    </City>
+    <City Name="佳木斯" Postcode="230800" >
+      <District Name="向阳区" Postcode="230803" />
+      <District Name="前进区" Postcode="230804" />
+      <District Name="东风区" Postcode="230805" />
+      <District Name="郊区" Postcode="230811" />
+      <District Name="桦南县" Postcode="230822" />
+      <District Name="桦川县" Postcode="230826" />
+      <District Name="汤原县" Postcode="230828" />
+      <District Name="抚远县" Postcode="230833" />
+      <District Name="同江" Postcode="230881" />
+      <District Name="富锦" Postcode="230882" />
+    </City>
+    <City Name="七台河" Postcode="230900" >
+      <District Name="新兴区" Postcode="230902" />
+      <District Name="桃山区" Postcode="230903" />
+      <District Name="茄子河区" Postcode="230904" />
+      <District Name="勃利县" Postcode="230921" />
+    </City>
+    <City Name="牡丹江" Postcode="231000" >
+      <District Name="东安区" Postcode="231002" />
+      <District Name="阳明区" Postcode="231003" />
+      <District Name="爱民区" Postcode="231004" />
+      <District Name="西安区" Postcode="231005" />
+      <District Name="东宁县" Postcode="231024" />
+      <District Name="林口县" Postcode="231025" />
+      <District Name="绥芬河" Postcode="231081" />
+      <District Name="海林" Postcode="231083" />
+      <District Name="宁安" Postcode="231084" />
+      <District Name="穆棱" Postcode="231085" />
+    </City>
+    <City Name="黑河" Postcode="231100" >
+      <District Name="爱辉区" Postcode="231102" />
+      <District Name="嫩江县" Postcode="231121" />
+      <District Name="逊克县" Postcode="231123" />
+      <District Name="孙吴县" Postcode="231124" />
+      <District Name="北安" Postcode="231181" />
+      <District Name="五大连池" Postcode="231182" />
+    </City>
+    <City Name="绥化" Postcode="231200" >
+      <District Name="北林区" Postcode="231202" />
+      <District Name="望奎县" Postcode="231221" />
+      <District Name="兰西县" Postcode="231222" />
+      <District Name="青冈县" Postcode="231223" />
+      <District Name="庆安县" Postcode="231224" />
+      <District Name="明水县" Postcode="231225" />
+      <District Name="绥棱县" Postcode="231226" />
+      <District Name="安达" Postcode="231281" />
+      <District Name="肇东" Postcode="231282" />
+      <District Name="海伦" Postcode="231283" />
+    </City>
+    <City Name="大兴安岭地区" Postcode="232700" >
+      <District Name="加格达奇区" Postcode="232701" />
+      <District Name="松岭区" Postcode="232702" />
+      <District Name="新林区" Postcode="232703" />
+      <District Name="呼中区" Postcode="232704" />
+      <District Name="呼玛县" Postcode="232721" />
+      <District Name="塔河县" Postcode="232722" />
+      <District Name="漠河县" Postcode="232723" />
+    </City>
+  </Province>
+
+  <Province Name="安徽" Postcode="340000" >
+    <City Name="合肥" Postcode="340100" >
+      <District Name="瑶海区" Postcode="340102" />
+      <District Name="庐阳区" Postcode="340103" />
+      <District Name="蜀山区" Postcode="340104" />
+      <District Name="包河区" Postcode="340111" />
+      <District Name="长丰县" Postcode="340121" />
+      <District Name="肥东县" Postcode="340122" />
+      <District Name="肥西县" Postcode="340123" />
+    </City>
+    <City Name="芜湖" Postcode="340200" >
+      <District Name="镜湖区" Postcode="340202" />
+      <District Name="弋江区" Postcode="340203" />
+      <District Name="鸠江区" Postcode="340207" />
+      <District Name="三山区" Postcode="340208" />
+      <District Name="芜湖县" Postcode="340221" />
+      <District Name="繁昌县" Postcode="340222" />
+      <District Name="南陵县" Postcode="340223" />
+    </City>
+    <City Name="蚌埠" Postcode="340300" >
+      <District Name="龙子湖区" Postcode="340302" />
+      <District Name="蚌山区" Postcode="340303" />
+      <District Name="禹会区" Postcode="340304" />
+      <District Name="淮上区" Postcode="340311" />
+      <District Name="怀远县" Postcode="340321" />
+      <District Name="五河县" Postcode="340322" />
+      <District Name="固镇县" Postcode="340323" />
+    </City>
+    <City Name="淮南" Postcode="340400" >
+      <District Name="大通区" Postcode="340402" />
+      <District Name="田家庵区" Postcode="340403" />
+      <District Name="谢家集区" Postcode="340404" />
+      <District Name="八公山区" Postcode="340405" />
+      <District Name="潘集区" Postcode="340406" />
+      <District Name="凤台县" Postcode="340421" />
+    </City>
+    <City Name="马鞍山" Postcode="340500" >
+      <District Name="金家庄区" Postcode="340502" />
+      <District Name="花山区" Postcode="340503" />
+      <District Name="雨山区" Postcode="340504" />
+      <District Name="当涂县" Postcode="340521" />
+    </City>
+    <City Name="淮北" Postcode="340600" >
+      <District Name="杜集区" Postcode="340602" />
+      <District Name="相山区" Postcode="340603" />
+      <District Name="烈山区" Postcode="340604" />
+      <District Name="濉溪县" Postcode="340621" />
+    </City>
+    <City Name="铜陵" Postcode="340700" >
+      <District Name="铜官山区" Postcode="340702" />
+      <District Name="狮子山区" Postcode="340703" />
+      <District Name="郊区" Postcode="340711" />
+      <District Name="铜陵县" Postcode="340721" />
+    </City>
+    <City Name="安庆" Postcode="340800" >
+      <District Name="迎江区" Postcode="340802" />
+      <District Name="大观区" Postcode="340803" />
+      <District Name="宜秀区" Postcode="340811" />
+      <District Name="怀宁县" Postcode="340822" />
+      <District Name="枞阳县" Postcode="340823" />
+      <District Name="潜山县" Postcode="340824" />
+      <District Name="太湖县" Postcode="340825" />
+      <District Name="宿松县" Postcode="340826" />
+      <District Name="望江县" Postcode="340827" />
+      <District Name="岳西县" Postcode="340828" />
+      <District Name="桐城" Postcode="340881" />
+    </City>
+    <City Name="黄山" Postcode="341000" >
+      <District Name="屯溪区" Postcode="341002" />
+      <District Name="黄山区" Postcode="341003" />
+      <District Name="徽州区" Postcode="341004" />
+      <District Name="歙县" Postcode="341021" />
+      <District Name="休宁县" Postcode="341022" />
+      <District Name="黟县" Postcode="341023" />
+      <District Name="祁门县" Postcode="341024" />
+    </City>
+    <City Name="滁州" Postcode="341100" >
+      <District Name="琅琊区" Postcode="341102" />
+      <District Name="南谯区" Postcode="341103" />
+      <District Name="来安县" Postcode="341122" />
+      <District Name="全椒县" Postcode="341124" />
+      <District Name="定远县" Postcode="341125" />
+      <District Name="凤阳县" Postcode="341126" />
+      <District Name="天长" Postcode="341181" />
+      <District Name="明光" Postcode="341182" />
+    </City>
+    <City Name="阜阳" Postcode="341200" >
+      <District Name="颍州区" Postcode="341202" />
+      <District Name="颍东区" Postcode="341203" />
+      <District Name="颍泉区" Postcode="341204" />
+      <District Name="临泉县" Postcode="341221" />
+      <District Name="太和县" Postcode="341222" />
+      <District Name="阜南县" Postcode="341225" />
+      <District Name="颍上县" Postcode="341226" />
+      <District Name="界首" Postcode="341282" />
+    </City>
+    <City Name="宿州" Postcode="341300" >
+      <District Name="埇桥区" Postcode="341302" />
+      <District Name="砀山县" Postcode="341321" />
+      <District Name="萧县" Postcode="341322" />
+      <District Name="灵璧县" Postcode="341323" />
+      <District Name="泗县" Postcode="341324" />
+    </City>
+    <City Name="巢湖" Postcode="341400" >
+      <District Name="居巢区" Postcode="341402" />
+      <District Name="庐江县" Postcode="341421" />
+      <District Name="无为县" Postcode="341422" />
+      <District Name="含山县" Postcode="341423" />
+      <District Name="和县" Postcode="341424" />
+    </City>
+    <City Name="六安" Postcode="341500" >
+      <District Name="金安区" Postcode="341502" />
+      <District Name="裕安区" Postcode="341503" />
+      <District Name="寿县" Postcode="341521" />
+      <District Name="霍邱县" Postcode="341522" />
+      <District Name="舒城县" Postcode="341523" />
+      <District Name="金寨县" Postcode="341524" />
+      <District Name="霍山县" Postcode="341525" />
+    </City>
+    <City Name="亳州" Postcode="341600" >
+      <District Name="谯城区" Postcode="341602" />
+      <District Name="涡阳县" Postcode="341621" />
+      <District Name="蒙城县" Postcode="341622" />
+      <District Name="利辛县" Postcode="341623" />
+    </City>
+    <City Name="池州" Postcode="341700" >
+      <District Name="贵池区" Postcode="341702" />
+      <District Name="东至县" Postcode="341721" />
+      <District Name="石台县" Postcode="341722" />
+      <District Name="青阳县" Postcode="341723" />
+    </City>
+    <City Name="宣城" Postcode="341800" >
+      <District Name="宣州区" Postcode="341802" />
+      <District Name="郎溪县" Postcode="341821" />
+      <District Name="广德县" Postcode="341822" />
+      <District Name="泾县" Postcode="341823" />
+      <District Name="绩溪县" Postcode="341824" />
+      <District Name="旌德县" Postcode="341825" />
+      <District Name="宁国" Postcode="341881" />
+    </City>
+  </Province>
+
+  <Province Name="福建" Postcode="350000" >
+    <City Name="福州" Postcode="350100" >
+      <District Name="鼓楼区" Postcode="350102" />
+      <District Name="台江区" Postcode="350103" />
+      <District Name="仓山区" Postcode="350104" />
+      <District Name="马尾区" Postcode="350105" />
+      <District Name="晋安区" Postcode="350111" />
+      <District Name="闽侯县" Postcode="350121" />
+      <District Name="连江县" Postcode="350122" />
+      <District Name="罗源县" Postcode="350123" />
+      <District Name="闽清县" Postcode="350124" />
+      <District Name="永泰县" Postcode="350125" />
+      <District Name="平潭县" Postcode="350128" />
+      <District Name="福清" Postcode="350181" />
+      <District Name="长乐" Postcode="350182" />
+    </City>
+    <City Name="厦门" Postcode="350200" >
+      <District Name="思明区" Postcode="350203" />
+      <District Name="海沧区" Postcode="350205" />
+      <District Name="湖里区" Postcode="350206" />
+      <District Name="集美区" Postcode="350211" />
+      <District Name="同安区" Postcode="350212" />
+      <District Name="翔安区" Postcode="350213" />
+    </City>
+    <City Name="莆田" Postcode="350300" >
+      <District Name="城厢区" Postcode="350302" />
+      <District Name="涵江区" Postcode="350303" />
+      <District Name="荔城区" Postcode="350304" />
+      <District Name="秀屿区" Postcode="350305" />
+      <District Name="仙游县" Postcode="350322" />
+    </City>
+    <City Name="三明" Postcode="350400" >
+      <District Name="梅列区" Postcode="350402" />
+      <District Name="三元区" Postcode="350403" />
+      <District Name="明溪县" Postcode="350421" />
+      <District Name="清流县" Postcode="350423" />
+      <District Name="宁化县" Postcode="350424" />
+      <District Name="大田县" Postcode="350425" />
+      <District Name="尤溪县" Postcode="350426" />
+      <District Name="沙县" Postcode="350427" />
+      <District Name="将乐县" Postcode="350428" />
+      <District Name="泰宁县" Postcode="350429" />
+      <District Name="建宁县" Postcode="350430" />
+      <District Name="永安" Postcode="350481" />
+    </City>
+    <City Name="泉州" Postcode="350500" >
+      <District Name="鲤城区" Postcode="350502" />
+      <District Name="丰泽区" Postcode="350503" />
+      <District Name="洛江区" Postcode="350504" />
+      <District Name="泉港区" Postcode="350505" />
+      <District Name="惠安县" Postcode="350521" />
+      <District Name="安溪县" Postcode="350524" />
+      <District Name="永春县" Postcode="350525" />
+      <District Name="德化县" Postcode="350526" />
+      <District Name="金门县" Postcode="350527" />
+      <District Name="石狮" Postcode="350581" />
+      <District Name="晋江" Postcode="350582" />
+      <District Name="南安" Postcode="350583" />
+    </City>
+    <City Name="漳州" Postcode="350600" >
+      <District Name="芗城区" Postcode="350602" />
+      <District Name="龙文区" Postcode="350603" />
+      <District Name="云霄县" Postcode="350622" />
+      <District Name="漳浦县" Postcode="350623" />
+      <District Name="诏安县" Postcode="350624" />
+      <District Name="长泰县" Postcode="350625" />
+      <District Name="东山县" Postcode="350626" />
+      <District Name="南靖县" Postcode="350627" />
+      <District Name="平和县" Postcode="350628" />
+      <District Name="华安县" Postcode="350629" />
+      <District Name="龙海" Postcode="350681" />
+    </City>
+    <City Name="南平" Postcode="350700" >
+      <District Name="延平区" Postcode="350702" />
+      <District Name="顺昌县" Postcode="350721" />
+      <District Name="浦城县" Postcode="350722" />
+      <District Name="光泽县" Postcode="350723" />
+      <District Name="松溪县" Postcode="350724" />
+      <District Name="政和县" Postcode="350725" />
+      <District Name="邵武" Postcode="350781" />
+      <District Name="武夷山" Postcode="350782" />
+      <District Name="建瓯" Postcode="350783" />
+      <District Name="建阳" Postcode="350784" />
+    </City>
+    <City Name="龙岩" Postcode="350800" >
+      <District Name="新罗区" Postcode="350802" />
+      <District Name="长汀县" Postcode="350821" />
+      <District Name="永定县" Postcode="350822" />
+      <District Name="上杭县" Postcode="350823" />
+      <District Name="武平县" Postcode="350824" />
+      <District Name="连城县" Postcode="350825" />
+      <District Name="漳平" Postcode="350881" />
+    </City>
+    <City Name="宁德" Postcode="350900" >
+      <District Name="蕉城区" Postcode="350902" />
+      <District Name="霞浦县" Postcode="350921" />
+      <District Name="古田县" Postcode="350922" />
+      <District Name="屏南县" Postcode="350923" />
+      <District Name="寿宁县" Postcode="350924" />
+      <District Name="周宁县" Postcode="350925" />
+      <District Name="柘荣县" Postcode="350926" />
+      <District Name="福安" Postcode="350981" />
+      <District Name="福鼎" Postcode="350982" />
+    </City>
+  </Province>
+
+  <Province Name="江西" Postcode="360000" >
+    <City Name="南昌" Postcode="360100" >
+      <District Name="东湖区" Postcode="360102" />
+      <District Name="西湖区" Postcode="360103" />
+      <District Name="青云谱区" Postcode="360104" />
+      <District Name="湾里区" Postcode="360105" />
+      <District Name="青山湖区" Postcode="360111" />
+      <District Name="南昌县" Postcode="360121" />
+      <District Name="新建县" Postcode="360122" />
+      <District Name="安义县" Postcode="360123" />
+      <District Name="进贤县" Postcode="360124" />
+    </City>
+    <City Name="景德镇" Postcode="360200" >
+      <District Name="昌江区" Postcode="360202" />
+      <District Name="**区" Postcode="360203" />
+      <District Name="浮梁县" Postcode="360222" />
+      <District Name="乐平" Postcode="360281" />
+    </City>
+    <City Name="萍乡" Postcode="360300" >
+      <District Name="安源区" Postcode="360302" />
+      <District Name="湘东区" Postcode="360313" />
+      <District Name="莲花县" Postcode="360321" />
+      <District Name="上栗县" Postcode="360322" />
+      <District Name="芦溪县" Postcode="360323" />
+    </City>
+    <City Name="九江" Postcode="360400" >
+      <District Name="庐山区" Postcode="360402" />
+      <District Name="浔阳区" Postcode="360403" />
+      <District Name="九江县" Postcode="360421" />
+      <District Name="武宁县" Postcode="360423" />
+      <District Name="修水县" Postcode="360424" />
+      <District Name="永修县" Postcode="360425" />
+      <District Name="德安县" Postcode="360426" />
+      <District Name="星子县" Postcode="360427" />
+      <District Name="都昌县" Postcode="360428" />
+      <District Name="湖口县" Postcode="360429" />
+      <District Name="彭泽县" Postcode="360430" />
+      <District Name="瑞昌" Postcode="360481" />
+    </City>
+    <City Name="新余" Postcode="360500" >
+      <District Name="渝水区" Postcode="360502" />
+      <District Name="分宜县" Postcode="360521" />
+    </City>
+    <City Name="鹰潭" Postcode="360600" >
+      <District Name="月湖区" Postcode="360602" />
+      <District Name="余江县" Postcode="360622" />
+      <District Name="贵溪" Postcode="360681" />
+    </City>
+    <City Name="赣州" Postcode="360700" >
+      <District Name="章贡区" Postcode="360702" />
+      <District Name="赣县" Postcode="360721" />
+      <District Name="信丰县" Postcode="360722" />
+      <District Name="大余县" Postcode="360723" />
+      <District Name="上犹县" Postcode="360724" />
+      <District Name="崇义县" Postcode="360725" />
+      <District Name="安远县" Postcode="360726" />
+      <District Name="龙南县" Postcode="360727" />
+      <District Name="定南县" Postcode="360728" />
+      <District Name="全南县" Postcode="360729" />
+      <District Name="宁都县" Postcode="360730" />
+      <District Name="于都县" Postcode="360731" />
+      <District Name="兴国县" Postcode="360732" />
+      <District Name="会昌县" Postcode="360733" />
+      <District Name="寻乌县" Postcode="360734" />
+      <District Name="石城县" Postcode="360735" />
+      <District Name="瑞金" Postcode="360781" />
+      <District Name="南康" Postcode="360782" />
+    </City>
+    <City Name="吉安" Postcode="360800" >
+      <District Name="吉州区" Postcode="360802" />
+      <District Name="青原区" Postcode="360803" />
+      <District Name="吉安县" Postcode="360821" />
+      <District Name="吉水县" Postcode="360822" />
+      <District Name="峡江县" Postcode="360823" />
+      <District Name="新干县" Postcode="360824" />
+      <District Name="永丰县" Postcode="360825" />
+      <District Name="泰和县" Postcode="360826" />
+      <District Name="遂川县" Postcode="360827" />
+      <District Name="万安县" Postcode="360828" />
+      <District Name="安福县" Postcode="360829" />
+      <District Name="永新县" Postcode="360830" />
+      <District Name="井冈山" Postcode="360881" />
+    </City>
+    <City Name="宜春" Postcode="360900" >
+      <District Name="袁州区" Postcode="360902" />
+      <District Name="奉新县" Postcode="360921" />
+      <District Name="万载县" Postcode="360922" />
+      <District Name="上高县" Postcode="360923" />
+      <District Name="宜丰县" Postcode="360924" />
+      <District Name="靖安县" Postcode="360925" />
+      <District Name="铜鼓县" Postcode="360926" />
+      <District Name="丰城" Postcode="360981" />
+      <District Name="樟树" Postcode="360982" />
+      <District Name="高安" Postcode="360983" />
+    </City>
+    <City Name="抚州" Postcode="361000" >
+      <District Name="临川区" Postcode="361002" />
+      <District Name="南城县" Postcode="361021" />
+      <District Name="黎川县" Postcode="361022" />
+      <District Name="南丰县" Postcode="361023" />
+      <District Name="崇仁县" Postcode="361024" />
+      <District Name="乐安县" Postcode="361025" />
+      <District Name="宜黄县" Postcode="361026" />
+      <District Name="金溪县" Postcode="361027" />
+      <District Name="资溪县" Postcode="361028" />
+      <District Name="东乡县" Postcode="361029" />
+      <District Name="广昌县" Postcode="361030" />
+    </City>
+    <City Name="上饶" Postcode="361100" >
+      <District Name="信州区" Postcode="361102" />
+      <District Name="上饶县" Postcode="361121" />
+      <District Name="广丰县" Postcode="361122" />
+      <District Name="玉山县" Postcode="361123" />
+      <District Name="铅山县" Postcode="361124" />
+      <District Name="横峰县" Postcode="361125" />
+      <District Name="弋阳县" Postcode="361126" />
+      <District Name="余干县" Postcode="361127" />
+      <District Name="鄱阳县" Postcode="361128" />
+      <District Name="万年县" Postcode="361129" />
+      <District Name="婺源县" Postcode="361130" />
+      <District Name="德兴" Postcode="361181" />
+    </City>
+  </Province>
+
+  <Province Name="山东" Postcode="370000" >
+    <City Name="济南" Postcode="370100" >
+      <District Name="历下区" Postcode="370102" />
+      <District Name="市中区" Postcode="370103" />
+      <District Name="槐荫区" Postcode="370104" />
+      <District Name="天桥区" Postcode="370105" />
+      <District Name="历城区" Postcode="370112" />
+      <District Name="长清区" Postcode="370113" />
+      <District Name="平阴县" Postcode="370124" />
+      <District Name="济阳县" Postcode="370125" />
+      <District Name="商河县" Postcode="370126" />
+      <District Name="章丘" Postcode="370181" />
+    </City>
+    <City Name="青岛" Postcode="370200" >
+      <District Name="市南区" Postcode="370202" />
+      <District Name="市北区" Postcode="370203" />
+      <District Name="四方区" Postcode="370205" />
+      <District Name="黄岛区" Postcode="370211" />
+      <District Name="崂山区" Postcode="370212" />
+      <District Name="李沧区" Postcode="370213" />
+      <District Name="城阳区" Postcode="370214" />
+      <District Name="胶州" Postcode="370281" />
+      <District Name="即墨" Postcode="370282" />
+      <District Name="平度" Postcode="370283" />
+      <District Name="胶南" Postcode="370284" />
+      <District Name="莱西" Postcode="370285" />
+    </City>
+    <City Name="淄博" Postcode="370300" >
+      <District Name="淄川区" Postcode="370302" />
+      <District Name="张店区" Postcode="370303" />
+      <District Name="博山区" Postcode="370304" />
+      <District Name="临淄区" Postcode="370305" />
+      <District Name="周村区" Postcode="370306" />
+      <District Name="桓台县" Postcode="370321" />
+      <District Name="高青县" Postcode="370322" />
+      <District Name="沂源县" Postcode="370323" />
+    </City>
+    <City Name="枣庄" Postcode="370400" >
+      <District Name="市中区" Postcode="370402" />
+      <District Name="薛城区" Postcode="370403" />
+      <District Name="峄城区" Postcode="370404" />
+      <District Name="台儿庄区" Postcode="370405" />
+      <District Name="山亭区" Postcode="370406" />
+      <District Name="滕州" Postcode="370481" />
+    </City>
+    <City Name="东营" Postcode="370500" >
+      <District Name="东营区" Postcode="370502" />
+      <District Name="河口区" Postcode="370503" />
+      <District Name="垦利县" Postcode="370521" />
+      <District Name="利津县" Postcode="370522" />
+      <District Name="**" Postcode="370523" />
+    </City>
+    <City Name="烟台" Postcode="370600" >
+      <District Name="芝罘区" Postcode="370602" />
+      <District Name="福山区" Postcode="370611" />
+      <District Name="牟平区" Postcode="370612" />
+      <District Name="莱山区" Postcode="370613" />
+      <District Name="长岛县" Postcode="370634" />
+      <District Name="龙口" Postcode="370681" />
+      <District Name="莱阳" Postcode="370682" />
+      <District Name="莱州" Postcode="370683" />
+      <District Name="蓬莱" Postcode="370684" />
+      <District Name="招远" Postcode="370685" />
+      <District Name="栖霞" Postcode="370686" />
+      <District Name="海阳" Postcode="370687" />
+    </City>
+    <City Name="潍坊" Postcode="370700" >
+      <District Name="潍城区" Postcode="370702" />
+      <District Name="寒亭区" Postcode="370703" />
+      <District Name="坊子区" Postcode="370704" />
+      <District Name="奎文区" Postcode="370705" />
+      <District Name="临朐县" Postcode="370724" />
+      <District Name="昌乐县" Postcode="370725" />
+      <District Name="青州" Postcode="370781" />
+      <District Name="诸城" Postcode="370782" />
+      <District Name="寿光" Postcode="370783" />
+      <District Name="安丘" Postcode="370784" />
+      <District Name="高密" Postcode="370785" />
+      <District Name="昌邑" Postcode="370786" />
+    </City>
+    <City Name="济宁" Postcode="370800" >
+      <District Name="市中区" Postcode="370802" />
+      <District Name="任城区" Postcode="370811" />
+      <District Name="微山县" Postcode="370826" />
+      <District Name="鱼台县" Postcode="370827" />
+      <District Name="金乡县" Postcode="370828" />
+      <District Name="嘉祥县" Postcode="370829" />
+      <District Name="汶上县" Postcode="370830" />
+      <District Name="泗水县" Postcode="370831" />
+      <District Name="梁山县" Postcode="370832" />
+      <District Name="曲阜" Postcode="370881" />
+      <District Name="兖州" Postcode="370882" />
+      <District Name="邹城" Postcode="370883" />
+    </City>
+    <City Name="泰安" Postcode="370900" >
+      <District Name="泰山区" Postcode="370902" />
+      <District Name="岱岳区" Postcode="370903" />
+      <District Name="宁阳县" Postcode="370921" />
+      <District Name="东平县" Postcode="370923" />
+      <District Name="新泰" Postcode="370982" />
+      <District Name="肥城" Postcode="370983" />
+    </City>
+    <City Name="威海" Postcode="371000" >
+      <District Name="环翠区" Postcode="371002" />
+      <District Name="文登" Postcode="371081" />
+      <District Name="荣成" Postcode="371082" />
+      <District Name="乳山" Postcode="371083" />
+    </City>
+    <City Name="日照" Postcode="371100" >
+      <District Name="东港区" Postcode="371102" />
+      <District Name="岚山区" Postcode="371103" />
+      <District Name="五莲县" Postcode="371121" />
+      <District Name="莒县" Postcode="371122" />
+    </City>
+    <City Name="莱芜" Postcode="371200" >
+      <District Name="莱城区" Postcode="371202" />
+      <District Name="钢城区" Postcode="371203" />
+    </City>
+    <City Name="临沂" Postcode="371300" >
+      <District Name="兰山区" Postcode="371302" />
+      <District Name="罗庄区" Postcode="371311" />
+      <District Name="河东区" Postcode="371312" />
+      <District Name="沂南县" Postcode="371321" />
+      <District Name="郯城县" Postcode="371322" />
+      <District Name="沂水县" Postcode="371323" />
+      <District Name="苍山县" Postcode="371324" />
+      <District Name="费县" Postcode="371325" />
+      <District Name="平邑县" Postcode="371326" />
+      <District Name="莒南县" Postcode="371327" />
+      <District Name="蒙阴县" Postcode="371328" />
+      <District Name="临沭县" Postcode="371329" />
+    </City>
+    <City Name="德州" Postcode="371400" >
+      <District Name="德城区" Postcode="371402" />
+      <District Name="陵县" Postcode="371421" />
+      <District Name="宁津县" Postcode="371422" />
+      <District Name="庆云县" Postcode="371423" />
+      <District Name="临邑县" Postcode="371424" />
+      <District Name="齐河县" Postcode="371425" />
+      <District Name="平原县" Postcode="371426" />
+      <District Name="夏津县" Postcode="371427" />
+      <District Name="武城县" Postcode="371428" />
+      <District Name="乐陵" Postcode="371481" />
+      <District Name="禹城" Postcode="371482" />
+    </City>
+    <City Name="聊城" Postcode="371500" >
+      <District Name="东昌府区" Postcode="371502" />
+      <District Name="阳谷县" Postcode="371521" />
+      <District Name="莘县" Postcode="371522" />
+      <District Name="茌平县" Postcode="371523" />
+      <District Name="东阿县" Postcode="371524" />
+      <District Name="冠县" Postcode="371525" />
+      <District Name="高唐县" Postcode="371526" />
+      <District Name="临清" Postcode="371581" />
+    </City>
+    <City Name="滨州" Postcode="371600" >
+      <District Name="滨城区" Postcode="371602" />
+      <District Name="惠民县" Postcode="371621" />
+      <District Name="阳信县" Postcode="371622" />
+      <District Name="无棣县" Postcode="371623" />
+      <District Name="沾化县" Postcode="371624" />
+      <District Name="博兴县" Postcode="371625" />
+      <District Name="邹平县" Postcode="371626" />
+    </City>
+    <City Name="菏泽" Postcode="371700" >
+      <District Name="牡丹区" Postcode="371702" />
+      <District Name="曹县" Postcode="371721" />
+      <District Name="单县" Postcode="371722" />
+      <District Name="成武县" Postcode="371723" />
+      <District Name="巨野县" Postcode="371724" />
+      <District Name="郓城县" Postcode="371725" />
+      <District Name="鄄城县" Postcode="371726" />
+      <District Name="定陶县" Postcode="371727" />
+      <District Name="东明县" Postcode="371728" />
+    </City>
+  </Province>
+
+  <Province Name="河南" Postcode="410000" >
+    <City Name="郑州" Postcode="410100" >
+      <District Name="中原区" Postcode="410102" />
+      <District Name="二七区" Postcode="410103" />
+      <District Name="管城回族区" Postcode="410104" />
+      <District Name="金水区" Postcode="410105" />
+      <District Name="上街区" Postcode="410106" />
+      <District Name="惠济区" Postcode="410108" />
+      <District Name="中牟县" Postcode="410122" />
+      <District Name="巩义" Postcode="410181" />
+      <District Name="荥阳" Postcode="410182" />
+      <District Name="新密" Postcode="410183" />
+      <District Name="新郑" Postcode="410184" />
+      <District Name="登封" Postcode="410185" />
+    </City>
+    <City Name="开封" Postcode="410200" >
+      <District Name="龙亭区" Postcode="410202" />
+      <District Name="顺河回族区" Postcode="410203" />
+      <District Name="鼓楼区" Postcode="410204" />
+      <District Name="禹王台区" Postcode="410205" />
+      <District Name="金明区" Postcode="410211" />
+      <District Name="杞县" Postcode="410221" />
+      <District Name="通许县" Postcode="410222" />
+      <District Name="尉氏县" Postcode="410223" />
+      <District Name="开封县" Postcode="410224" />
+      <District Name="兰考县" Postcode="410225" />
+    </City>
+    <City Name="洛阳" Postcode="410300" >
+      <District Name="老城区" Postcode="410302" />
+      <District Name="西工区" Postcode="410303" />
+      <District Name="廛河回族区" Postcode="410304" />
+      <District Name="涧西区" Postcode="410305" />
+      <District Name="吉利区" Postcode="410306" />
+      <District Name="洛龙区" Postcode="410307" />
+      <District Name="孟津县" Postcode="410322" />
+      <District Name="新安县" Postcode="410323" />
+      <District Name="栾川县" Postcode="410324" />
+      <District Name="嵩县" Postcode="410325" />
+      <District Name="汝阳县" Postcode="410326" />
+      <District Name="宜阳县" Postcode="410327" />
+      <District Name="洛宁县" Postcode="410328" />
+      <District Name="伊川县" Postcode="410329" />
+      <District Name="偃师" Postcode="410381" />
+    </City>
+    <City Name="平顶山" Postcode="410400" >
+      <District Name="新华区" Postcode="410402" />
+      <District Name="卫东区" Postcode="410403" />
+      <District Name="石龙区" Postcode="410404" />
+      <District Name="湛河区" Postcode="410411" />
+      <District Name="宝丰县" Postcode="410421" />
+      <District Name="叶县" Postcode="410422" />
+      <District Name="鲁山县" Postcode="410423" />
+      <District Name="郏县" Postcode="410425" />
+      <District Name="舞钢" Postcode="410481" />
+      <District Name="汝州" Postcode="410482" />
+    </City>
+    <City Name="安阳" Postcode="410500" >
+      <District Name="文峰区" Postcode="410502" />
+      <District Name="北关区" Postcode="410503" />
+      <District Name="殷都区" Postcode="410505" />
+      <District Name="龙安区" Postcode="410506" />
+      <District Name="安阳县" Postcode="410522" />
+      <District Name="汤阴县" Postcode="410523" />
+      <District Name="滑县" Postcode="410526" />
+      <District Name="内黄县" Postcode="410527" />
+      <District Name="林州" Postcode="410581" />
+    </City>
+    <City Name="鹤壁" Postcode="410600" >
+      <District Name="鹤山区" Postcode="410602" />
+      <District Name="山城区" Postcode="410603" />
+      <District Name="淇滨区" Postcode="410611" />
+      <District Name="浚县" Postcode="410621" />
+      <District Name="淇县" Postcode="410622" />
+    </City>
+    <City Name="新乡" Postcode="410700" >
+      <District Name="红旗区" Postcode="410702" />
+      <District Name="卫滨区" Postcode="410703" />
+      <District Name="凤泉区" Postcode="410704" />
+      <District Name="牧野区" Postcode="410711" />
+      <District Name="新乡县" Postcode="410721" />
+      <District Name="获嘉县" Postcode="410724" />
+      <District Name="原阳县" Postcode="410725" />
+      <District Name="延津县" Postcode="410726" />
+      <District Name="封丘县" Postcode="410727" />
+      <District Name="长垣县" Postcode="410728" />
+      <District Name="卫辉" Postcode="410781" />
+      <District Name="辉县" Postcode="410782" />
+    </City>
+    <City Name="焦作" Postcode="410800" >
+      <District Name="解放区" Postcode="410802" />
+      <District Name="中站区" Postcode="410803" />
+      <District Name="马村区" Postcode="410804" />
+      <District Name="山阳区" Postcode="410811" />
+      <District Name="修武县" Postcode="410821" />
+      <District Name="博爱县" Postcode="410822" />
+      <District Name="武陟县" Postcode="410823" />
+      <District Name="温县" Postcode="410825" />
+      <District Name="济源" Postcode="410881" />
+      <District Name="沁阳" Postcode="410882" />
+      <District Name="孟州" Postcode="410883" />
+    </City>
+    <City Name="濮阳" Postcode="410900" >
+      <District Name="华龙区" Postcode="410902" />
+      <District Name="清丰县" Postcode="410922" />
+      <District Name="南乐县" Postcode="410923" />
+      <District Name="范县" Postcode="410926" />
+      <District Name="台前县" Postcode="410927" />
+      <District Name="濮阳县" Postcode="410928" />
+    </City>
+    <City Name="许昌" Postcode="411000" >
+      <District Name="魏都区" Postcode="411002" />
+      <District Name="许昌县" Postcode="411023" />
+      <District Name="鄢陵县" Postcode="411024" />
+      <District Name="襄城县" Postcode="411025" />
+      <District Name="禹州" Postcode="411081" />
+      <District Name="长葛" Postcode="411082" />
+    </City>
+    <City Name="漯河" Postcode="411100" >
+      <District Name="源汇区" Postcode="411102" />
+      <District Name="郾城区" Postcode="411103" />
+      <District Name="召陵区" Postcode="411104" />
+      <District Name="舞阳县" Postcode="411121" />
+      <District Name="临颍县" Postcode="411122" />
+    </City>
+    <City Name="三门峡" Postcode="411200" >
+      <District Name="湖滨区" Postcode="411202" />
+      <District Name="渑池县" Postcode="411221" />
+      <District Name="陕县" Postcode="411222" />
+      <District Name="卢氏县" Postcode="411224" />
+      <District Name="义马" Postcode="411281" />
+      <District Name="灵宝" Postcode="411282" />
+    </City>
+    <City Name="南阳" Postcode="411300" >
+      <District Name="宛城区" Postcode="411302" />
+      <District Name="卧龙区" Postcode="411303" />
+      <District Name="南召县" Postcode="411321" />
+      <District Name="方城县" Postcode="411322" />
+      <District Name="西峡县" Postcode="411323" />
+      <District Name="镇平县" Postcode="411324" />
+      <District Name="内乡县" Postcode="411325" />
+      <District Name="淅川县" Postcode="411326" />
+      <District Name="社旗县" Postcode="411327" />
+      <District Name="唐河县" Postcode="411328" />
+      <District Name="新野县" Postcode="411329" />
+      <District Name="桐柏县" Postcode="411330" />
+      <District Name="邓州" Postcode="411381" />
+    </City>
+    <City Name="商丘" Postcode="411400" >
+      <District Name="梁园区" Postcode="411402" />
+      <District Name="睢阳区" Postcode="411403" />
+      <District Name="民权县" Postcode="411421" />
+      <District Name="睢县" Postcode="411422" />
+      <District Name="宁陵县" Postcode="411423" />
+      <District Name="柘城县" Postcode="411424" />
+      <District Name="虞城县" Postcode="411425" />
+      <District Name="夏邑县" Postcode="411426" />
+      <District Name="永城" Postcode="411481" />
+    </City>
+    <City Name="信阳" Postcode="411500" >
+      <District Name="浉河区" Postcode="411502" />
+      <District Name="平桥区" Postcode="411503" />
+      <District Name="罗山县" Postcode="411521" />
+      <District Name="光山县" Postcode="411522" />
+      <District Name="新县" Postcode="411523" />
+      <District Name="商城县" Postcode="411524" />
+      <District Name="固始县" Postcode="411525" />
+      <District Name="潢川县" Postcode="411526" />
+      <District Name="淮滨县" Postcode="411527" />
+      <District Name="息县" Postcode="411528" />
+    </City>
+    <City Name="周口" Postcode="411600" >
+      <District Name="川汇区" Postcode="411602" />
+      <District Name="扶沟县" Postcode="411621" />
+      <District Name="西华县" Postcode="411622" />
+      <District Name="商水县" Postcode="411623" />
+      <District Name="沈丘县" Postcode="411624" />
+      <District Name="郸城县" Postcode="411625" />
+      <District Name="淮阳县" Postcode="411626" />
+      <District Name="太康县" Postcode="411627" />
+      <District Name="鹿邑县" Postcode="411628" />
+      <District Name="项城" Postcode="411681" />
+    </City>
+    <City Name="驻马店" Postcode="411700" >
+      <District Name="驿城区" Postcode="411702" />
+      <District Name="西平县" Postcode="411721" />
+      <District Name="上蔡县" Postcode="411722" />
+      <District Name="平舆县" Postcode="411723" />
+      <District Name="正阳县" Postcode="411724" />
+      <District Name="确山县" Postcode="411725" />
+      <District Name="泌阳县" Postcode="411726" />
+      <District Name="汝南县" Postcode="411727" />
+      <District Name="遂平县" Postcode="411728" />
+      <District Name="新蔡县" Postcode="411729" />
+    </City>
+  </Province>
+
+  <Province Name="湖北" Postcode="420000" >
+    <City Name="武汉" Postcode="420100" >
+      <District Name="江岸区" Postcode="420102" />
+      <District Name="江汉区" Postcode="420103" />
+      <District Name="硚口区" Postcode="420104" />
+      <District Name="汉阳区" Postcode="420105" />
+      <District Name="武昌区" Postcode="420106" />
+      <District Name="青山区" Postcode="420107" />
+      <District Name="洪山区" Postcode="420111" />
+      <District Name="东西湖区" Postcode="420112" />
+      <District Name="汉南区" Postcode="420113" />
+      <District Name="蔡甸区" Postcode="420114" />
+      <District Name="江夏区" Postcode="420115" />
+      <District Name="黄陂区" Postcode="420116" />
+      <District Name="新洲区" Postcode="420117" />
+    </City>
+    <City Name="黄石" Postcode="420200" >
+      <District Name="黄石港区" Postcode="420202" />
+      <District Name="西塞山区" Postcode="420203" />
+      <District Name="下陆区" Postcode="420204" />
+      <District Name="铁山区" Postcode="420205" />
+      <District Name="阳新县" Postcode="420222" />
+      <District Name="大冶" Postcode="420281" />
+    </City>
+    <City Name="十堰" Postcode="420300" >
+      <District Name="茅箭区" Postcode="420302" />
+      <District Name="张湾区" Postcode="420303" />
+      <District Name="郧县" Postcode="420321" />
+      <District Name="郧西县" Postcode="420322" />
+      <District Name="竹山县" Postcode="420323" />
+      <District Name="竹溪县" Postcode="420324" />
+      <District Name="房县" Postcode="420325" />
+      <District Name="丹江口" Postcode="420381" />
+    </City>
+    <City Name="宜昌" Postcode="420500" >
+      <District Name="西陵区" Postcode="420502" />
+      <District Name="伍家岗区" Postcode="420503" />
+      <District Name="点军区" Postcode="420504" />
+      <District Name="猇亭区" Postcode="420505" />
+      <District Name="夷陵区" Postcode="420506" />
+      <District Name="远安县" Postcode="420525" />
+      <District Name="兴山县" Postcode="420526" />
+      <District Name="秭归县" Postcode="420527" />
+      <District Name="长阳土家族自治县" Postcode="420528" />
+      <District Name="五峰土家族自治县" Postcode="420529" />
+      <District Name="宜都" Postcode="420581" />
+      <District Name="当阳" Postcode="420582" />
+      <District Name="枝江" Postcode="420583" />
+    </City>
+    <City Name="襄樊" Postcode="420600" >
+      <District Name="襄城区" Postcode="420602" />
+      <District Name="樊城区" Postcode="420606" />
+      <District Name="襄阳区" Postcode="420607" />
+      <District Name="南漳县" Postcode="420624" />
+      <District Name="谷城县" Postcode="420625" />
+      <District Name="保康县" Postcode="420626" />
+      <District Name="老河口" Postcode="420682" />
+      <District Name="枣阳" Postcode="420683" />
+      <District Name="宜城" Postcode="420684" />
+    </City>
+    <City Name="鄂州" Postcode="420700" >
+      <District Name="梁子湖区" Postcode="420702" />
+      <District Name="华容区" Postcode="420703" />
+      <District Name="鄂城区" Postcode="420704" />
+    </City>
+    <City Name="荆门" Postcode="420800" >
+      <District Name="东宝区" Postcode="420802" />
+      <District Name="掇刀区" Postcode="420804" />
+      <District Name="京山县" Postcode="420821" />
+      <District Name="沙洋县" Postcode="420822" />
+      <District Name="钟祥" Postcode="420881" />
+    </City>
+    <City Name="孝感" Postcode="420900" >
+      <District Name="孝南区" Postcode="420902" />
+      <District Name="孝昌县" Postcode="420921" />
+      <District Name="大悟县" Postcode="420922" />
+      <District Name="云梦县" Postcode="420923" />
+      <District Name="应城" Postcode="420981" />
+      <District Name="安陆" Postcode="420982" />
+      <District Name="汉川" Postcode="420984" />
+    </City>
+    <City Name="荆州" Postcode="421000" >
+      <District Name="沙市区" Postcode="421002" />
+      <District Name="荆州区" Postcode="421003" />
+      <District Name="公安县" Postcode="421022" />
+      <District Name="监利县" Postcode="421023" />
+      <District Name="江陵县" Postcode="421024" />
+      <District Name="石首" Postcode="421081" />
+      <District Name="洪湖" Postcode="421083" />
+      <District Name="松滋" Postcode="421087" />
+    </City>
+    <City Name="黄冈" Postcode="421100" >
+      <District Name="黄州区" Postcode="421102" />
+      <District Name="团风县" Postcode="421121" />
+      <District Name="红安县" Postcode="421122" />
+      <District Name="罗田县" Postcode="421123" />
+      <District Name="英山县" Postcode="421124" />
+      <District Name="浠水县" Postcode="421125" />
+      <District Name="蕲春县" Postcode="421126" />
+      <District Name="黄梅县" Postcode="421127" />
+      <District Name="麻城" Postcode="421181" />
+      <District Name="武穴" Postcode="421182" />
+    </City>
+    <City Name="咸宁" Postcode="421200" >
+      <District Name="咸安区" Postcode="421202" />
+      <District Name="嘉鱼县" Postcode="421221" />
+      <District Name="通城县" Postcode="421222" />
+      <District Name="崇阳县" Postcode="421223" />
+      <District Name="通山县" Postcode="421224" />
+      <District Name="赤壁" Postcode="421281" />
+    </City>
+    <City Name="随州" Postcode="421300" >
+      <District Name="曾都区" Postcode="421302" />
+      <District Name="广水" Postcode="421381" />
+    </City>
+    <City Name="恩施土家族苗族自治州" Postcode="422800" >
+      <District Name="恩施" Postcode="422801" />
+      <District Name="利川" Postcode="422802" />
+      <District Name="建始县" Postcode="422822" />
+      <District Name="巴东县" Postcode="422823" />
+      <District Name="宣恩县" Postcode="422825" />
+      <District Name="咸丰县" Postcode="422826" />
+      <District Name="来凤县" Postcode="422827" />
+      <District Name="鹤峰县" Postcode="422828" />
+    </City>
+    <City Name="省直辖行政单位" Postcode="429000" >
+      <District Name="仙桃" Postcode="429004" />
+      <District Name="潜江" Postcode="429005" />
+      <District Name="天门" Postcode="429006" />
+      <District Name="神农架林区" Postcode="429021" />
+    </City>
+  </Province>
+
+  <Province Name="湖南" Postcode="430000" >
+    <City Name="长沙" Postcode="430100" >
+      <District Name="芙蓉区" Postcode="430102" />
+      <District Name="天心区" Postcode="430103" />
+      <District Name="岳麓区" Postcode="430104" />
+      <District Name="开福区" Postcode="430105" />
+      <District Name="雨花区" Postcode="430111" />
+      <District Name="长沙县" Postcode="430121" />
+      <District Name="望城县" Postcode="430122" />
+      <District Name="宁乡县" Postcode="430124" />
+      <District Name="浏阳" Postcode="430181" />
+    </City>
+    <City Name="株洲" Postcode="430200" >
+      <District Name="荷塘区" Postcode="430202" />
+      <District Name="芦淞区" Postcode="430203" />
+      <District Name="石峰区" Postcode="430204" />
+      <District Name="天元区" Postcode="430211" />
+      <District Name="株洲县" Postcode="430221" />
+      <District Name="攸县" Postcode="430223" />
+      <District Name="茶陵县" Postcode="430224" />
+      <District Name="炎陵县" Postcode="430225" />
+      <District Name="醴陵" Postcode="430281" />
+    </City>
+    <City Name="湘潭" Postcode="430300" >
+      <District Name="雨湖区" Postcode="430302" />
+      <District Name="岳塘区" Postcode="430304" />
+      <District Name="湘潭县" Postcode="430321" />
+      <District Name="湘乡" Postcode="430381" />
+      <District Name="韶山" Postcode="430382" />
+    </City>
+    <City Name="衡阳" Postcode="430400" >
+      <District Name="珠晖区" Postcode="430405" />
+      <District Name="雁峰区" Postcode="430406" />
+      <District Name="石鼓区" Postcode="430407" />
+      <District Name="蒸湘区" Postcode="430408" />
+      <District Name="南岳区" Postcode="430412" />
+      <District Name="衡阳县" Postcode="430421" />
+      <District Name="衡南县" Postcode="430422" />
+      <District Name="衡山县" Postcode="430423" />
+      <District Name="衡东县" Postcode="430424" />
+      <District Name="祁东县" Postcode="430426" />
+      <District Name="耒阳" Postcode="430481" />
+      <District Name="常宁" Postcode="430482" />
+    </City>
+    <City Name="邵阳" Postcode="430500" >
+      <District Name="双清区" Postcode="430502" />
+      <District Name="大祥区" Postcode="430503" />
+      <District Name="北塔区" Postcode="430511" />
+      <District Name="邵东县" Postcode="430521" />
+      <District Name="新邵县" Postcode="430522" />
+      <District Name="邵阳县" Postcode="430523" />
+      <District Name="隆回县" Postcode="430524" />
+      <District Name="洞口县" Postcode="430525" />
+      <District Name="绥宁县" Postcode="430527" />
+      <District Name="新宁县" Postcode="430528" />
+      <District Name="城步苗族自治县" Postcode="430529" />
+      <District Name="武冈" Postcode="430581" />
+    </City>
+    <City Name="岳阳" Postcode="430600" >
+      <District Name="岳阳楼区" Postcode="430602" />
+      <District Name="云溪区" Postcode="430603" />
+      <District Name="君山区" Postcode="430611" />
+      <District Name="岳阳县" Postcode="430621" />
+      <District Name="华容县" Postcode="430623" />
+      <District Name="湘阴县" Postcode="430624" />
+      <District Name="平江县" Postcode="430626" />
+      <District Name="汨罗" Postcode="430681" />
+      <District Name="临湘" Postcode="430682" />
+    </City>
+    <City Name="常德" Postcode="430700" >
+      <District Name="武陵区" Postcode="430702" />
+      <District Name="鼎城区" Postcode="430703" />
+      <District Name="安乡县" Postcode="430721" />
+      <District Name="汉寿县" Postcode="430722" />
+      <District Name="澧县" Postcode="430723" />
+      <District Name="临澧县" Postcode="430724" />
+      <District Name="桃源县" Postcode="430725" />
+      <District Name="石门县" Postcode="430726" />
+      <District Name="津市" Postcode="430781" />
+    </City>
+    <City Name="张家界" Postcode="430800" >
+      <District Name="永定区" Postcode="430802" />
+      <District Name="武陵源区" Postcode="430811" />
+      <District Name="慈利县" Postcode="430821" />
+      <District Name="桑植县" Postcode="430822" />
+    </City>
+    <City Name="益阳" Postcode="430900" >
+      <District Name="资阳区" Postcode="430902" />
+      <District Name="赫山区" Postcode="430903" />
+      <District Name="南县" Postcode="430921" />
+      <District Name="桃江县" Postcode="430922" />
+      <District Name="安化县" Postcode="430923" />
+      <District Name="沅江" Postcode="430981" />
+    </City>
+    <City Name="郴州" Postcode="431000" >
+      <District Name="北湖区" Postcode="431002" />
+      <District Name="苏仙区" Postcode="431003" />
+      <District Name="桂阳县" Postcode="431021" />
+      <District Name="宜章县" Postcode="431022" />
+      <District Name="永兴县" Postcode="431023" />
+      <District Name="嘉禾县" Postcode="431024" />
+      <District Name="临武县" Postcode="431025" />
+      <District Name="汝城县" Postcode="431026" />
+      <District Name="桂东县" Postcode="431027" />
+      <District Name="安仁县" Postcode="431028" />
+      <District Name="资兴" Postcode="431081" />
+    </City>
+    <City Name="永州" Postcode="431100" >
+      <District Name="零陵区" Postcode="431102" />
+      <District Name="冷水滩区" Postcode="431103" />
+      <District Name="祁阳县" Postcode="431121" />
+      <District Name="东安县" Postcode="431122" />
+      <District Name="双牌县" Postcode="431123" />
+      <District Name="道县" Postcode="431124" />
+      <District Name="江永县" Postcode="431125" />
+      <District Name="宁远县" Postcode="431126" />
+      <District Name="蓝山县" Postcode="431127" />
+      <District Name="新田县" Postcode="431128" />
+      <District Name="江华瑶族自治县" Postcode="431129" />
+    </City>
+    <City Name="怀化" Postcode="431200" >
+      <District Name="鹤城区" Postcode="431202" />
+      <District Name="中方县" Postcode="431221" />
+      <District Name="沅陵县" Postcode="431222" />
+      <District Name="辰溪县" Postcode="431223" />
+      <District Name="溆浦县" Postcode="431224" />
+      <District Name="会同县" Postcode="431225" />
+      <District Name="麻阳苗族自治县" Postcode="431226" />
+      <District Name="新晃侗族自治县" Postcode="431227" />
+      <District Name="芷江侗族自治县" Postcode="431228" />
+      <District Name="靖州苗族侗族自治县" Postcode="431229" />
+      <District Name="通道侗族自治县" Postcode="431230" />
+      <District Name="洪江" Postcode="431281" />
+    </City>
+    <City Name="娄底" Postcode="431300" >
+      <District Name="娄星区" Postcode="431302" />
+      <District Name="双峰县" Postcode="431321" />
+      <District Name="新化县" Postcode="431322" />
+      <District Name="冷水江" Postcode="431381" />
+      <District Name="涟源" Postcode="431382" />
+    </City>
+    <City Name="湘西土家族苗族自治州" Postcode="433100" >
+      <District Name="吉首" Postcode="433101" />
+      <District Name="泸溪县" Postcode="433122" />
+      <District Name="凤凰县" Postcode="433123" />
+      <District Name="花垣县" Postcode="433124" />
+      <District Name="保靖县" Postcode="433125" />
+      <District Name="古丈县" Postcode="433126" />
+      <District Name="永顺县" Postcode="433127" />
+      <District Name="龙山县" Postcode="433130" />
+    </City>
+  </Province>
+
+  <Province Name="广东" Postcode="440000" >
+    <City Name="广州" Postcode="440100" >
+      <District Name="荔湾区" Postcode="440103" />
+      <District Name="越秀区" Postcode="440104" />
+      <District Name="海珠区" Postcode="440105" />
+      <District Name="天河区" Postcode="440106" />
+      <District Name="白云区" Postcode="440111" />
+      <District Name="黄埔区" Postcode="440112" />
+      <District Name="番禺区" Postcode="440113" />
+      <District Name="花都区" Postcode="440114" />
+      <District Name="南沙区" Postcode="440115" />
+      <District Name="萝岗区" Postcode="440116" />
+      <District Name="增城区" Postcode="440183" />
+      <District Name="从化区" Postcode="440184" />
+    </City>
+    <City Name="韶关" Postcode="440200" >
+      <District Name="武江区" Postcode="440203" />
+      <District Name="浈江区" Postcode="440204" />
+      <District Name="曲江区" Postcode="440205" />
+      <District Name="始兴县" Postcode="440222" />
+      <District Name="仁化县" Postcode="440224" />
+      <District Name="翁源县" Postcode="440229" />
+      <District Name="乳源瑶族自治县" Postcode="440232" />
+      <District Name="新丰县" Postcode="440233" />
+      <District Name="乐昌" Postcode="440281" />
+      <District Name="南雄" Postcode="440282" />
+    </City>
+    <City Name="深圳" Postcode="440300" >
+      <District Name="罗湖区" Postcode="440303" />
+      <District Name="福田区" Postcode="440304" />
+      <District Name="南山区" Postcode="440305" />
+      <District Name="宝安区" Postcode="440306" />
+      <District Name="龙岗区" Postcode="440307" />
+      <District Name="盐田区" Postcode="440308" />
+      <District Name="龙华新区" Postcode="518110" />
+      <District Name="光明新区" Postcode="518107" />
+      <District Name="坪山新区" Postcode="518118" />
+    </City>
+    <City Name="珠海" Postcode="440400" >
+      <District Name="香洲区" Postcode="440402" />
+      <District Name="斗门区" Postcode="440403" />
+      <District Name="金湾区" Postcode="440404" />
+    </City>
+    <City Name="汕头" Postcode="440500" >
+      <District Name="龙湖区" Postcode="440507" />
+      <District Name="金平区" Postcode="440511" />
+      <District Name="濠江区" Postcode="440512" />
+      <District Name="潮阳区" Postcode="440513" />
+      <District Name="潮南区" Postcode="440514" />
+      <District Name="澄海区" Postcode="440515" />
+      <District Name="南澳县" Postcode="440523" />
+    </City>
+    <City Name="佛山" Postcode="440600" >
+      <District Name="禅城区" Postcode="440604" />
+      <District Name="南海区" Postcode="440605" />
+      <District Name="顺德区" Postcode="440606" />
+      <District Name="三水区" Postcode="440607" />
+      <District Name="高明区" Postcode="440608" />
+    </City>
+    <City Name="江门" Postcode="440700" >
+      <District Name="蓬江区" Postcode="440703" />
+      <District Name="江海区" Postcode="440704" />
+      <District Name="新会区" Postcode="440705" />
+      <District Name="台山" Postcode="440781" />
+      <District Name="开平" Postcode="440783" />
+      <District Name="鹤山" Postcode="440784" />
+      <District Name="恩平" Postcode="440785" />
+    </City>
+    <City Name="湛江" Postcode="440800" >
+      <District Name="赤坎区" Postcode="440802" />
+      <District Name="霞山区" Postcode="440803" />
+      <District Name="坡头区" Postcode="440804" />
+      <District Name="麻章区" Postcode="440811" />
+      <District Name="遂溪县" Postcode="440823" />
+      <District Name="徐闻县" Postcode="440825" />
+      <District Name="廉江" Postcode="440881" />
+      <District Name="雷州" Postcode="440882" />
+      <District Name="吴川" Postcode="440883" />
+    </City>
+    <City Name="茂名" Postcode="440900" >
+      <District Name="茂南区" Postcode="440902" />
+      <District Name="茂港区" Postcode="440903" />
+      <District Name="电白县" Postcode="440923" />
+      <District Name="高州" Postcode="440981" />
+      <District Name="化州" Postcode="440982" />
+      <District Name="信宜" Postcode="440983" />
+    </City>
+    <City Name="肇庆" Postcode="441200" >
+      <District Name="端州区" Postcode="441202" />
+      <District Name="鼎湖区" Postcode="441203" />
+      <District Name="广宁县" Postcode="441223" />
+      <District Name="怀集县" Postcode="441224" />
+      <District Name="封开县" Postcode="441225" />
+      <District Name="德庆县" Postcode="441226" />
+      <District Name="高要" Postcode="441283" />
+      <District Name="四会" Postcode="441284" />
+    </City>
+    <City Name="惠州" Postcode="441300" >
+      <District Name="惠城区" Postcode="441302" />
+      <District Name="惠阳区" Postcode="441303" />
+      <District Name="博罗县" Postcode="441322" />
+      <District Name="惠东县" Postcode="441323" />
+      <District Name="龙门县" Postcode="441324" />
+    </City>
+    <City Name="梅州" Postcode="441400" >
+      <District Name="梅江区" Postcode="441402" />
+      <District Name="梅县" Postcode="441421" />
+      <District Name="大埔县" Postcode="441422" />
+      <District Name="丰顺县" Postcode="441423" />
+      <District Name="五华县" Postcode="441424" />
+      <District Name="平远县" Postcode="441426" />
+      <District Name="蕉岭县" Postcode="441427" />
+      <District Name="兴宁" Postcode="441481" />
+    </City>
+    <City Name="汕尾" Postcode="441500" >
+      <District Name="城区" Postcode="441502" />
+      <District Name="海丰县" Postcode="441521" />
+      <District Name="陆河县" Postcode="441523" />
+      <District Name="陆丰" Postcode="441581" />
+    </City>
+    <City Name="河源" Postcode="441600" >
+      <District Name="源城区" Postcode="441602" />
+      <District Name="紫金县" Postcode="441621" />
+      <District Name="龙川县" Postcode="441622" />
+      <District Name="连平县" Postcode="441623" />
+      <District Name="和平县" Postcode="441624" />
+      <District Name="东源县" Postcode="441625" />
+    </City>
+    <City Name="阳江" Postcode="441700" >
+      <District Name="江城区" Postcode="441702" />
+      <District Name="阳西县" Postcode="441721" />
+      <District Name="阳东县" Postcode="441723" />
+      <District Name="阳春" Postcode="441781" />
+    </City>
+    <City Name="清远" Postcode="441800" >
+      <District Name="清城区" Postcode="441802" />
+      <District Name="佛冈县" Postcode="441821" />
+      <District Name="阳山县" Postcode="441823" />
+      <District Name="连山壮族瑶族自治县" Postcode="441825" />
+      <District Name="连南瑶族自治县" Postcode="441826" />
+      <District Name="清新县" Postcode="441827" />
+      <District Name="英德" Postcode="441881" />
+      <District Name="连州" Postcode="441882" />
+    </City>
+    <City Name="东莞" Postcode="441900" >
+      <District Name="市辖区" Postcode="441901" />
+    </City>
+    <City Name="中山" Postcode="442000" >
+      <District Name="市辖区" Postcode="442001" />
+    </City>
+    <City Name="潮州" Postcode="445100" >
+      <District Name="湘桥区" Postcode="445102" />
+      <District Name="潮安县" Postcode="445121" />
+      <District Name="饶平县" Postcode="445122" />
+    </City>
+    <City Name="揭阳" Postcode="445200" >
+      <District Name="榕城区" Postcode="445202" />
+      <District Name="揭东县" Postcode="445221" />
+      <District Name="揭西县" Postcode="445222" />
+      <District Name="惠来县" Postcode="445224" />
+      <District Name="普宁" Postcode="445281" />
+    </City>
+    <City Name="云浮" Postcode="445300" >
+      <District Name="云城区" Postcode="445302" />
+      <District Name="新兴县" Postcode="445321" />
+      <District Name="郁南县" Postcode="445322" />
+      <District Name="云安县" Postcode="445323" />
+      <District Name="罗定" Postcode="445381" />
+    </City>
+  </Province>
+
+  <Province Name="广西壮族自治区" Postcode="450000" >
+    <City Name="南宁" Postcode="450100" >
+      <District Name="兴宁区" Postcode="450102" />
+      <District Name="青秀区" Postcode="450103" />
+      <District Name="江南区" Postcode="450105" />
+      <District Name="西乡塘区" Postcode="450107" />
+      <District Name="良庆区" Postcode="450108" />
+      <District Name="邕宁区" Postcode="450109" />
+      <District Name="武鸣县" Postcode="450122" />
+      <District Name="隆安县" Postcode="450123" />
+      <District Name="马山县" Postcode="450124" />
+      <District Name="上林县" Postcode="450125" />
+      <District Name="宾阳县" Postcode="450126" />
+      <District Name="横县" Postcode="450127" />
+    </City>
+    <City Name="柳州" Postcode="450200" >
+      <District Name="城中区" Postcode="450202" />
+      <District Name="鱼峰区" Postcode="450203" />
+      <District Name="柳南区" Postcode="450204" />
+      <District Name="柳北区" Postcode="450205" />
+      <District Name="柳江县" Postcode="450221" />
+      <District Name="柳城县" Postcode="450222" />
+      <District Name="鹿寨县" Postcode="450223" />
+      <District Name="融安县" Postcode="450224" />
+      <District Name="融水苗族自治县" Postcode="450225" />
+      <District Name="三江侗族自治县" Postcode="450226" />
+    </City>
+    <City Name="桂林" Postcode="450300" >
+      <District Name="秀峰区" Postcode="450302" />
+      <District Name="叠彩区" Postcode="450303" />
+      <District Name="象山区" Postcode="450304" />
+      <District Name="七星区" Postcode="450305" />
+      <District Name="雁山区" Postcode="450311" />
+      <District Name="阳朔县" Postcode="450321" />
+      <District Name="临桂县" Postcode="450322" />
+      <District Name="灵川县" Postcode="450323" />
+      <District Name="全州县" Postcode="450324" />
+      <District Name="兴安县" Postcode="450325" />
+      <District Name="永福县" Postcode="450326" />
+      <District Name="灌阳县" Postcode="450327" />
+      <District Name="龙胜各族自治县" Postcode="450328" />
+      <District Name="资源县" Postcode="450329" />
+      <District Name="平乐县" Postcode="450330" />
+      <District Name="荔蒲县" Postcode="450331" />
+      <District Name="恭城瑶族自治县" Postcode="450332" />
+    </City>
+    <City Name="梧州" Postcode="450400" >
+      <District Name="万秀区" Postcode="450403" />
+      <District Name="蝶山区" Postcode="450404" />
+      <District Name="长洲区" Postcode="450405" />
+      <District Name="苍梧县" Postcode="450421" />
+      <District Name="藤县" Postcode="450422" />
+      <District Name="蒙山县" Postcode="450423" />
+      <District Name="岑溪" Postcode="450481" />
+    </City>
+    <City Name="北海" Postcode="450500" >
+      <District Name="海城区" Postcode="450502" />
+      <District Name="银海区" Postcode="450503" />
+      <District Name="铁山港区" Postcode="450512" />
+      <District Name="合浦县" Postcode="450521" />
+    </City>
+    <City Name="防城港" Postcode="450600" >
+      <District Name="港口区" Postcode="450602" />
+      <District Name="防城区" Postcode="450603" />
+      <District Name="上思县" Postcode="450621" />
+      <District Name="东兴" Postcode="450681" />
+    </City>
+    <City Name="钦州" Postcode="450700" >
+      <District Name="钦南区" Postcode="450702" />
+      <District Name="钦北区" Postcode="450703" />
+      <District Name="灵山县" Postcode="450721" />
+      <District Name="浦北县" Postcode="450722" />
+    </City>
+    <City Name="贵港" Postcode="450800" >
+      <District Name="港北区" Postcode="450802" />
+      <District Name="港南区" Postcode="450803" />
+      <District Name="覃塘区" Postcode="450804" />
+      <District Name="平南县" Postcode="450821" />
+      <District Name="桂平" Postcode="450881" />
+    </City>
+    <City Name="玉林" Postcode="450900" >
+      <District Name="玉州区" Postcode="450902" />
+      <District Name="容县" Postcode="450921" />
+      <District Name="陆川县" Postcode="450922" />
+      <District Name="博白县" Postcode="450923" />
+      <District Name="兴业县" Postcode="450924" />
+      <District Name="北流" Postcode="450981" />
+    </City>
+    <City Name="百色" Postcode="451000" >
+      <District Name="右江区" Postcode="451002" />
+      <District Name="田阳县" Postcode="451021" />
+      <District Name="田东县" Postcode="451022" />
+      <District Name="平果县" Postcode="451023" />
+      <District Name="德保县" Postcode="451024" />
+      <District Name="靖西县" Postcode="451025" />
+      <District Name="那坡县" Postcode="451026" />
+      <District Name="凌云县" Postcode="451027" />
+      <District Name="乐业县" Postcode="451028" />
+      <District Name="田林县" Postcode="451029" />
+      <District Name="西林县" Postcode="451030" />
+      <District Name="隆林各族自治县" Postcode="451031" />
+    </City>
+    <City Name="贺州" Postcode="451100" >
+      <District Name="八步区" Postcode="451102" />
+      <District Name="昭平县" Postcode="451121" />
+      <District Name="钟山县" Postcode="451122" />
+      <District Name="富川瑶族自治县" Postcode="451123" />
+    </City>
+    <City Name="河池" Postcode="451200" >
+      <District Name="金城江区" Postcode="451202" />
+      <District Name="南丹县" Postcode="451221" />
+      <District Name="天峨县" Postcode="451222" />
+      <District Name="凤山县" Postcode="451223" />
+      <District Name="东兰县" Postcode="451224" />
+      <District Name="罗城仫佬族自治县" Postcode="451225" />
+      <District Name="环江毛南族自治县" Postcode="451226" />
+      <District Name="巴马瑶族自治县" Postcode="451227" />
+      <District Name="都安瑶族自治县" Postcode="451228" />
+      <District Name="大化瑶族自治县" Postcode="451229" />
+      <District Name="宜州" Postcode="451281" />
+    </City>
+    <City Name="来宾" Postcode="451300" >
+      <District Name="兴宾区" Postcode="451302" />
+      <District Name="忻城县" Postcode="451321" />
+      <District Name="象州县" Postcode="451322" />
+      <District Name="武宣县" Postcode="451323" />
+      <District Name="金秀瑶族自治县" Postcode="451324" />
+      <District Name="合山" Postcode="451381" />
+    </City>
+    <City Name="崇左" Postcode="451400" >
+      <District Name="江洲区" Postcode="451402" />
+      <District Name="扶绥县" Postcode="451421" />
+      <District Name="宁明县" Postcode="451422" />
+      <District Name="龙州县" Postcode="451423" />
+      <District Name="大新县" Postcode="451424" />
+      <District Name="天等县" Postcode="451425" />
+      <District Name="凭祥" Postcode="451481" />
+    </City>
+  </Province>
+
+  <Province Name="海南" Postcode="460000" >
+    <City Name="海口" Postcode="460100" >
+      <District Name="秀英区" Postcode="460105" />
+      <District Name="龙华区" Postcode="460106" />
+      <District Name="琼山区" Postcode="460107" />
+      <District Name="美兰区" Postcode="460108" />
+    </City>
+    <City Name="三亚" Postcode="460200" >
+      <District Name="市辖区" Postcode="460201" />
+    </City>
+    <City Name="三沙" Postcode="460300" >
+      <District Name="市辖区" Postcode="460201" />
+    </City>
+    <City Name="省直辖县级行政单位" Postcode="469000" >
+      <District Name="五指山" Postcode="469001" />
+      <District Name="琼海" Postcode="469002" />
+      <District Name="儋州" Postcode="469003" />
+      <District Name="文昌" Postcode="469005" />
+      <District Name="万宁" Postcode="469006" />
+      <District Name="东方" Postcode="469007" />
+      <District Name="定安县" Postcode="469025" />
+      <District Name="屯昌县" Postcode="469026" />
+      <District Name="澄迈县" Postcode="469027" />
+      <District Name="临高县" Postcode="469028" />
+      <District Name="白沙黎族自治县" Postcode="469030" />
+      <District Name="昌江黎族自治县" Postcode="469031" />
+      <District Name="乐东黎族自治县" Postcode="469033" />
+      <District Name="陵水黎族自治县" Postcode="469034" />
+      <District Name="保亭黎族苗族自治县" Postcode="469035" />
+      <District Name="琼中黎族苗族自治县" Postcode="469036" />
+      <District Name="西沙群岛" Postcode="469037" />
+      <District Name="南沙群岛" Postcode="469038" />
+      <District Name="中沙群岛的岛礁及其海域" Postcode="469039" />
+    </City>
+  </Province>
+
+  <Province Name="重庆" Postcode="500000" >
+    <City Name="万州区" Postcode="500101" />
+    <City Name="涪陵区" Postcode="500102" />
+    <City Name="渝中区" Postcode="500103" />
+    <City Name="大渡口区" Postcode="500104" />
+    <City Name="江北区" Postcode="500105" />
+    <City Name="沙坪坝区" Postcode="500106" />
+    <City Name="九龙坡区" Postcode="500107" />
+    <City Name="南岸区" Postcode="500108" />
+    <City Name="北碚区" Postcode="500109" />
+    <City Name="万盛区" Postcode="500110" />
+    <City Name="双桥区" Postcode="500111" />
+    <City Name="渝北区" Postcode="500112" />
+    <City Name="巴南区" Postcode="500113" />
+    <City Name="黔江区" Postcode="500114" />
+    <City Name="长寿区" Postcode="500115" />
+    <City Name="江津区" Postcode="500116" />
+    <City Name="合川区" Postcode="500117" />
+    <City Name="永川区" Postcode="500118" />
+    <City Name="南川区" Postcode="500119" />
+    <City Name="綦江县" Postcode="500222" />
+    <City Name="潼南县" Postcode="500223" />
+    <City Name="铜梁县" Postcode="500224" />
+    <City Name="大足县" Postcode="500225" />
+    <City Name="荣昌县" Postcode="500226" />
+    <City Name="璧山县" Postcode="500227" />
+    <City Name="梁平县" Postcode="500228" />
+    <City Name="城口县" Postcode="500229" />
+    <City Name="丰都县" Postcode="500230" />
+    <City Name="垫江县" Postcode="500231" />
+    <City Name="武隆县" Postcode="500232" />
+    <City Name="忠县" Postcode="500233" />
+    <City Name="开县" Postcode="500234" />
+    <City Name="云阳县" Postcode="500235" />
+    <City Name="奉节县" Postcode="500236" />
+    <City Name="巫山县" Postcode="500237" />
+    <City Name="巫溪县" Postcode="500238" />
+    <City Name="石柱土家族自治县" Postcode="500240" />
+    <City Name="秀山土家族苗族自治县" Postcode="500241" />
+    <City Name="酉阳土家族苗族自治县" Postcode="500242" />
+    <City Name="彭水苗族土家族自治县" Postcode="500243" />
+  </Province>
+
+  <Province Name="四川" Postcode="510000" >
+    <City Name="成都" Postcode="510100" >
+      <District Name="锦江区" Postcode="510104" />
+      <District Name="青羊区" Postcode="510105" />
+      <District Name="金牛区" Postcode="510106" />
+      <District Name="武侯区" Postcode="510107" />
+      <District Name="成华区" Postcode="510108" />
+      <District Name="龙泉驿区" Postcode="510112" />
+      <District Name="青白江区" Postcode="510113" />
+      <District Name="新都区" Postcode="510114" />
+      <District Name="温江区" Postcode="510115" />
+      <District Name="金堂县" Postcode="510121" />
+      <District Name="双流县" Postcode="510122" />
+      <District Name="郫县" Postcode="510124" />
+      <District Name="大邑县" Postcode="510129" />
+      <District Name="蒲江县" Postcode="510131" />
+      <District Name="新津县" Postcode="510132" />
+      <District Name="都江堰" Postcode="510181" />
+      <District Name="彭州" Postcode="510182" />
+      <District Name="邛崃" Postcode="510183" />
+      <District Name="崇州" Postcode="510184" />
+    </City>
+    <City Name="自贡" Postcode="510300" >
+      <District Name="自流井区" Postcode="510302" />
+      <District Name="贡井区" Postcode="510303" />
+      <District Name="大安区" Postcode="510304" />
+      <District Name="沿滩区" Postcode="510311" />
+      <District Name="荣县" Postcode="510321" />
+      <District Name="富顺县" Postcode="510322" />
+    </City>
+    <City Name="攀枝花" Postcode="510400" >
+      <District Name="东区" Postcode="510402" />
+      <District Name="西区" Postcode="510403" />
+      <District Name="仁和区" Postcode="510411" />
+      <District Name="米易县" Postcode="510421" />
+      <District Name="盐边县" Postcode="510422" />
+    </City>
+    <City Name="泸州" Postcode="510500" >
+      <District Name="江阳区" Postcode="510502" />
+      <District Name="纳溪区" Postcode="510503" />
+      <District Name="龙马潭区" Postcode="510504" />
+      <District Name="泸县" Postcode="510521" />
+      <District Name="合江县" Postcode="510522" />
+      <District Name="叙永县" Postcode="510524" />
+      <District Name="古蔺县" Postcode="510525" />
+    </City>
+    <City Name="德阳" Postcode="510600" >
+      <District Name="旌阳区" Postcode="510603" />
+      <District Name="中江县" Postcode="510623" />
+      <District Name="罗江县" Postcode="510626" />
+      <District Name="广汉" Postcode="510681" />
+      <District Name="什邡" Postcode="510682" />
+      <District Name="绵竹" Postcode="510683" />
+    </City>
+    <City Name="绵阳" Postcode="510700" >
+      <District Name="涪城区" Postcode="510703" />
+      <District Name="游仙区" Postcode="510704" />
+      <District Name="三台县" Postcode="510722" />
+      <District Name="盐亭县" Postcode="510723" />
+      <District Name="安县" Postcode="510724" />
+      <District Name="梓潼县" Postcode="510725" />
+      <District Name="北川羌族自治县" Postcode="510726" />
+      <District Name="平武县" Postcode="510727" />
+      <District Name="江油" Postcode="510781" />
+    </City>
+    <City Name="广元" Postcode="510800" >
+      <District Name="市中区" Postcode="510802" />
+      <District Name="元坝区" Postcode="510811" />
+      <District Name="朝天区" Postcode="510812" />
+      <District Name="旺苍县" Postcode="510821" />
+      <District Name="青川县" Postcode="510822" />
+      <District Name="剑阁县" Postcode="510823" />
+      <District Name="苍溪县" Postcode="510824" />
+    </City>
+    <City Name="遂宁" Postcode="510900" >
+      <District Name="船山区" Postcode="510903" />
+      <District Name="安居区" Postcode="510904" />
+      <District Name="蓬溪县" Postcode="510921" />
+      <District Name="射洪县" Postcode="510922" />
+      <District Name="大英县" Postcode="510923" />
+    </City>
+    <City Name="内江" Postcode="511000" >
+      <District Name="市中区" Postcode="511002" />
+      <District Name="东兴区" Postcode="511011" />
+      <District Name="威远县" Postcode="511024" />
+      <District Name="资中县" Postcode="511025" />
+      <District Name="隆昌县" Postcode="511028" />
+    </City>
+    <City Name="乐山" Postcode="511100" >
+      <District Name="市中区" Postcode="511102" />
+      <District Name="沙湾区" Postcode="511111" />
+      <District Name="五通桥区" Postcode="511112" />
+      <District Name="金口河区" Postcode="511113" />
+      <District Name="犍为县" Postcode="511123" />
+      <District Name="井研县" Postcode="511124" />
+      <District Name="夹江县" Postcode="511126" />
+      <District Name="沐川县" Postcode="511129" />
+      <District Name="峨边彝族自治县" Postcode="511132" />
+      <District Name="马边彝族自治县" Postcode="511133" />
+      <District Name="峨眉山" Postcode="511181" />
+    </City>
+    <City Name="南充" Postcode="511300" >
+      <District Name="顺庆区" Postcode="511302" />
+      <District Name="高坪区" Postcode="511303" />
+      <District Name="嘉陵区" Postcode="511304" />
+      <District Name="南部县" Postcode="511321" />
+      <District Name="营山县" Postcode="511322" />
+      <District Name="蓬安县" Postcode="511323" />
+      <District Name="仪陇县" Postcode="511324" />
+      <District Name="西充县" Postcode="511325" />
+      <District Name="阆中" Postcode="511381" />
+    </City>
+    <City Name="眉山" Postcode="511400" >
+      <District Name="东坡区" Postcode="511402" />
+      <District Name="仁寿县" Postcode="511421" />
+      <District Name="彭山县" Postcode="511422" />
+      <District Name="洪雅县" Postcode="511423" />
+      <District Name="丹棱县" Postcode="511424" />
+      <District Name="青神县" Postcode="511425" />
+    </City>
+    <City Name="宜宾" Postcode="511500" >
+      <District Name="翠屏区" Postcode="511502" />
+      <District Name="宜宾县" Postcode="511521" />
+      <District Name="南溪县" Postcode="511522" />
+      <District Name="江安县" Postcode="511523" />
+      <District Name="长宁县" Postcode="511524" />
+      <District Name="高县" Postcode="511525" />
+      <District Name="珙县" Postcode="511526" />
+      <District Name="筠连县" Postcode="511527" />
+      <District Name="兴文县" Postcode="511528" />
+      <District Name="屏山县" Postcode="511529" />
+    </City>
+    <City Name="广安" Postcode="511600" >
+      <District Name="广安区" Postcode="511602" />
+      <District Name="岳池县" Postcode="511621" />
+      <District Name="武胜县" Postcode="511622" />
+      <District Name="邻水县" Postcode="511623" />
+      <District Name="华蓥" Postcode="511681" />
+    </City>
+    <City Name="达州" Postcode="511700" >
+      <District Name="通川区" Postcode="511702" />
+      <District Name="达县" Postcode="511721" />
+      <District Name="宣汉县" Postcode="511722" />
+      <District Name="开江县" Postcode="511723" />
+      <District Name="大竹县" Postcode="511724" />
+      <District Name="渠县" Postcode="511725" />
+      <District Name="万源" Postcode="511781" />
+    </City>
+    <City Name="雅安" Postcode="511800" >
+      <District Name="雨城区" Postcode="511802" />
+      <District Name="名山县" Postcode="511821" />
+      <District Name="荥经县" Postcode="511822" />
+      <District Name="汉源县" Postcode="511823" />
+      <District Name="石棉县" Postcode="511824" />
+      <District Name="天全县" Postcode="511825" />
+      <District Name="芦山县" Postcode="511826" />
+      <District Name="宝兴县" Postcode="511827" />
+    </City>
+    <City Name="巴中" Postcode="511900" >
+      <District Name="巴州区" Postcode="511902" />
+      <District Name="通江县" Postcode="511921" />
+      <District Name="南江县" Postcode="511922" />
+      <District Name="平昌县" Postcode="511923" />
+    </City>
+    <City Name="资阳" Postcode="512000" >
+      <District Name="雁江区" Postcode="512002" />
+      <District Name="安岳县" Postcode="512021" />
+      <District Name="乐至县" Postcode="512022" />
+      <District Name="简阳" Postcode="512081" />
+    </City>
+    <City Name="阿坝藏族羌族自治州" Postcode="513200" >
+      <District Name="汶川县" Postcode="513221" />
+      <District Name="理县" Postcode="513222" />
+      <District Name="茂县" Postcode="513223" />
+      <District Name="松潘县" Postcode="513224" />
+      <District Name="九寨沟县" Postcode="513225" />
+      <District Name="金川县" Postcode="513226" />
+      <District Name="小金县" Postcode="513227" />
+      <District Name="黑水县" Postcode="513228" />
+      <District Name="马尔康县" Postcode="513229" />
+      <District Name="壤塘县" Postcode="513230" />
+      <District Name="阿坝县" Postcode="513231" />
+      <District Name="若尔盖县" Postcode="513232" />
+      <District Name="红原县" Postcode="513233" />
+    </City>
+    <City Name="甘孜藏族自治州" Postcode="513300" >
+      <District Name="康定县" Postcode="513321" />
+      <District Name="泸定县" Postcode="513322" />
+      <District Name="丹巴县" Postcode="513323" />
+      <District Name="九龙县" Postcode="513324" />
+      <District Name="雅江县" Postcode="513325" />
+      <District Name="道孚县" Postcode="513326" />
+      <District Name="炉霍县" Postcode="513327" />
+      <District Name="甘孜县" Postcode="513328" />
+      <District Name="新龙县" Postcode="513329" />
+      <District Name="德格县" Postcode="513330" />
+      <District Name="白玉县" Postcode="513331" />
+      <District Name="石渠县" Postcode="513332" />
+      <District Name="色达县" Postcode="513333" />
+      <District Name="理塘县" Postcode="513334" />
+      <District Name="巴塘县" Postcode="513335" />
+      <District Name="乡城县" Postcode="513336" />
+      <District Name="稻城县" Postcode="513337" />
+      <District Name="得荣县" Postcode="513338" />
+    </City>
+    <City Name="凉山彝族自治州" Postcode="513400" >
+      <District Name="西昌" Postcode="513401" />
+      <District Name="木里藏族自治县" Postcode="513422" />
+      <District Name="盐源县" Postcode="513423" />
+      <District Name="德昌县" Postcode="513424" />
+      <District Name="会理县" Postcode="513425" />
+      <District Name="会东县" Postcode="513426" />
+      <District Name="宁南县" Postcode="513427" />
+      <District Name="普格县" Postcode="513428" />
+      <District Name="布拖县" Postcode="513429" />
+      <District Name="金阳县" Postcode="513430" />
+      <District Name="昭觉县" Postcode="513431" />
+      <District Name="喜德县" Postcode="513432" />
+      <District Name="冕宁县" Postcode="513433" />
+      <District Name="越西县" Postcode="513434" />
+      <District Name="甘洛县" Postcode="513435" />
+      <District Name="美姑县" Postcode="513436" />
+      <District Name="雷波县" Postcode="513437" />
+    </City>
+  </Province>
+
+  <Province Name="贵州" Postcode="520000" >
+    <City Name="贵阳" Postcode="520100" >
+      <District Name="南明区" Postcode="520102" />
+      <District Name="云岩区" Postcode="520103" />
+      <District Name="花溪区" Postcode="520111" />
+      <District Name="乌当区" Postcode="520112" />
+      <District Name="白云区" Postcode="520113" />
+      <District Name="小河区" Postcode="520114" />
+      <District Name="开阳县" Postcode="520121" />
+      <District Name="息烽县" Postcode="520122" />
+      <District Name="修文县" Postcode="520123" />
+      <District Name="清镇" Postcode="520181" />
+    </City>
+    <City Name="六盘水" Postcode="520200" >
+      <District Name="钟山区" Postcode="520201" />
+      <District Name="六枝特区" Postcode="520203" />
+      <District Name="水城县" Postcode="520221" />
+      <District Name="盘县" Postcode="520222" />
+    </City>
+    <City Name="遵义" Postcode="520300" >
+      <District Name="红花岗区" Postcode="520302" />
+      <District Name="汇川区" Postcode="520303" />
+      <District Name="遵义县" Postcode="520321" />
+      <District Name="桐梓县" Postcode="520322" />
+      <District Name="绥阳县" Postcode="520323" />
+      <District Name="正安县" Postcode="520324" />
+      <District Name="道真仡佬族苗族自治县" Postcode="520325" />
+      <District Name="务川仡佬族苗族自治县" Postcode="520326" />
+      <District Name="凤冈县" Postcode="520327" />
+      <District Name="湄潭县" Postcode="520328" />
+      <District Name="余庆县" Postcode="520329" />
+      <District Name="习水县" Postcode="520330" />
+      <District Name="赤水" Postcode="520381" />
+      <District Name="仁怀" Postcode="520382" />
+    </City>
+    <City Name="安顺" Postcode="520400" >
+      <District Name="西秀区" Postcode="520402" />
+      <District Name="平坝县" Postcode="520421" />
+      <District Name="普定县" Postcode="520422" />
+      <District Name="镇宁布依族苗族自治县" Postcode="520423" />
+      <District Name="关岭布依族苗族自治县" Postcode="520424" />
+      <District Name="紫云苗族布依族自治县" Postcode="520425" />
+    </City>
+    <City Name="铜仁地区" Postcode="522200" >
+      <District Name="铜仁" Postcode="522201" />
+      <District Name="江口县" Postcode="522222" />
+      <District Name="玉屏侗族自治县" Postcode="522223" />
+      <District Name="石阡县" Postcode="522224" />
+      <District Name="思南县" Postcode="522225" />
+      <District Name="印江土家族苗族自治县" Postcode="522226" />
+      <District Name="德江县" Postcode="522227" />
+      <District Name="沿河土家族自治县" Postcode="522228" />
+      <District Name="松桃苗族自治县" Postcode="522229" />
+      <District Name="万山特区" Postcode="522230" />
+    </City>
+    <City Name="黔西南布依族苗族自治州" Postcode="522300" >
+      <District Name="兴义" Postcode="522301" />
+      <District Name="兴仁县" Postcode="522322" />
+      <District Name="普安县" Postcode="522323" />
+      <District Name="晴隆县" Postcode="522324" />
+      <District Name="贞丰县" Postcode="522325" />
+      <District Name="望谟县" Postcode="522326" />
+      <District Name="册亨县" Postcode="522327" />
+      <District Name="安龙县" Postcode="522328" />
+    </City>
+    <City Name="毕节地区" Postcode="522400" >
+      <District Name="毕节" Postcode="522401" />
+      <District Name="大方县" Postcode="522422" />
+      <District Name="黔西县" Postcode="522423" />
+      <District Name="金沙县" Postcode="522424" />
+      <District Name="织金县" Postcode="522425" />
+      <District Name="纳雍县" Postcode="522426" />
+      <District Name="威宁彝族回族苗族自治县" Postcode="522427" />
+      <District Name="赫章县" Postcode="522428" />
+    </City>
+    <City Name="黔东南苗族侗族自治州" Postcode="522600" >
+      <District Name="凯里" Postcode="522601" />
+      <District Name="黄平县" Postcode="522622" />
+      <District Name="施秉县" Postcode="522623" />
+      <District Name="三穗县" Postcode="522624" />
+      <District Name="镇远县" Postcode="522625" />
+      <District Name="岑巩县" Postcode="522626" />
+      <District Name="天柱县" Postcode="522627" />
+      <District Name="锦屏县" Postcode="522628" />
+      <District Name="剑河县" Postcode="522629" />
+      <District Name="台江县" Postcode="522630" />
+      <District Name="黎平县" Postcode="522631" />
+      <District Name="榕江县" Postcode="522632" />
+      <District Name="从江县" Postcode="522633" />
+      <District Name="雷山县" Postcode="522634" />
+      <District Name="麻江县" Postcode="522635" />
+      <District Name="丹寨县" Postcode="522636" />
+    </City>
+    <City Name="黔南布依族苗族自治州" Postcode="522700" >
+      <District Name="都匀" Postcode="522701" />
+      <District Name="福泉" Postcode="522702" />
+      <District Name="荔波县" Postcode="522722" />
+      <District Name="贵定县" Postcode="522723" />
+      <District Name="瓮安县" Postcode="522725" />
+      <District Name="独山县" Postcode="522726" />
+      <District Name="平塘县" Postcode="522727" />
+      <District Name="罗甸县" Postcode="522728" />
+      <District Name="长顺县" Postcode="522729" />
+      <District Name="龙里县" Postcode="522730" />
+      <District Name="惠水县" Postcode="522731" />
+      <District Name="三都水族自治县" Postcode="522732" />
+    </City>
+  </Province>
+
+  <Province Name="云南" Postcode="530000" >
+    <City Name="昆明" Postcode="530100" >
+      <District Name="五华区" Postcode="530102" />
+      <District Name="盘龙区" Postcode="530103" />
+      <District Name="官渡区" Postcode="530111" />
+      <District Name="西山区" Postcode="530112" />
+      <District Name="东川区" Postcode="530113" />
+      <District Name="呈贡县" Postcode="530121" />
+      <District Name="晋宁县" Postcode="530122" />
+      <District Name="富民县" Postcode="530124" />
+      <District Name="宜良县" Postcode="530125" />
+      <District Name="石林彝族自治县" Postcode="530126" />
+      <District Name="嵩明县" Postcode="530127" />
+      <District Name="禄劝彝族苗族自治县" Postcode="530128" />
+      <District Name="寻甸回族彝族自治县" Postcode="530129" />
+      <District Name="安宁" Postcode="530181" />
+    </City>
+    <City Name="曲靖" Postcode="530300" >
+      <District Name="麒麟区" Postcode="530302" />
+      <District Name="马龙县" Postcode="530321" />
+      <District Name="陆良县" Postcode="530322" />
+      <District Name="师宗县" Postcode="530323" />
+      <District Name="罗平县" Postcode="530324" />
+      <District Name="富源县" Postcode="530325" />
+      <District Name="会泽县" Postcode="530326" />
+      <District Name="沾益县" Postcode="530328" />
+      <District Name="宣威" Postcode="530381" />
+    </City>
+    <City Name="玉溪" Postcode="530400" >
+      <District Name="红塔区" Postcode="530402" />
+      <District Name="江川县" Postcode="530421" />
+      <District Name="澄江县" Postcode="530422" />
+      <District Name="通海县" Postcode="530423" />
+      <District Name="华宁县" Postcode="530424" />
+      <District Name="易门县" Postcode="530425" />
+      <District Name="峨山彝族自治县" Postcode="530426" />
+      <District Name="新平彝族傣族自治县" Postcode="530427" />
+      <District Name="元江哈尼族彝族傣族自治县" Postcode="530428" />
+    </City>
+    <City Name="保山" Postcode="530500" >
+      <District Name="隆阳区" Postcode="530502" />
+      <District Name="施甸县" Postcode="530521" />
+      <District Name="腾冲县" Postcode="530522" />
+      <District Name="龙陵县" Postcode="530523" />
+      <District Name="昌宁县" Postcode="530524" />
+    </City>
+    <City Name="昭通" Postcode="530600" >
+      <District Name="昭阳区" Postcode="530602" />
+      <District Name="鲁甸县" Postcode="530621" />
+      <District Name="巧家县" Postcode="530622" />
+      <District Name="盐津县" Postcode="530623" />
+      <District Name="大关县" Postcode="530624" />
+      <District Name="永善县" Postcode="530625" />
+      <District Name="绥江县" Postcode="530626" />
+      <District Name="镇雄县" Postcode="530627" />
+      <District Name="彝良县" Postcode="530628" />
+      <District Name="威信县" Postcode="530629" />
+      <District Name="水富县" Postcode="530630" />
+    </City>
+    <City Name="丽江" Postcode="530700" >
+      <District Name="古城区" Postcode="530702" />
+      <District Name="玉龙纳西族自治县" Postcode="530721" />
+      <District Name="永胜县" Postcode="530722" />
+      <District Name="华坪县" Postcode="530723" />
+      <District Name="宁蒗彝族自治县" Postcode="530724" />
+    </City>
+    <City Name="思茅" Postcode="530800" >
+      <District Name="翠云区" Postcode="530802" />
+      <District Name="普洱哈尼族彝族自治县" Postcode="530821" />
+      <District Name="墨江哈尼族自治县" Postcode="530822" />
+      <District Name="景东彝族自治县" Postcode="530823" />
+      <District Name="景谷傣族彝族自治县" Postcode="530824" />
+      <District Name="镇沅彝族哈尼族拉祜族自治县" Postcode="530825" />
+      <District Name="江城哈尼族彝族自治县" Postcode="530826" />
+      <District Name="孟连傣族拉祜族佤族自治县" Postcode="530827" />
+      <District Name="澜沧拉祜族自治县" Postcode="530828" />
+      <District Name="西盟佤族自治县" Postcode="530829" />
+    </City>
+    <City Name="临沧" Postcode="530900" >
+      <District Name="临翔区" Postcode="530902" />
+      <District Name="凤庆县" Postcode="530921" />
+      <District Name="云县" Postcode="530922" />
+      <District Name="永德县" Postcode="530923" />
+      <District Name="镇康县" Postcode="530924" />
+      <District Name="双江拉祜族佤族布朗族傣族自治县" Postcode="530925" />
+      <District Name="耿马傣族佤族自治县" Postcode="530926" />
+      <District Name="沧源佤族自治县" Postcode="530927" />
+    </City>
+    <City Name="楚雄彝族自治州" Postcode="532300" >
+      <District Name="楚雄" Postcode="532301" />
+      <District Name="双柏县" Postcode="532322" />
+      <District Name="牟定县" Postcode="532323" />
+      <District Name="南华县" Postcode="532324" />
+      <District Name="姚安县" Postcode="532325" />
+      <District Name="大姚县" Postcode="532326" />
+      <District Name="永仁县" Postcode="532327" />
+      <District Name="元谋县" Postcode="532328" />
+      <District Name="武定县" Postcode="532329" />
+      <District Name="禄丰县" Postcode="532331" />
+    </City>
+    <City Name="红河哈尼族彝族自治州" Postcode="532500" >
+      <District Name="个旧" Postcode="532501" />
+      <District Name="开远" Postcode="532502" />
+      <District Name="蒙自县" Postcode="532522" />
+      <District Name="屏边苗族自治县" Postcode="532523" />
+      <District Name="建水县" Postcode="532524" />
+      <District Name="**" Postcode="532525" />
+      <District Name="弥勒县" Postcode="532526" />
+      <District Name="泸西县" Postcode="532527" />
+      <District Name="元阳县" Postcode="532528" />
+      <District Name="红河县" Postcode="532529" />
+      <District Name="金平苗族瑶族傣族自治县" Postcode="532530" />
+      <District Name="绿春县" Postcode="532531" />
+      <District Name="河口瑶族自治县" Postcode="532532" />
+    </City>
+    <City Name="文山壮族苗族自治州" Postcode="532600" >
+      <District Name="文山县" Postcode="532621" />
+      <District Name="砚山县" Postcode="532622" />
+      <District Name="西畴县" Postcode="532623" />
+      <District Name="麻栗坡县" Postcode="532624" />
+      <District Name="马关县" Postcode="532625" />
+      <District Name="丘北县" Postcode="532626" />
+      <District Name="广南县" Postcode="532627" />
+      <District Name="富宁县" Postcode="532628" />
+    </City>
+    <City Name="西双版纳傣族自治州" Postcode="532800" >
+      <District Name="景洪" Postcode="532801" />
+      <District Name="勐海县" Postcode="532822" />
+      <District Name="勐腊县" Postcode="532823" />
+    </City>
+    <City Name="大理白族自治州" Postcode="532900" >
+      <District Name="大理" Postcode="532901" />
+      <District Name="漾濞彝族自治县" Postcode="532922" />
+      <District Name="祥云县" Postcode="532923" />
+      <District Name="宾川县" Postcode="532924" />
+      <District Name="弥渡县" Postcode="532925" />
+      <District Name="南涧彝族自治县" Postcode="532926" />
+      <District Name="巍山彝族回族自治县" Postcode="532927" />
+      <District Name="永平县" Postcode="532928" />
+      <District Name="云龙县" Postcode="532929" />
+      <District Name="洱源县" Postcode="532930" />
+      <District Name="剑川县" Postcode="532931" />
+      <District Name="鹤庆县" Postcode="532932" />
+    </City>
+    <City Name="德宏傣族景颇族自治州" Postcode="533100" >
+      <District Name="瑞丽" Postcode="533102" />
+      <District Name="潞西" Postcode="533103" />
+      <District Name="梁河县" Postcode="533122" />
+      <District Name="盈江县" Postcode="533123" />
+      <District Name="陇川县" Postcode="533124" />
+    </City>
+    <City Name="怒江傈僳族自治州" Postcode="533300" >
+      <District Name="泸水县" Postcode="533321" />
+      <District Name="福贡县" Postcode="533323" />
+      <District Name="贡山独龙族怒族自治县" Postcode="533324" />
+      <District Name="兰坪白族普米族自治县" Postcode="533325" />
+    </City>
+    <City Name="迪庆藏族自治州" Postcode="533400" >
+      <District Name="香格里拉县" Postcode="533421" />
+      <District Name="德钦县" Postcode="533422" />
+      <District Name="维西傈僳族自治县" Postcode="533423" />
+    </City>
+  </Province>
+
+  <Province Name="陕西" Postcode="610000" >
+    <City Name="西安" Postcode="610100" >
+      <District Name="新城区" Postcode="610102" />
+      <District Name="碑林区" Postcode="610103" />
+      <District Name="莲湖区" Postcode="610104" />
+      <District Name="灞桥区" Postcode="610111" />
+      <District Name="未央区" Postcode="610112" />
+      <District Name="雁塔区" Postcode="610113" />
+      <District Name="阎良区" Postcode="610114" />
+      <District Name="临潼区" Postcode="610115" />
+      <District Name="长安区" Postcode="610116" />
+      <District Name="蓝田县" Postcode="610122" />
+      <District Name="周至县" Postcode="610124" />
+      <District Name="户县" Postcode="610125" />
+      <District Name="高陵县" Postcode="610126" />
+    </City>
+    <City Name="铜川" Postcode="610200" >
+      <District Name="王益区" Postcode="610202" />
+      <District Name="印台区" Postcode="610203" />
+      <District Name="耀州区" Postcode="610204" />
+      <District Name="宜君县" Postcode="610222" />
+    </City>
+    <City Name="宝鸡" Postcode="610300" >
+      <District Name="渭滨区" Postcode="610302" />
+      <District Name="金台区" Postcode="610303" />
+      <District Name="陈仓区" Postcode="610304" />
+      <District Name="凤翔县" Postcode="610322" />
+      <District Name="岐山县" Postcode="610323" />
+      <District Name="扶风县" Postcode="610324" />
+      <District Name="眉县" Postcode="610326" />
+      <District Name="陇县" Postcode="610327" />
+      <District Name="千阳县" Postcode="610328" />
+      <District Name="麟游县" Postcode="610329" />
+      <District Name="凤县" Postcode="610330" />
+      <District Name="太白县" Postcode="610331" />
+    </City>
+    <City Name="咸阳" Postcode="610400" >
+      <District Name="秦都区" Postcode="610402" />
+      <District Name="杨凌区" Postcode="610403" />
+      <District Name="渭城区" Postcode="610404" />
+      <District Name="三原县" Postcode="610422" />
+      <District Name="泾阳县" Postcode="610423" />
+      <District Name="乾县" Postcode="610424" />
+      <District Name="礼泉县" Postcode="610425" />
+      <District Name="永寿县" Postcode="610426" />
+      <District Name="彬县" Postcode="610427" />
+      <District Name="长武县" Postcode="610428" />
+      <District Name="旬邑县" Postcode="610429" />
+      <District Name="淳化县" Postcode="610430" />
+      <District Name="武功县" Postcode="610431" />
+      <District Name="兴平" Postcode="610481" />
+    </City>
+    <City Name="渭南" Postcode="610500" >
+      <District Name="临渭区" Postcode="610502" />
+      <District Name="华县" Postcode="610521" />
+      <District Name="潼关县" Postcode="610522" />
+      <District Name="大荔县" Postcode="610523" />
+      <District Name="合阳县" Postcode="610524" />
+      <District Name="澄城县" Postcode="610525" />
+      <District Name="蒲城县" Postcode="610526" />
+      <District Name="白水县" Postcode="610527" />
+      <District Name="富平县" Postcode="610528" />
+      <District Name="韩城" Postcode="610581" />
+      <District Name="华阴" Postcode="610582" />
+    </City>
+    <City Name="延安" Postcode="610600" >
+      <District Name="宝塔区" Postcode="610602" />
+      <District Name="延长县" Postcode="610621" />
+      <District Name="延川县" Postcode="610622" />
+      <District Name="子长县" Postcode="610623" />
+      <District Name="安塞县" Postcode="610624" />
+      <District Name="志丹县" Postcode="610625" />
+      <District Name="吴起县" Postcode="610626" />
+      <District Name="甘泉县" Postcode="610627" />
+      <District Name="富县" Postcode="610628" />
+      <District Name="洛川县" Postcode="610629" />
+      <District Name="宜川县" Postcode="610630" />
+      <District Name="黄龙县" Postcode="610631" />
+      <District Name="黄陵县" Postcode="610632" />
+    </City>
+    <City Name="汉中" Postcode="610700" >
+      <District Name="汉台区" Postcode="610702" />
+      <District Name="南郑县" Postcode="610721" />
+      <District Name="城固县" Postcode="610722" />
+      <District Name="洋县" Postcode="610723" />
+      <District Name="西乡县" Postcode="610724" />
+      <District Name="勉县" Postcode="610725" />
+      <District Name="宁强县" Postcode="610726" />
+      <District Name="略阳县" Postcode="610727" />
+      <District Name="镇巴县" Postcode="610728" />
+      <District Name="留坝县" Postcode="610729" />
+      <District Name="佛坪县" Postcode="610730" />
+    </City>
+    <City Name="榆林" Postcode="610800" >
+      <District Name="榆阳区" Postcode="610802" />
+      <District Name="神木县" Postcode="610821" />
+      <District Name="府谷县" Postcode="610822" />
+      <District Name="横山县" Postcode="610823" />
+      <District Name="靖边县" Postcode="610824" />
+      <District Name="定边县" Postcode="610825" />
+      <District Name="绥德县" Postcode="610826" />
+      <District Name="米脂县" Postcode="610827" />
+      <District Name="佳县" Postcode="610828" />
+      <District Name="吴堡县" Postcode="610829" />
+      <District Name="清涧县" Postcode="610830" />
+      <District Name="子洲县" Postcode="610831" />
+    </City>
+    <City Name="安康" Postcode="610900" >
+      <District Name="汉滨区" Postcode="610902" />
+      <District Name="汉阴县" Postcode="610921" />
+      <District Name="石泉县" Postcode="610922" />
+      <District Name="宁陕县" Postcode="610923" />
+      <District Name="紫阳县" Postcode="610924" />
+      <District Name="岚皋县" Postcode="610925" />
+      <District Name="平利县" Postcode="610926" />
+      <District Name="镇坪县" Postcode="610927" />
+      <District Name="旬阳县" Postcode="610928" />
+      <District Name="白河县" Postcode="610929" />
+    </City>
+    <City Name="商洛" Postcode="611000" >
+      <District Name="商州区" Postcode="611002" />
+      <District Name="洛南县" Postcode="611021" />
+      <District Name="丹凤县" Postcode="611022" />
+      <District Name="商南县" Postcode="611023" />
+      <District Name="山阳县" Postcode="611024" />
+      <District Name="镇安县" Postcode="611025" />
+      <District Name="柞水县" Postcode="611026" />
+    </City>
+  </Province>
+
+  <Province Name="甘肃" Postcode="620000" >
+    <City Name="兰州" Postcode="620100" >
+      <District Name="城关区" Postcode="620102" />
+      <District Name="七里河区" Postcode="620103" />
+      <District Name="西固区" Postcode="620104" />
+      <District Name="安宁区" Postcode="620105" />
+      <District Name="红古区" Postcode="620111" />
+      <District Name="永登县" Postcode="620121" />
+      <District Name="皋兰县" Postcode="620122" />
+      <District Name="榆中县" Postcode="620123" />
+    </City>
+    <City Name="嘉峪关" Postcode="620200" >
+    </City>
+    <City Name="金昌" Postcode="620300" >
+      <District Name="金川区" Postcode="620302" />
+      <District Name="永昌县" Postcode="620321" />
+    </City>
+    <City Name="白银" Postcode="620400" >
+      <District Name="白银区" Postcode="620402" />
+      <District Name="平川区" Postcode="620403" />
+      <District Name="靖远县" Postcode="620421" />
+      <District Name="会宁县" Postcode="620422" />
+      <District Name="景泰县" Postcode="620423" />
+    </City>
+    <City Name="天水" Postcode="620500" >
+      <District Name="秦城区" Postcode="620502" />
+      <District Name="北道区" Postcode="620503" />
+      <District Name="清水县" Postcode="620521" />
+      <District Name="秦安县" Postcode="620522" />
+      <District Name="甘谷县" Postcode="620523" />
+      <District Name="武山县" Postcode="620524" />
+      <District Name="张家川回族自治县" Postcode="620525" />
+    </City>
+    <City Name="武威" Postcode="620600" >
+      <District Name="凉州区" Postcode="620602" />
+      <District Name="民勤县" Postcode="620621" />
+      <District Name="古浪县" Postcode="620622" />
+      <District Name="天祝藏族自治县" Postcode="620623" />
+    </City>
+    <City Name="张掖" Postcode="620700" >
+      <District Name="甘州区" Postcode="620702" />
+      <District Name="肃南裕固族自治县" Postcode="620721" />
+      <District Name="民乐县" Postcode="620722" />
+      <District Name="临泽县" Postcode="620723" />
+      <District Name="高台县" Postcode="620724" />
+      <District Name="山丹县" Postcode="620725" />
+    </City>
+    <City Name="平凉" Postcode="620800" >
+      <District Name="崆峒区" Postcode="620802" />
+      <District Name="泾川县" Postcode="620821" />
+      <District Name="灵台县" Postcode="620822" />
+      <District Name="崇信县" Postcode="620823" />
+      <District Name="华亭县" Postcode="620824" />
+      <District Name="庄浪县" Postcode="620825" />
+      <District Name="静宁县" Postcode="620826" />
+    </City>
+    <City Name="酒泉" Postcode="620900" >
+      <District Name="肃州区" Postcode="620902" />
+      <District Name="金塔县" Postcode="620921" />
+      <District Name="瓜州县" Postcode="620922" />
+      <District Name="肃北蒙古族自治县" Postcode="620923" />
+      <District Name="阿克塞哈萨克族自治县" Postcode="620924" />
+      <District Name="玉门" Postcode="620981" />
+      <District Name="敦煌" Postcode="620982" />
+    </City>
+    <City Name="庆阳" Postcode="621000" >
+      <District Name="西峰区" Postcode="621002" />
+      <District Name="庆城县" Postcode="621021" />
+      <District Name="环县" Postcode="621022" />
+      <District Name="华池县" Postcode="621023" />
+      <District Name="合水县" Postcode="621024" />
+      <District Name="正宁县" Postcode="621025" />
+      <District Name="宁县" Postcode="621026" />
+      <District Name="镇原县" Postcode="621027" />
+    </City>
+    <City Name="定西" Postcode="621100" >
+      <District Name="安定区" Postcode="621102" />
+      <District Name="通渭县" Postcode="621121" />
+      <District Name="陇西县" Postcode="621122" />
+      <District Name="渭源县" Postcode="621123" />
+      <District Name="临洮县" Postcode="621124" />
+      <District Name="漳县" Postcode="621125" />
+      <District Name="岷县" Postcode="621126" />
+    </City>
+    <City Name="陇南" Postcode="621200" >
+      <District Name="武都区" Postcode="621202" />
+      <District Name="成县" Postcode="621221" />
+      <District Name="文县" Postcode="621222" />
+      <District Name="宕昌县" Postcode="621223" />
+      <District Name="康县" Postcode="621224" />
+      <District Name="西和县" Postcode="621225" />
+      <District Name="礼县" Postcode="621226" />
+      <District Name="徽县" Postcode="621227" />
+      <District Name="两当县" Postcode="621228" />
+    </City>
+    <City Name="临夏回族自治州" Postcode="622900" >
+      <District Name="临夏" Postcode="622901" />
+      <District Name="临夏县" Postcode="622921" />
+      <District Name="康乐县" Postcode="622922" />
+      <District Name="永靖县" Postcode="622923" />
+      <District Name="广河县" Postcode="622924" />
+      <District Name="和政县" Postcode="622925" />
+      <District Name="东乡族自治县" Postcode="622926" />
+      <District Name="积石山保安族东乡族撒拉族自治县" Postcode="622927" />
+    </City>
+    <City Name="甘南藏族自治州" Postcode="623000" >
+      <District Name="合作" Postcode="623001" />
+      <District Name="临潭县" Postcode="623021" />
+      <District Name="卓尼县" Postcode="623022" />
+      <District Name="舟曲县" Postcode="623023" />
+      <District Name="迭部县" Postcode="623024" />
+      <District Name="玛曲县" Postcode="623025" />
+      <District Name="碌曲县" Postcode="623026" />
+      <District Name="夏河县" Postcode="623027" />
+    </City>
+  </Province>
+
+  <Province Name="青海" Postcode="630000" >
+    <City Name="西宁" Postcode="630100" >
+      <District Name="城东区" Postcode="630102" />
+      <District Name="城中区" Postcode="630103" />
+      <District Name="城西区" Postcode="630104" />
+      <District Name="城北区" Postcode="630105" />
+      <District Name="大通回族土族自治县" Postcode="630121" />
+      <District Name="湟中县" Postcode="630122" />
+      <District Name="湟源县" Postcode="630123" />
+    </City>
+    <City Name="海东地区" Postcode="632100" >
+      <District Name="平安县" Postcode="632121" />
+      <District Name="民和回族土族自治县" Postcode="632122" />
+      <District Name="乐都县" Postcode="632123" />
+      <District Name="互助土族自治县" Postcode="632126" />
+      <District Name="化隆回族自治县" Postcode="632127" />
+      <District Name="循化撒拉族自治县" Postcode="632128" />
+    </City>
+    <City Name="海北藏族自治州" Postcode="632200" >
+      <District Name="门源回族自治县" Postcode="632221" />
+      <District Name="祁连县" Postcode="632222" />
+      <District Name="海晏县" Postcode="632223" />
+      <District Name="刚察县" Postcode="632224" />
+    </City>
+    <City Name="黄南藏族自治州" Postcode="632300" >
+      <District Name="同仁县" Postcode="632321" />
+      <District Name="尖扎县" Postcode="632322" />
+      <District Name="泽库县" Postcode="632323" />
+      <District Name="河南蒙古族自治县" Postcode="632324" />
+    </City>
+    <City Name="海南藏族自治州" Postcode="632500" >
+      <District Name="共和县" Postcode="632521" />
+      <District Name="同德县" Postcode="632522" />
+      <District Name="贵德县" Postcode="632523" />
+      <District Name="兴海县" Postcode="632524" />
+      <District Name="贵南县" Postcode="632525" />
+    </City>
+    <City Name="果洛藏族自治州" Postcode="632600" >
+      <District Name="玛沁县" Postcode="632621" />
+      <District Name="班玛县" Postcode="632622" />
+      <District Name="甘德县" Postcode="632623" />
+      <District Name="达日县" Postcode="632624" />
+      <District Name="久治县" Postcode="632625" />
+      <District Name="玛多县" Postcode="632626" />
+    </City>
+    <City Name="玉树藏族自治州" Postcode="632700" >
+      <District Name="玉树县" Postcode="632721" />
+      <District Name="杂多县" Postcode="632722" />
+      <District Name="称多县" Postcode="632723" />
+      <District Name="治多县" Postcode="632724" />
+      <District Name="囊谦县" Postcode="632725" />
+      <District Name="曲麻莱县" Postcode="632726" />
+    </City>
+    <City Name="海西蒙古族藏族自治州" Postcode="632800" >
+      <District Name="格尔木" Postcode="632801" />
+      <District Name="德令哈" Postcode="632802" />
+      <District Name="乌兰县" Postcode="632821" />
+      <District Name="都兰县" Postcode="632822" />
+      <District Name="天峻县" Postcode="632823" />
+    </City>
+  </Province>
+</root>

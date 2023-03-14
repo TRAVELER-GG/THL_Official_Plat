@@ -1,0 +1,20 @@
+﻿@model List<Alumni_Member>
+@{
+    Layout = null;
+}
+
+<table class="table table-sm table-bordered table-hover">
+    <tbody>
+        @foreach (var x in Model.Where(c => c.Status == Status_Enum.已认证.ToString()))
+        {
+            <tr onclick="Change_Member_Name('@x.AMID')" style="cursor:pointer;">
+                <td style="border-bottom:1px dotted #ccc;">
+                    <span>@x.Member_Name </span>
+                    <span style="color:#666"> (@x.Gender)</span>
+                    <input type="hidden" id="Member_Name_@x.AMID" name="Member_Name_@x.AMID" value="@x.Member_Name" />
+                </td>
+                <td style="border-bottom:1px dotted #ccc; padding-left:0px;">@x.Faculty</td>
+            </tr>
+        }
+    </tbody>
+</table>

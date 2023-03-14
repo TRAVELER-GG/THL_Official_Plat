@@ -1,0 +1,33 @@
+﻿@model PagePar
+@{
+    Layout = null;
+}
+<div class="MyPage_DIV">
+    <div style="float:right; text-align:right; padding-top:5px; padding-right:18px;">
+        @Html.Raw(PageComponent.MyPageNumberList(Model))
+        <script>
+            function SubmitSelectIndex() {
+                $("#PageIndex").val($("#FootPageIndexNo").val());
+                $("#MyForm").submit();
+            }
+            function SubmitPageIndex(PageIndex) {
+                $("#PageIndex").val(PageIndex);
+                $("#MyForm").submit();
+            }
+        </script>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#DataTable').dataTable({
+            searching: false,
+            paging: false,
+            info: false,
+            scrollY: FixHeightValue(),
+            scrollX: true,
+            language: {
+                url: "/Scripts/dataTables/Localisation/Chinese.json"
+            }
+        });
+    });
+</script> 

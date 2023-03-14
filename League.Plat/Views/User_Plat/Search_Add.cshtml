@@ -1,0 +1,73 @@
+﻿@model User_Plat
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    ViewBag.Title = ViewContext.RouteData.Values["action"].ToString();
+    Layout = null;
+
+    string Form_ID = "Form_Add";
+    string Form_ID_Action = Controller + "/Main_User_Add_Post/";
+}
+
+<form id="@Form_ID" action="~/@Form_ID_Action" method="post">
+    <table class="table table-sm table-borderless text-nowrap" style="width:97%;">
+        <tr>
+            <th style="width:10px;">* @Html.DisplayNameFor(m => m.Name)</th>
+            <td><input name="@Html.NameFor(m => m.Name)" value="" class="form-control form-control-sm" required type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>* @Html.DisplayNameFor(m => m.Name_Full)</th>
+            <td><input name="@Html.NameFor(m => m.Name_Full)" value="" class="form-control form-control-sm" required type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Email)</th>
+            <td><input name="@Html.NameFor(m => m.Email)" value="" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+        </tr>
+
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Tel)</th>
+            <td><input name="@Html.NameFor(m => m.Tel)" value="" class="form-control form-control-sm" type="text" style="width:100%;" /></td>
+        </tr>
+
+        <tr>
+            <th style="vertical-align:top;">* @Html.DisplayNameFor(m => m.Roles_Title)</th>
+            <td>
+                @foreach (var x in Model.Roles_Title_List)
+                {
+                    <div style="width:30%; float:left;">
+                        <input name="Roles_Title" id="Title_@x" type="checkbox" value="@x" />
+                        <label for="Title_@x">@x</label>
+                    </div>
+                }
+            </td>
+        </tr>
+
+        <tr>
+            <th>* 初始密码</th>
+            <td style="position:relative;">
+                <input id="Password" name="@Html.NameFor(m => m.Password)" class="form-control form-control-sm" required type="text" value="" style="width:100%;" autocomplete="off" />
+                @*<span style="position:absolute; color:red;">* 密码中必须包含字母（不区分大小写）、数字，至少8个字符，最多30个字符</span>*@
+            </td>
+        </tr>
+
+        <tr>
+            <th>&nbsp;</th>
+            <td style="padding-top:15px;">
+                <button type="button" onclick="Submit_Form(this)" class="btn btn-primary btn-sm" style="width:25%;">确认递交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function Submit_Form(Btn_Obj) {
+        //var pwdRegex = new RegExp('(?=.*[0-9])(?=.*[a-zA-Z]).{8,30}');
+        //var Password = $("#Password").val();
+        //if (!pwdRegex.test(Password)) {
+        //    alert("您的密码复杂度太低，请按照提示修改密码！");
+        //    return false;
+        //}
+        Ajax_Form_Reload('@Form_ID', Btn_Obj)
+    }
+</script>

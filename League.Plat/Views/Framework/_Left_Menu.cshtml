@@ -1,0 +1,70 @@
+﻿@model Function_Tree
+@{
+    Layout = null;
+    User_Plat U = ViewData["U"] as User_Plat;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/bootstrap/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/iconfont/iconfont.css" />
+    <style>
+        .Mod_Title {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            border-bottom: 1px solid #51617C;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            color: white;
+        }
+
+            .Mod_Title a {
+                cursor: pointer;
+                color: white;
+            }
+
+            .Mod_Title a:hover{
+                text-decoration:none;
+            }
+
+        .Mod_Title_Active a {
+            color: #fbdb04;
+        }
+    </style>
+    <script type="text/javascript">
+        //点击父级菜单
+        function Show_Mod_Title_Sub(Mod_Name) {
+            $('.Mod_Title').removeClass("Mod_Title_Active");
+            $('.Mod_Title_' + Mod_Name).addClass("Mod_Title_Active");
+        }
+    </script>
+</head>
+<body style="width:100%; height:auto; overflow:hidden; padding:0px; margin:0px; background-color:#2C3D59;">
+    <div style="width:100%; height:auto; padding:0px; margin:0px; overflow:hidden;">
+        @foreach (var x in Model.MOD_List.Where(x => x.Active == 1))
+        {
+            <div class="Mod_Title Mod_Title_@x.Name" style="text-align:center;">
+                <a href="~/@x.Left_Menu_List.Where(c => c.Active == 1).FirstOrDefault().URL" target="Framework_Content" onclick="Show_Mod_Title_Sub('@x.Name')">
+                    <span class="@x.Icon" style="font-size:16px; margin-right:5px;"></span>
+                    <span style="font-size:14px;">@x.Name</span>
+                </a>
+            </div>
+        }
+    </div>
+</body>
+</html>

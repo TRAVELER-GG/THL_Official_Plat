@@ -1,0 +1,143 @@
+﻿@model Alumni_Member
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    ViewBag.Title = ViewContext.RouteData.Values["action"].ToString();
+    Layout = null;
+
+    string Form_Add_ID = "User_Add_Form";
+    string Form_Add_Action = Controller + "/Create_Post/";
+}
+
+<form id="@Form_Add_ID" action="~/@Form_Add_Action" method="post">
+    <table class="table table-sm table-borderless text-nowrap" style="width:95%;">
+        <tr>
+            <th style="width:10px;">* @Html.DisplayNameFor(m => m.Member_Name)</th>
+            <td><input name="Member_Name" value="@Model.Member_Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th style="width:10px;">* @Html.DisplayNameFor(m => m.Gender)</th>
+            <td>
+                <select class="form-control form-control-sm" name="Gender">
+                    @foreach (var x in Enum.GetNames(typeof(Gender_Enum)))
+                    {
+                        <option value="@x">@x</option>
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th style="width:10px;">* @Html.DisplayNameFor(m => m.Mobile)</th>
+            <td><input name="Mobile" value="@Model.Mobile" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th style="width:10px;">* @Html.DisplayNameFor(m => m.Year)</th>
+            <td>
+                <select class="form-control form-control-sm" name="Year">
+                    <option value="">请选择</option>
+                    @for (int i = 1980; i < (int)DateTime.Now.Year + 1; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th style="width:10px;">@Html.DisplayNameFor(m => m.Faculty)</th>
+            <td>
+                <select class="form-control form-control-sm" name="Faculty">
+                    <option value="">请选择院系</option>
+                    @foreach (var x in Model.Faculty_List)
+                    {
+                        <option value="@x">@x</option>
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th style="width:10px;">@Html.DisplayNameFor(m => m.Degree)</th>
+            <td>
+                <select class="form-control form-control-sm" name="Degree">
+                    <option value="">请选择学位</option>
+                    @foreach (var x in Enum.GetNames(typeof(Degree_Enum)))
+                    {
+                        <option value="@x">@x</option>
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">籍贯</td>
+            <td>
+                <div class="city-picker-selector" id="Native-picker" style="display:flex;"></div>
+                <input type="hidden" id="Native_Province" name="Native_Province" value="">
+                <input type="hidden" id="Native_City" name="Native_City" value="">
+                <input type="hidden" id="Native_District" name="Native_District" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">所在地区</td>
+            <td>
+                <div class="city-picker-selector" id="picker" style="display:flex;"></div>
+                <input type="hidden" id="Province" name="Province" value="">
+                <input type="hidden" id="City" name="City" value="">
+                <input type="hidden" id="District" name="District" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                <button type="button" onclick="Add_Member(this)" class="btn btn-primary btn-sm" style="width:50%;">确认递交</button>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#Native-picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true
+        });
+
+        $('#picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true
+        });
+    });
+
+    function Add_Member(Btn_Obj) {
+        Set_City();
+        Ajax_Form_Reload('@Form_Add_ID', Btn_Obj);
+    }
+
+    function Set_City() {
+        var Native_Province = $(".province .selector-name:first").text();
+        var Native_City = $(".city .selector-name:first").text();
+        var Native_District = $(".district .selector-name:first").text();
+        $("#Native_Province").val(Native_Province);
+        $("#Native_City").val(Native_City);
+        $("#Native_District").val(Native_District);
+
+        var Province = $(".province .selector-name:last").text();
+        var City = $(".city .selector-name:last").text();
+        var District = $(".district .selector-name:last").text();
+        $("#Province").val(Province);
+        $("#City").val(City);
+        $("#District").val(District);
+    }
+</script>

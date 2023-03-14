@@ -1,0 +1,50 @@
+﻿@model Activity_Sponsor
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Add_ID = "Sponsor_Add_Form";
+    string Form_Add_Action = Controller + "/Publish_Sub_Post";
+}
+
+<form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+    <table class="table table-borderless text-nowrap">
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Name)</td>
+            <td><input name="Name" id="Sponsor_Name" value="@Model.Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Contacts)</td>
+            <td><input name="Contacts" value="@Model.Contacts" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Phone)</td>
+            <td><input name="Phone" value="@Model.Phone" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Intro)</td>
+            <td><textarea name="Intro" class="form-control form-control-sm" rows="3">@Model.Intro</textarea></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align:right;"><button type="button" class="btn btn-sm btn-primary" style="width:30%;" onclick="Add_Sponsor(this)">递交创建</button></td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function Add_Sponsor(Btn_Obj) {
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj, Add_Sponsor_CallBack)
+    }
+
+    function Add_Sponsor_CallBack(Btn_Obj, Link_ASID) {
+        var Sponsor_Name = $("#Sponsor_Name").val();
+        $("#Link_ASID").append("<option selected value='" + Link_ASID + "'>" + Sponsor_Name + "</option>");
+        Closs_Modal();
+    }
+</script>
+

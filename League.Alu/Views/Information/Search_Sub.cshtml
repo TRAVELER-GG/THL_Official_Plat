@@ -1,0 +1,135 @@
+﻿@model Information
+@{ string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string Form_Add_ID = "Infor_Add_Form";
+    string Form_Add_Action = Controller + "/Search_Sub_Add_Post/" + Model.IMID;
+    string Form_Set_Action = Controller + "/Search_Sub_Post/" + Model.IMID;
+
+    string Form_Del_ID = "Infor_Del_Form";
+    string Form_Del_Action = Controller + "/Search_Sub_Delete_Post/" + Model.IMID;
+
+    string Form_Cover_Img_ID = "Form_Cover_Img_ID";
+    string Form_Cover_Img_Action = Host_Domain.Host() + "Upload_Files/Information_Cover_Img_Post/" + Model.IMID; }
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('查询更新')</script>
+
+<script>
+    function Set_word_wrap() {
+        var width = $("#editor").width();
+        $("p#editor").width(width - 30);
+    }
+
+    function Set_Div_width() {
+        var width = $(".Enter_Select_DIV").width();
+        $("#Member_List_Select").width(width - 1);
+    }
+
+    $(function () {
+        Set_Div_width();
+        Set_word_wrap();
+    })
+</script>
+<div style="padding:15px; height:100%; overflow:auto;">
+    <form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+        <table class="table table-borderless text-nowrap" style="width:800px">
+            <tr>
+                <td style="width:10px; text-align:right;">* @Html.DisplayNameFor(m => m.Title)</td>
+                <td colspan="3"><input name="Title" value="@Model.Title" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right;">@Html.DisplayNameFor(m => m.Cover_Img)</td>
+                <td colspan="3">
+                    <div id="Img_Cover"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>* @Html.DisplayNameFor(m => m.Content)</td>
+                <td colspan="3" class="text-break-all">
+                    <script name="Content" id="Content" type="text/plain">
+                        @Html.Raw(Model.Content)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><button type="button" onclick="Delete_Info(this)" class="btn btn-danger btn-sm" style="width:50%;">删除</button></td>
+                <td>&nbsp;</td>
+                <td style="text-align:right;">
+                    @if (Model.Infor_Status == Infor_Status_Enum.待发布.ToString())
+                    {
+                        <button type="button" onclick="Publish_Info(this)" class="btn btn-primary btn-sm" style="width:40%;">确认发布</button> }
+                    else
+                    {
+                        <button type="button" onclick="Set_Info(this)" class="btn btn-primary btn-sm" style="width:40%;">更 新</button>}
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Content', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Content').getContent();
+        document.editForm.submit();
+    }
+</script>
+<!--封面图片-->
+<form id="@Form_Cover_Img_ID" action="@Form_Cover_Img_Action" method="post" enctype="multipart/form-data"></form>
+<script>
+    function Ajax_Img_Upload(Btn_Obj) {
+        var File_OBJ = $("#File_Input");
+        $("#@Form_Cover_Img_ID").html(File_OBJ);
+        Ajax_Form_Upload("@Form_Cover_Img_ID", Btn_Obj, Ajax_Img_Upload_Callback);
+    }
+
+    function Reload_Img_Cover() {
+        $("#Img_Cover").load("/@Controller/Search_Sub_Cover_Img/" + "@Model.IMID");
+    }
+
+    function Ajax_Img_Upload_Callback() {
+        Reload_Img_Cover();
+    }
+
+    Reload_Img_Cover();
+</script>
+<!--封面图片-->
+
+<script>
+    function Publish_Info(Btn_Obj) {
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<script>
+    function Set_Info(Btn_Obj) {
+        $("#@Form_Add_ID").attr("action","/@Form_Set_Action");
+        $("#Content").val(UE.getEditor('Content').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<form id="@Form_Del_ID" action="/@Form_Del_Action" method="post"></form>
+<script>
+    function Delete_Info(Btn_Obj) {
+        if (confirm("确认删除？") == false) { return false; }
+        Ajax_Form_Callback('@Form_Del_ID', Btn_Obj,Call_Back)
+    }
+
+    function Call_Back() {
+        JumpPage("/@Controller/Search")
+    }
+</script>
+

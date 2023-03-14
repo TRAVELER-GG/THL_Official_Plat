@@ -1,0 +1,102 @@
+﻿@model User_Plat
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Set_ID = "Search_Sub_Set_Form";
+    string Form_Set_Action = Controller + "/Search_Sub_Post/" + Model.UID;
+
+    string Form_Delete_ID = "Search_Sub_Delete_Form";
+    string Form_Delete_Action = Controller + "/Search_Sub_Delete_Post/" + Model.UID;
+}
+
+<form id="@Form_Set_ID" action="~/@Form_Set_Action" method="post">
+    <table class="table table-sm table-borderless text-nowrap" style="width:90%;">
+        <tr>
+            <th style="width:50px;">* @Html.DisplayNameFor(c => c.Name)</th>
+            <td><input name="Name" value="@Model.Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>@Html.DisplayNameFor(c => c.Name_Full)</th>
+            <td><input name="Name_Full" value="@Model.Name_Full" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>@Html.DisplayNameFor(c => c.Tel)</th>
+            <td><input name="Tel" value="@Model.Tel" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>@Html.DisplayNameFor(c => c.Email)</th>
+            <td><input name="Email" value="@Model.Email" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th style="vertical-align:top">* @Html.DisplayNameFor(m => m.Roles_Title)</th>
+            <td>
+                @foreach (var x in Enum.GetNames(typeof(User_Plat_Title_Enum)).ToList())
+                {
+                    <div style="width:30%; float:left;">
+                        @if (Model.Roles_Title_List.Contains(x))
+                        {
+                            <input name="Roles_Title" id="Title_@x" type="checkbox" checked value="@x" />
+                        }
+                        else
+                        {
+                            <input name="Roles_Title" id="Title_@x" type="checkbox" value="@x" />
+                        }
+                        <label for="Title_@x">@x</label>
+                    </div>
+                }
+            </td>
+        </tr>
+
+        <tr>
+            <th>* @Html.DisplayNameFor(m => m.Is_Frozen)</th>
+            <td>
+                <select name="@Html.NameFor(m=>m.Is_Frozen)" class="form-control form-control-sm">
+                    @foreach (var x in Enum.GetNames(typeof(Is_Freeze_Enum)))
+                    {
+                        if (x == Model.Is_Frozen)
+                        {
+                            <option selected="selected" value="@x">@x</option>
+                        }
+                        else
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>* 密码</th>
+            <td><input name="Password" value="@Model.Password" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                @if (Model.Is_Admin != Alumni_Is_Admin_Enum.Admin.ToString())
+                {
+                    <button type="button" class="btn btn-danger btn-sm" onclick="Delete_Submit(this)" style="width:30%;">删除</button>
+                }
+                <button type="button" onclick="Ajax_Form_Reload('@Form_Set_ID', this)" class="btn btn-primary btn-sm" style="width:30%; float:right;">确认递交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<!--删除-->
+<script>
+    function Delete_Submit(Obj_Btn) {
+        if (confirm("确认删除？") == false) {
+            return false;
+        }
+        Ajax_Form_Reload('@Form_Delete_ID', Obj_Btn)
+    }
+</script>
+<form id="@Form_Delete_ID" action="~/@Form_Delete_Action" method="post"></form>
+<!--删除-->

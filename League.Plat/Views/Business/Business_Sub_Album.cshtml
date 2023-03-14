@@ -1,0 +1,57 @@
+﻿@model Business
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Upload_ID = "Business_Album_Upload_Form";
+    string Form_Upload_Action = Controller + "/Business_Sub_Album_Post/" + Model.BID;
+
+    string Form_Delete_ID = "Business_Album_Delete_Form";
+    string Form_Delete_Action = Controller + "/Business_Sub_Album_Delete_Post/";
+}
+
+<span>商家相册</span>
+<form id="@Form_Upload_ID" action="/@Form_Upload_Action" method="post" enctype="multipart/form-data">
+    <div style="display:flex; vertical-align:middle;">
+        <select name="Album_Type" class="form-control" style="width:100px; height:25px; margin-right:10px; padding-top:3px;">
+            @foreach (var x in Enum.GetNames(typeof(Album_Type_Enum)))
+            {
+                <option value="@x">@x</option>
+            }
+        </select>
+        <input type="file" name="Img_Input" style="width:200px;" />
+        <button type="button" onclick="Ajax_Form_Upload('@Form_Upload_ID', this, Reload_Div_Album_Context)" class="btn btn-default btn-xs" style="height:25px; border-radius:0px;">上传相册</button>
+    </div>
+</form>
+
+<div style="display:flex; flex-wrap:wrap; height:280px; overflow:auto;">
+    @foreach (var x in Model.Album_List.OrderByDescending(x => x.Create_DT))
+    {
+    <table style="width:30%; margin-top:10px; margin-right:15px; margin-bottom:10px;">
+        <tr>
+            <td style="text-align:center; height:80px; overflow:hidden; vertical-align:top;">
+                <a href="~/@x.Album_Img" target="_blank" style="width:100%; height:80px; overflow:hidden; border:1px solid #b1b1b1; display:block; padding:3px;">
+                    <img src="~/@x.Album_Img" style="max-width:100%; max-height:100%;" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; color:#246dc6">@x.Album_Type</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
+                <button type="button" class="btn btn-danger btn-xs" onclick="Delete_Album('@x.Album_ID', this)" style="width:100%; border-radius:0px;">删除</button>
+            </td>
+        </tr>
+    </table>
+    }
+</div>
+
+<form id="@Form_Delete_ID" action="~/@Form_Delete_Action" method="post"></form>
+<script>
+    function Delete_Album(Album_ID, Btn_Obj) {
+         if (confirm("确认删除？") == false) { return false; }
+         $("#@Form_Delete_ID").attr("action", "/@Form_Delete_Action" + Album_ID);
+        Ajax_Form_Callback('@Form_Delete_ID', Btn_Obj, Reload_Div_Album_Context);
+     }
+</script>

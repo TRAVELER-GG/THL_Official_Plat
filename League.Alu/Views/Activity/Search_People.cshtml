@@ -1,0 +1,43 @@
+﻿@model PageList<Activity_Apply>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Activity_Filter MF = ViewData["MF"] as Activity_Filter;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('活动查询')</script>
+<p></p>
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:5px;">&nbsp;</th>
+            <th style="width:120px;">报名时间</th>
+            <th style="width:80px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Name)</th>
+            <th style="width:60px;">性别</th>
+            <th style="width:120px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Phone)</th>
+            <th style="width:200px; ">高校名称</th>
+            <th style="width:250px; ">院系</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>&nbsp;</td>
+                <td style="vertical-align:top;">@x.Create_DT.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td style="vertical-align:top;">@x.Name</td>
+                <td style="vertical-align:top;">@x.Gender</td>
+                <td style="vertical-align:top;">@x.Phone</td>
+                <td style="vertical-align:top;">@x.Alumni_Union</td>
+                <td style="vertical-align:top;">@x.Faculty</td>
+                <td>&nbsp;</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />
+

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <Function_Tree MOD_Name="校友" Icon="icon-th-list">
+    <Left_Menu Name="校友管理">
+      <Top_Menu Name="校友账号" URL="Alumni_Member/Search" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="校友验证" URL="Alumni_Member/Verify" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="授权验证" URL="Alumni_Member/Auditor" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+
+    <Left_Menu Name="校友企业">
+      <Top_Menu Name="查询更新" URL="Alumni_Member/Enterprise" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="编辑发布" URL="Alumni_Member/Enterprise_Edit" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+
+    <Left_Menu_OFF Name="大咖风采">
+      <Top_Menu Name="查询更新" URL="Alumni_Member/Rich_EXP" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="编辑发布" URL="Alumni_Member/Rich_EXP_Edit" Role_Titel=""></Top_Menu>
+    </Left_Menu_OFF>
+  </Function_Tree>
+
+  <Function_Tree MOD_Name="活动" Icon="icon-th-list">
+    <Left_Menu Name="活动管理">
+      <Top_Menu Name="活动查询" URL="Activity/Search" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="活动发布" URL="Activity/Publish" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="主办方" URL="Activity/Sponsor_Search" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+  </Function_Tree>
+
+  <Function_Tree MOD_Name="资讯" Icon="icon-th-list">
+    <Left_Menu Name="资讯管理">
+      <Top_Menu Name="查询更新" URL="Information/Search" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="资讯发布" URL="Information/Publish" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+  </Function_Tree>
+ 
+  <Function_Tree MOD_Name="招聘" Icon="icon-th-list">
+    <Left_Menu Name="招聘管理">
+      <Top_Menu Name="查询更新" URL="Recruit/Search" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="招聘发布" URL="Recruit/Publish" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+  </Function_Tree>
+
+  <Function_Tree MOD_Name="设置" Icon="icon-th-list">
+    <Left_Menu Name="校友会">
+      <Top_Menu Name="账号" URL="Alumni_Union/Search" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="形象" URL="Alumni_Union/Logo_And_Background" Role_Titel=""></Top_Menu>
+      <Top_Menu Name="简介" URL="Alumni_Union/Union_Introduce" Role_Titel=""></Top_Menu>
+    </Left_Menu>
+  </Function_Tree>
+</Tree>

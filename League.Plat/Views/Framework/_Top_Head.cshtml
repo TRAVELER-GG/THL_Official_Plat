@@ -1,0 +1,47 @@
+﻿@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string Action = ViewContext.RouteData.Values["action"].ToString();
+    Layout = null;
+    User_Plat U = ViewData["U"] as User_Plat;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .Top_Head td
+        {
+            padding:0px;
+        }
+
+        .Top_Head a {
+            color: white;
+            text-decoration: none;
+            height: 32px;
+            padding: 0px;
+            display: block;
+            line-height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            overflow: hidden;
+        }
+
+        .Top_Head a:hover {
+            background-color:#3a537c;
+        }
+    </style>
+</head>
+<body style="width:100%; height:auto; overflow:hidden; padding:0px; margin:0px; background-color:#2C3D59; font-size:12px;">
+    <table style="width:100%;" class="Top_Head">
+        <tr>
+            <td style="color:white; padding-left:5px; vertical-align:middle; width:10px; white-space:nowrap;">仙交校友汇 | 后台管理系统</td>
+            <td>&nbsp;</td>
+            <td style="width:10px; white-space:nowrap;"><a href="~/@Controller/User_Info" target="Framework_Content">@U.Name_Full</a></td>
+            <td style="width:10px; white-space:nowrap;"><a href="~/Login/Login_Out" target="_top">退出登陆</a></td>
+            <td style="width:20px; white-space:nowrap;">&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+

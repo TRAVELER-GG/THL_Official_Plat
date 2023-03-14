@@ -1,0 +1,39 @@
+﻿@model Mini_Service
+@{
+    Layout = null;
+}
+<table>
+    <tr>
+        <td style="height:170px; vertical-align:middle; padding:6px 0; text-align:center; background-color:#f3f3f3">
+            @if (Model.Cover_Img != string.Empty)
+            {
+                <img src="@Host_Domain.Host()@Model.Cover_Img" style="max-width:100%; max-height:100%; " />
+            }
+            else
+            {
+                <img src="~/Images/NotImg.jpg" style="max-width:100%; max-height:100%;" />
+            }
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding-left:5px; vertical-align:top;">
+            <table style="width:100%;" class="text-nowrap">
+                <tr>
+                    <td><input type="file" name="File_Input" id="File_Input" style="width:100%;" /></td>
+                    <td style="width:10px;">
+                        @if (Model.Cover_Img == string.Empty)
+                        {
+                            <button type="button" onclick="Ajax_Img_Upload(this)">上传Logo</button>
+                        }
+                        else
+                        {
+                            <button type="button" onclick="Ajax_Img_Upload(this)">重新上传</button>
+                        }
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+

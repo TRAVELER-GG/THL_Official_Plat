@@ -1,0 +1,15 @@
+﻿@{
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    Layout = null;
+    Alumni_Union_User U = ViewData["U"] as Alumni_Union_User;
+    List<Top_Menu> Top_List = FunTree.Get_Top_Menu_List(U, "校友", "校友管理");
+}
+
+<div class="Sub_Top_Menu">
+    <div class="Sub_Top_Menu_Div">
+        @foreach (var x in Top_List)
+        {
+            <a class="Sub_Top_Menu_Btn" id="Sub_Top_@x.Name" href="~/@x.URL">@x.Name</a>
+        }
+    </div>
+</div>

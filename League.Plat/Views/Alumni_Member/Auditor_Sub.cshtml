@@ -1,0 +1,100 @@
+﻿@model Alumni_Member
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Set_ID = "Form_Set_ID";
+    string Form_Set_Action = Controller + "/Auditor_Sub_Post/" + Model.AMID;
+}
+<style>
+    .city-picker-selector .selector-item {
+        width: 45% !important;
+    }
+</style>
+
+<form id="@Form_Set_ID" action="~/@Form_Set_Action" method="post">
+    <table class="table table-sm table-borderless text-nowrap">
+        <tr>
+            <th style="width:10px;">* 权限类型</th>
+            <td>
+                <select class="form-control form-control-sm" name="Authority_Type" id="Authority_Type" onchange="Change_Authority_Type()">
+                    <option value="">请选择</option>
+                    @foreach (var x in Model.Authority_Type_List)
+                    {
+                        if (x == Model.Authority_Type)
+                        {
+                            <option selected value="@x">@x</option>
+                        }
+                        else
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    }
+                </select>
+            </td>
+        </tr>
+
+        <tr id="Auth_TR_ID" style="display:none;">
+            <th style="width:10px;"></th>
+            <td>
+                <div class="city-picker-selector" id="picker" style="display:flex;"></div>
+                <input type="hidden" id="Authority_Province" name="Authority_Province" value="@Model.Authority_Province">
+                <input type="hidden" id="Authority_City" name="Authority_City" value="@Model.Authority_City">
+            </td>
+        </tr>
+
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                <button type="button" onclick="Set_Member(this)" class="btn btn-primary btn-sm" style="width:100px; float:right;">确认递交</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    Change_Authority_Type();
+
+    function Change_Authority_Type() {
+        var Type = $("#Authority_Type").val();
+
+        if (Type=='@Authority_Type_Enum.区域权限.ToString()') {
+            $("#Auth_TR_ID").css("display", "table-row");
+        } else {
+            $("#Auth_TR_ID").css("display", "none");
+        }
+    }
+</script>
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true,
+            level:2
+        });
+
+        if ("@Model.Authority_Province"!="")
+        {
+            $(".province .selector-name:last").text("@Model.Authority_Province");  
+            $(".city .selector-name:last").text("@Model.Authority_City");
+        }
+    });
+</script>
+
+<script>
+    function Set_Member(Btn_Obj) {
+        Set_City();
+        Ajax_Form_Reload('@Form_Set_ID', Btn_Obj)
+    }
+
+    function Set_City() {
+        var Authority_Province = $(".province .selector-name:first").text();
+        var Authority_City = $(".city .selector-name:first").text();
+        $("#Authority_Province").val(Authority_Province);
+        $("#Authority_City").val(Authority_City);
+    }
+</script>

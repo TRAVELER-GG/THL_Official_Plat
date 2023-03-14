@@ -1,0 +1,20 @@
+﻿@model Alumni_Union
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+}
+<div style="height:667px;">
+    <table>
+        <tr>
+            <td>@Html.Raw(Model.Content)</td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+</style>

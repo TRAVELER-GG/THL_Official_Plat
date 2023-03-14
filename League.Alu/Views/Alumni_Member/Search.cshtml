@@ -1,0 +1,180 @@
+﻿@model PageList<Alumni_Member>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Alumni_Member_Filter MF = ViewData["MF"] as Alumni_Member_Filter;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('校友账号')</script>
+
+<form id="MyForm" action="~/@Controller/@action" method="get">
+    <table class="Search_Table">
+        <tr>
+            <td style="width:120px; padding-right:10px;">
+                <select class="form-control form-control-sm" name="Is_Frozen" onchange="SubmitPageIndex(1)">
+                    <option value="">账号状态</option>
+                    @foreach (var x in Enum.GetNames(typeof(Alumni_Is_Frozen_Enum)))
+                    {
+                        if (x == MF.Is_Frozen)
+                        {
+                            <option selected value="@x">@x</option>
+                        }
+                        else
+                        {
+                            <option value="@x">@x</option>
+                        }
+                    }
+                </select>
+            </td>
+            <td style="width:200px; padding-right:0px;">
+                <input class="form-control form-control-sm" style="border-top-right-radius:0px; border-bottom-right-radius:0px;" name="Keyword_Name" id="Keyword_Name" value="@MF.Keyword_Name" placeholder="校友姓名关键词" />
+            </td>
+            <td style="width:50px; padding-left:0px;">
+                <button class="btn btn-danger btn-sm Search-Btn" style="border-top-left-radius:0px; border-bottom-left-radius:0px;" type="submit"><i class="icon-search"></i> 搜索</button>
+            </td>
+
+            <td style="width:30px;"></td>
+            <td>
+                <button class="btn btn-primary btn-sm" type="button" onclick="Show_Add_Modal()"><i class="icon-plus"></i> 新增校友</button>
+            </td>
+            <td>
+                <input type="hidden" name="PageIndex" id="PageIndex" class="PageIndex" value="" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:5px;">&nbsp;</th>
+            <th style="width:80px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Member_Name)</th>
+            <th style="width:60px; text-align:center;">性别</th>
+            <th style="width:120px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Mobile)</th>
+            <th style="width:80px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Year)</th>
+            <th style="width:80px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Degree)</th>
+            <th style="width:150px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Faculty)</th>
+            <th style="width:150px;">当前居住地</th>
+            <th style="width:100px;">注册时间</th>
+            <th style="width:60px; text-align:center;">&nbsp;</th>
+            <th style="width:60px; text-align:center;">&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+        <tr>
+            <td>&nbsp;</td>
+            @if (x.Status == Status_Enum.待认证.ToString())
+            {
+                <td style="vertical-align:top;" title="@x.Status">
+                    <span>@x.Member_Name</span>
+                    <i class="icon-exclamation" style="color:#dd3535; font-size:16px; margin-left:15px;"></i>
+                </td>
+            }
+            else
+            {
+                <td style="vertical-align:top;">
+                    <span>@x.Member_Name</span>
+                </td>
+            }
+            <td style="text-align:center; vertical-align:top;">@x.Gender</td>
+            <td style="vertical-align:top;">@x.Mobile</td>
+            <td style="vertical-align:top;">@x.Year</td>
+            <td style="vertical-align:top;">@x.Degree</td>
+            <td style="vertical-align:top;">@x.Faculty</td>
+            <td style="vertical-align:top;">
+                <span>@x.Province @x.City </span>
+                @if (!string.IsNullOrEmpty(x.District))
+                {<span>@x.District</span>}
+            </td>
+            <td style="vertical-align:top;">@x.Create_DT.ToString("yyyy-MM-dd")</td>
+            <td style="text-align:center; vertical-align:top;"><button type="button" onclick="Show_Pre_Modal('@x.AMID')" class="btn btn-info btn-xs">查看</button></td>
+            <td style="text-align:center; vertical-align:top;"><button type="button" onclick="Show_Set_Modal('@x.AMID')" class="btn btn-info btn-xs">更新</button></td>
+            <td>&nbsp;</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />
+
+
+
+<!--ADD-->
+<script>
+    function Show_Add_Modal() {
+        $('#Add_Modal').modal({ backdrop: 'static' });
+        Reload_Add_Context();
+    }
+
+    function Reload_Add_Context() {
+        $("#Add_Context").text("Loading...");
+        $("#Add_Context").load("/@Controller/Create");
+    }
+</script>
+<div class="modal fade" id="Add_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:480px;">
+            <div class="modal-header">
+                <h5 class="modal-title">新增校友用户账号</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Add_Context"></div>
+        </div>
+    </div>
+</div>
+<!--ADD-->
+<!--SET-->
+<script>
+    function Show_Set_Modal(AMID) {
+        $('#Set_Modal').modal({ backdrop: 'static' });
+        Reload_Set_Context(AMID);
+    }
+
+    function Reload_Set_Context(AMID) {
+        $("#Set_Context").text("Loading...");
+        $("#Set_Context").load("/@Controller/Search_Sub/" + AMID);
+    }
+</script>
+
+<div class="modal fade" id="Set_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:720px;">
+            <div class="modal-header">
+                <h5 class="modal-title">更新校友用户资料</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Set_Context"></div>
+        </div>
+    </div>
+</div>
+<!--SET-->
+<!--Pre-->
+<script>
+    function Show_Pre_Modal(AMID) {
+        $('#Pre_Modal').modal({ backdrop: 'static' });
+        Reload_Pre_Context(AMID);
+    }
+
+    function Reload_Pre_Context(AMID) {
+        $("#Pre_Context").text("Loading...");
+        $("#Pre_Context").load("/@Controller/Search_Pre/" + AMID);
+    }
+</script>
+
+<div class="modal fade" id="Pre_Modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:480px;">
+            <div class="modal-header">
+                <h5 class="modal-title">预览校友资料</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" id="Pre_Context"></div>
+        </div>
+    </div>
+</div>
+<!--Pre-->

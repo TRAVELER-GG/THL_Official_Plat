@@ -1,0 +1,263 @@
+﻿@model Alumni_Member
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Set_ID = "Search_Sub_Set_Form";
+    string Form_Set_Action = Controller + "/Search_Sub_Post/" + Model.AMID;
+
+    string Form_Delete_ID = "Search_Sub_Delete_Form";
+    string Form_Delete_Action = Controller + "/Search_Sub_Delete/" + Model.AMID;
+
+    string Formr_Img_ID = "Form_Img_ID";
+    string Form_Img_Action = Host_Domain.Host() + "Upload_Files/Member_Img_Post/" + Model.AMID;
+}
+<table style="width:100%">
+    <tr>
+        <td style="width:60%;">
+            <form id="@Form_Set_ID" action="~/@Form_Set_Action" method="post">
+                <table class="table table-sm table-borderless text-nowrap" style="width:95%;">
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Member_Name)</th>
+                        <td><input name="Member_Name" value="@Model.Member_Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Gender)</th>
+                        <td>
+                            <select class="form-control form-control-sm" name="Gender">
+                                @foreach (var x in Enum.GetNames(typeof(Gender_Enum)))
+                                {
+                                    if (x == Model.Gender)
+                                    {
+                                        <option selected value="@x">@x</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@x">@x</option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Mobile)</th>
+                        <td><input name="Mobile" value="@Model.Mobile" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Year)</th>
+                        <td>
+                            <select class="form-control form-control-sm" name="Year">
+                                @for (int i = 1949; i < (int)DateTime.Now.Year + 1; i++)
+                                {
+                                    if (Model.Year == i)
+                                    {
+                                        <option selected value="@i">@i</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@i">@i</option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Faculty)</th>
+                        <td>
+                            <select class="form-control form-control-sm" name="Faculty">
+                                <option value="">请选择院系</option>
+                                @foreach (var x in Model.Faculty_List)
+                                {
+                                    if (Model.Faculty == x)
+                                    {
+                                        <option selected value="@x">@x</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@x">@x</option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">* @Html.DisplayNameFor(m => m.Degree)</th>
+                        <td>
+                            <select class="form-control form-control-sm" name="Degree">
+                                @foreach (var x in Enum.GetNames(typeof(Degree_Enum)))
+                                {
+                                    if (x == Model.Degree)
+                                    {
+                                        <option selected value="@x">@x</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@x">@x</option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">籍贯</td>
+                        <td>
+                            <div class="city-picker-selector" id="Native-picker" style="display:flex;"></div>
+                            <input type="hidden" id="Native_Province" name="Native_Province" value="@Model.Native_Province">
+                            <input type="hidden" id="Native_City" name="Native_City" value="@Model.Native_City">
+                            <input type="hidden" id="Native_District" name="Native_District" value="@Model.Native_District">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">所在地区</td>
+                        <td>
+                            <div class="city-picker-selector" id="picker" style="display:flex;"></div>
+                            <input type="hidden" id="Province" name="Province" value="@Model.Province">
+                            <input type="hidden" id="City" name="City" value="@Model.City">
+                            <input type="hidden" id="District" name="District" value="@Model.District">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th style="width:10px;">账号状态</th>
+                        <td>
+                            <select class="form-control form-control-sm" name="Is_Frozen" style="width:30%">
+                                @foreach (var x in Enum.GetNames(typeof(Alumni_Is_Frozen_Enum)))
+                                {
+                                    if (x == Model.Is_Frozen)
+                                    {
+                                        <option selected value="@x">@x</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@x">@x</option>
+                                    }
+                                }
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="Delete_Submit(this)" style="width:30%;">删除</button>
+                            <button type="button" onclick="Set_Member(this)" class="btn btn-primary btn-sm" style="width:30%; float:right;">确认递交</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+        <td style="vertical-align:top; padding-top:8px;">
+            <form id="@Formr_Img_ID" action="@Form_Img_Action" method="post" enctype="multipart/form-data">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="height:170px; vertical-align:middle; padding:6px 0; text-align:center; background-color:#f3f3f3">
+                            @if (Model.Img != string.Empty)
+                            {
+                                <img src="@Host_Domain.Host()@Model.Img" style="max-width:100%; max-height:100%; " />
+                            }
+                            else
+                            {
+                                <img src="~/Images/NotImg.jpg" style="max-width:100%; max-height:100%;" />
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px; vertical-align:top;">
+                            <table style="width:100%;" class="text-nowrap">
+                                <tr>
+                                    <td><input type="file" name="File_Input" style="width:100%;" /></td>
+                                    <td style="width:10px;"><button type="button" onclick="Upload_Img(this)">上传头像</button></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function Upload_Img(BTN_OBJ) {
+        Ajax_Form_Upload('@Formr_Img_ID', BTN_OBJ, Upload_Img_Callback);
+    }
+
+    function Upload_Img_Callback() {
+        Reload_Set_Context('@Model.AMID');
+    }
+</script>
+
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#Native-picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true
+        });
+
+        $('#picker').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true
+        });
+
+        if ("@Model.Native_Province"!="")
+        {
+            $(".province .selector-name:first").text("@Model.Native_Province");
+            $(".city .selector-name:first").text("@Model.Native_City");
+            $(".district .selector-name:first").text("@Model.Native_District");
+        }
+
+        if ("@Model.Province"!="")
+        {
+            $(".province .selector-name:last").text("@Model.Province");
+            $(".city .selector-name:last").text("@Model.City");
+            $(".district .selector-name:last").text("@Model.District");
+        }
+    });
+</script>
+
+<script>
+    function Set_Member(Btn_Obj) {
+        Set_City();
+        Ajax_Form_Reload('@Form_Set_ID', Btn_Obj)
+    }
+
+    function Set_City() {
+        var Native_Province = $(".province .selector-name:first").text();
+        var Native_City = $(".city .selector-name:first").text();
+        var Native_District = $(".district .selector-name:first").text();
+        $("#Native_Province").val(Native_Province);
+        $("#Native_City").val(Native_City);
+        $("#Native_District").val(Native_District);
+
+        var Province = $(".province .selector-name:last").text();
+        var City = $(".city .selector-name:last").text();
+        var District = $(".district .selector-name:last").text();
+        $("#Province").val(Province);
+        $("#City").val(City);
+        $("#District").val(District);
+    }
+</script>
+
+<!--删除-->
+<script>
+    function Delete_Submit(Obj_Btn) {
+        if (confirm("确认删除？") == false) {
+            return false;
+        }
+        Ajax_Form_Reload('@Form_Delete_ID', Obj_Btn)
+    }
+</script>
+<form id="@Form_Delete_ID" action="~/@Form_Delete_Action" method="post"></form>
+<!--删除-->

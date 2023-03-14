@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root Name="兴趣类型">
+  <Label Name="运动">
+    <Label_Sub Name="爬山" />
+    <Label_Sub Name="攀岩" />
+    <Label_Sub Name="冲浪" />
+    <Label_Sub Name="跳伞" />
+    <Label_Sub Name="露营" />
+    <Label_Sub Name="骑行" />
+    <Label_Sub Name="马拉松" />
+    <Label_Sub Name="足球" />
+    <Label_Sub Name="篮球" />
+    <Label_Sub Name="羽毛球" />
+    <Label_Sub Name="网球" />
+    <Label_Sub Name="乒乓球" />
+    <Label_Sub Name="保龄球" />
+    <Label_Sub Name="高尔夫" />
+  </Label>
+  <Label Name="健身">
+    <Label_Sub Name="游泳" />
+    <Label_Sub Name="瑜伽" />
+    <Label_Sub Name="跆拳道" />
+    <Label_Sub Name="拳击" />
+    <Label_Sub Name="太极" />
+    <Label_Sub Name="柔道" />
+    <Label_Sub Name="健美" />
+    <Label_Sub Name="舞蹈" />
+  </Label>
+  <Label Name="生活">
+    <Label_Sub Name="收藏" />
+    <Label_Sub Name="炒股" />
+    <Label_Sub Name="投资" />
+    <Label_Sub Name="理财" />
+    <Label_Sub Name="读书" />
+    <Label_Sub Name="摄影" />
+    <Label_Sub Name="书法" />
+    <Label_Sub Name="绘画" />
+    <Label_Sub Name="掼蛋" />
+    <Label_Sub Name="钓鱼" />
+    <Label_Sub Name="养生" />
+    <Label_Sub Name="民宿" />
+  </Label>
+</root>

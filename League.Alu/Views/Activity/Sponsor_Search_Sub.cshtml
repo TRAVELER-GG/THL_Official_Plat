@@ -1,0 +1,55 @@
+﻿@model Activity_Sponsor
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Set_ID = "Act_Set_Form";
+    string Form_Set_Action = Controller + "/Sponsor_Search_Sub_Post/" + Model.ASID;
+
+    string Form_Del_ID = "Act_Del_Form";
+    string Form_Del_Action = Controller + "/Sponsor_Search_Sub_Delete/" + Model.ASID;
+}
+
+<form id="@Form_Set_ID" action="/@Form_Set_Action" method="post">
+    <table class="table table-borderless text-nowrap">
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Name)</td>
+            <td colspan="2"><input name="Name" value="@Model.Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Contacts)</td>
+            <td colspan="2"><input name="Contacts" value="@Model.Contacts" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Phone)</td>
+            <td colspan="2"><input name="Phone" value="@Model.Phone" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+        </tr>
+
+        <tr>
+            <td style="width:10px; text-align:right; vertical-align:top;">* @Html.DisplayNameFor(m => m.Intro)</td>
+            <td colspan="2"><textarea name="Intro" class="form-control form-control-sm" rows="3">@Model.Intro</textarea></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button type="button" class="btn btn-sm btn-danger" style="width:60%;" onclick="Delete_Sponsor(this)">删除</button></td>
+            <td style="text-align:right;"><button type="button" class="btn btn-sm btn-primary" style="width:50%;" onclick="Ajax_Form_Reload('@Form_Set_ID',this)">更新递交</button></td>
+        </tr>
+    </table>
+</form>
+
+<form id="@Form_Del_ID" action="/@Form_Del_Action" method="post"></form>
+<script>
+    function Delete_Sponsor(Btn_Obj) {
+        if (confirm("确认删除？") == false) { return false; }
+        Ajax_Form_Callback('@Form_Del_ID', Btn_Obj,Call_Back)
+    }
+
+    function Call_Back() {
+        JumpPage("/@Controller/Sponsor_Search")
+    }
+</script>
+
+

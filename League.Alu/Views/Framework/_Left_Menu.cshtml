@@ -1,0 +1,85 @@
+﻿@model Function_Tree
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/bootstrap/css/font-awesome.min.css" />
+    <style>
+        .Mod_Title {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            text-indent: 5px;
+            text-align: left;
+            border-bottom: 1px solid #51617C;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            font-size: 14px;
+            color: white;
+        }
+
+        .Left_Menu {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 0px;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+            text-align: left;
+            border-bottom: 1px solid #1F2E46;
+            width: 100%;
+            background-color: #5f718f;
+            font-size: 12px;
+            color: white;
+        }
+
+            .Left_Menu:hover {
+                background-color: #51617C;
+                color: white;
+            }
+    </style>
+    <script type="text/javascript">
+        //点击父级菜单
+        function Show_Mod_Title_Sub(Mod_Name) {
+            $('.Left_Menu').hide();
+            $('.Left_Menu_Sub_' + Mod_Name).show();
+        }
+    </script>
+</head>
+<body style="width:100%; height:auto; overflow:hidden; padding:0px; margin:0px; background-color:#2C3D59;">
+    <a href="~/Framework/Welcome" style="height:29px; width:100%; background-color: #2C3D59;padding:0px; display:block; overflow:hidden;" target="Framework_Content">
+        <p style="font-size:16px; font-weight:bold; background:#91b2d7; color: #000000; text-align:center; margin:0; padding:0;">BCAU</p>
+    </a>
+
+    <div style="width:100%; height:auto; padding:0px; margin:0px; overflow:hidden;">
+        @foreach (var x in Model.MOD_List.Where(x => x.Active == 1))
+        {
+            <div class="Mod_Title" onclick="Show_Mod_Title_Sub('@x.Name')"><span style="font-size:12px;" class="@x.Icon"></span><span style="margin-left:6px;">@x.Name</span></div>
+            foreach (var xx in x.Left_Menu_List.Where(c => c.Active == 1).ToList())
+            {
+                <a class="Left_Menu Left_Menu_Sub_@x.Name" href="~/@xx.URL" style="display:none;" target="Framework_Content">@xx.Name</a>
+            }
+        }
+    </div>
+</body>
+</html>

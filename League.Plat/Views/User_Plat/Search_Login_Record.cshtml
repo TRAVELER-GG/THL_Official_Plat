@@ -1,0 +1,56 @@
+﻿@model PageList<User_Plat_Login_Record>
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    string action = ViewContext.RouteData.Values["action"].ToString();
+    ViewBag.Title = action;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    User_Plat_Filter MF = ViewData["MF"] as User_Plat_Filter;
+}
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('登录日志')</script>
+
+<form id="MyForm" action="~/@Controller/@action" method="get">
+    <table class="Search_Table">
+        <tr>
+            <td style="width:250px;">
+                <input class="form-control form-control-sm" name="Keyword_Name" id="Keyword_Name" value="@MF.Keyword_Name" placeholder="用户名或用户名全称" />
+            </td>
+            <td style="width:250px;">
+                <button class="btn btn-danger btn-sm Search-Btn" type="submit"><i class="icon-search"></i> 搜索</button>
+            </td>
+            <td style="text-align:right;">
+                <input type="hidden" name="PageIndex" id="PageIndex" class="PageIndex" value="1" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table id="DataTable" class="ListTable text-nowrap" style="width:100%;">
+    <thead>
+        <tr>
+            <th style="width:10px;">&nbsp;</th>
+            <th style="width:80px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Name)</th>
+            <th style="width:100px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Name_Full)</th>
+            <th style="width:100px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Last_Login_IP)</th>
+            <th style="width:120px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Last_Login_DT)</th>
+            <th style="width:600px;">@Html.DisplayNameFor(m => m.Rows.FirstOrDefault().Client_Info)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>&nbsp;</td>
+                <td style="vertical-align:top;">@x.Name</td>
+                <td style="vertical-align:top;">@x.Name_Full</td>
+                <td style="vertical-align:top;" class="text-break-all">@x.Last_Login_IP</td>
+                <td style="vertical-align:top;" class="text-break-all">@x.Last_Login_DT.ToString("yyyy-MM-dd HH:ss")</td>
+                <td style="vertical-align:top;" class="text-break-all">@x.Client_Info</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="~/Views/Component/Page_DIV.cshtml" model="new PagePar() { PageIndex = Model.PageIndex, PageSize = Model.PageSize, TotalRecord = Model.TotalRecord, PageSizeList = Model.PageSize.ToString() }" />

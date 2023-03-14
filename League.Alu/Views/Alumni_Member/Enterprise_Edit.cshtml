@@ -1,0 +1,220 @@
+﻿@model Alumni_Member_Enterprise
+@{ string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    Alumni_Member_Filter MF = ViewData["MF"] as Alumni_Member_Filter;
+
+    List<Profession_First> List = ViewData["List"] as List<Profession_First>;
+
+    string Form_Add_ID = "Infor_Add_Form";
+    string Form_Add_Action = Controller + "/Enterprise_Edit_Post"; }
+<partial name="_SubMenu_Enter" />
+<script>Change_Top_Menu('编辑发布')</script>
+
+<script>
+    function Set_word_wrap() {
+        var width = $("#editor").width();
+        $("p#editor").width(width - 30);
+    }
+
+    function Set_Div_width() {
+        var width = $(".Enter_Select_DIV").width();
+        $("#Member_List_Select").width(width - 1);
+    }
+
+    $(function () {
+        Set_Div_width();
+        Set_word_wrap();
+    })
+</script>
+
+<div style="padding:15px; height:100%; overflow:auto;">
+    <form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+        <table class="table table-borderless text-nowrap" style="width:800px;">
+            <tr>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">* 校友名称</td>
+                <td style="width:320px;">
+                    <div class="Enter_Select_DIV">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="padding:0px; width:100%;">
+                                    <input onclick="Reload_Member_List()" 
+                                           onkeyup="Reload_Member_List()" 
+                                           onchange="Set_AMID_Empty(this)" 
+                                           id="Keyword_Name" 
+                                           name="Keyword_Name" 
+                                           class="form-control form-control-sm" 
+                                           style="border-radius:0px;" 
+                                           value="@MF.Keyword_Name" 
+                                           placeholder="输入或选择校友" 
+                                           autocomplete="off" />
+                                    <input type="hidden" name="Link_AMID" id="Link_AMID" />
+                                </td>
+                                <td style="padding:0px;text-align:right;">
+                                    <button onclick="Reload_Member_List()" type="button" class="btn btn-default btn-sm" style="border-radius:0px; border-left:0px; "><i class="icon-sort-down"></i></button>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Member_List_Select" class="Enter_Select_DIV_Box" style="min-width:290px;"></div>
+                    </div>
+                </td>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">担任职务</td>
+                <td style="width:350px;"><input type="text" class="form-control form-control-sm" name="Duty" value="@Model.Duty" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">* 企业全称</td>
+                <td colspan="3"><input type="text" class="form-control form-control-sm" name="Name" value="@Model.Name" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">所处行业</td>
+                <td>
+                    <select class="form-control form-control-sm" name="Profession" style="width:100%;">
+                        <option value="">请选择</option>
+                        @foreach (var x in List)
+                        {
+                            <optgroup label="@x.First_Name">
+                                @foreach (var xx in x.Second_List.Where(c => c.Link_Name == x.First_Name))
+                                {
+                                    <option value="@xx.Second_Name">@xx.Second_Name</option>
+                                }
+                            </optgroup>
+                        }
+                    </select>
+                </td>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">所属城市</td>
+                <td>
+                    <div class="city-picker-selector" id="city-picker-search" style="display:flex;"></div>
+                    <input type="hidden" id="Province" name="Province" value="@Model.Province">
+                    <input type="hidden" id="City" name="City" value="@Model.City">
+                    <input type="hidden" id="District" name="District" value="@Model.District">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">联系方式</td>
+                <td><input type="text" class="form-control form-control-sm" name="Contact" value="@Model.Contact" /></td>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">邮箱</td>
+                <td><input type="text" class="form-control form-control-sm" name="Email" value="@Model.Email" /></td>
+            </tr>
+
+            <tr>
+                <td style="width:10px; text-align:right; padding-right:0; vertical-align:middle;">地址</td>
+                <td colspan="3"><input type="text" class="form-control form-control-sm" name="Address" value="@Model.Address" /></td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right; padding-right:0;">@Html.DisplayNameFor(m => m.Detial)</td>
+                <td colspan="3" class="text-break-all">
+                    <script name="Detial" id="Detial" type="text/plain">
+                        @Html.Raw(Model.Detial)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align:right; padding-right:0;">@Html.DisplayNameFor(m => m.Main_Business)</td>
+                <td colspan="3" class="text-break-all">
+                    <script name="Main_Business" id="Main_Business" type="text/plain">
+                        @Html.Raw(Model.Main_Business)
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><button type="button" onclick="Publish_Info(this)" class="btn btn-primary btn-sm" style="width:50%;">确认发布</button></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Detial', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Detial').getContent();
+        document.editForm.submit();
+    }
+</script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Main_Business', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Main_Business').getContent();
+        document.editForm.submit();
+    }
+</script>
+<script>
+    $(function () {
+        //模拟城市-联动/搜索
+        $('#city-picker-search').cityPicker({
+            dataJson: cityData,
+            renderMode: true,
+            search: true,
+            linkage: true
+        });
+    });
+</script>
+
+<script>
+    function Publish_Info(Btn_Obj) {
+        Set_City();
+        $("#Detial").val(UE.getEditor('Detial').getContent());
+        $("#Main_Business").val(UE.getEditor('Main_Business').getContent());
+        Ajax_Form_Reload('@Form_Add_ID',Btn_Obj);
+    }
+
+    function Set_City() {
+        var Province = $(".province .selector-name").text();
+        var City = $(".city .selector-name").text();
+        var District = $(".district .selector-name").text();
+        $("#Province").val(Province);
+        $("#City").val(City);
+        $("#District").val(District);
+    }
+</script>
+
+<!--选择校友-->
+<script>
+    $(function () {
+        $("#Member_List_Select").hover(function () {
+            $("#Member_List_Select").show();
+        },
+            function () {
+                $("#Member_List_Select").hide();
+            });
+    });
+
+    function Reload_Member_List() {
+        $("#Member_List_Select").show();
+        var Keyword_Name = $("#Keyword_Name").val();
+        $("#Member_List_Select").text("Loading...");
+        $("#Member_List_Select").load("/@Controller/Enterprise_Member_List", { Keyword_Name });
+    }
+
+    function Change_Member_Name(AMID) {
+        var Member_Name = $("#Member_Name_" + AMID).val();
+        $("#Keyword_Name").val(Member_Name);
+        $("#Link_AMID").val(AMID);
+    }
+
+    function Set_AMID_Empty(Obj) {
+        if ($(Obj).val() == "") {$("#Link_AMID").val("@Guid.Empty");}
+    }
+</script>
+<!--选择校友-->

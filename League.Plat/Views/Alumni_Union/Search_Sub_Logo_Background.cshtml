@@ -1,0 +1,147 @@
+﻿@model Alumni_Union
+@{
+    string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+    Layout = null;
+
+    string Form_Logo_ID = "AN_Logo_Form";
+    string Form_Logo_Action = Controller + "/Search_Sub_Logo_Post/" + Model.AUID;
+
+    string Form_Logo_College_ID = "AU_College_Form";
+    string Form_Logo_College_Action = Controller + "/Search_Sub_Logo_College_Post/" + Model.AUID;
+
+    string Form_Background_ID = "AU_Background_Form";
+    string Form_Background_Action = Controller + "/Search_Sub_Background_Post/" + Model.AUID;
+    if (!string.IsNullOrEmpty(Model.Background))
+    {
+        Form_Background_Action = Controller + "/Search_Sub_Background_Delete/" + Model.AUID;
+    }
+}
+
+<table class="table table-sm table-borderless text-nowrap">
+    <tr>
+        <td style="vertical-align:top; width:10px; text-align:right;">@Html.DisplayNameFor(m => m.Logo)</td>
+        <td style="border:1px solid #dcdcdc;">
+            <form id="@Form_Logo_ID" action="~/@Form_Logo_Action" method="post" enctype="multipart/form-data">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width:90px; height:90px; vertical-align:middle; text-align:center; padding-bottom:5px; background-color:#ededed">
+                            @if (Model.Logo != string.Empty)
+                            {
+                                <img src="~/@Model.Logo" style="max-width:100%; max-height:100%; " />
+                            }
+                            else
+                            {
+                                <img src="~/Images/NotImg.jpg" style="max-width:100%; max-height:100%;" />
+                            }
+                        </td>
+                        <td style="padding-left:5px; vertical-align:top;">
+                            <table style="width:100%;" class="text-nowrap">
+                                <tr>
+                                    <td><input type="file" name="File_Input" style="width:100%;" /></td>
+                                    <td style="width:10px;">
+                                        @if (Model.Logo == string.Empty)
+                                        {
+                                            <button type="button" onclick="Ajax_Form_Upload('@Form_Logo_ID', this, Success_Fun_Callback)">上传Logo</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" onclick="Ajax_Form_Upload('@Form_Logo_ID', this, Success_Fun_Callback)">重新上传</button>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="color:#6e6e6e">
+                                        建议尺寸：宽100px * 高100px
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    @*<tr><td></td></tr>
+    <tr>
+        <td style="vertical-align:top; width:10px; text-align:right;">@Html.DisplayNameFor(m => m.Logo_College)</td>
+        <td style="border:1px solid #dcdcdc;">
+            <form id="@Form_Logo_College_ID" action="~/@Form_Logo_College_Action" method="post" enctype="multipart/form-data">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="padding-left:5px; vertical-align:top;">
+                            <table style="width:100%;" class="text-nowrap">
+                                <tr>
+                                    <td><input type="file" name="File_Input" style="width:100%;" /></td>
+                                    <td style="width:10px;">
+                                        @if (Model.Logo_College == string.Empty)
+                                        {
+                                            <button type="button" onclick="Ajax_Form_Upload('@Form_Logo_College_ID', this, Success_Fun_Callback)">上传校徽</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" onclick="Ajax_Form_Upload('@Form_Logo_College_ID', this, Success_Fun_Callback)">重新上传</button>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="color:#6e6e6e">
+                                        建议尺寸：宽400px * 高120px
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:90px; vertical-align:middle; text-align:center; padding-bottom:5px; background-color:#f9fff9">
+                            @if (Model.Logo_College != string.Empty)
+                            {
+                                <img src="~/@Model.Logo_College" style="max-width:100%; max-height:100%; " />
+                            }
+                            else
+                            {
+                                <img src="~/Images/NotImg.jpg" style="max-width:100%; max-height:100%;" />
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr><td></td></tr>*@
+    @*<tr>
+        <td style="vertical-align:top;">@Html.DisplayNameFor(m => m.Background)</td>
+        <td style="border:1px solid #dcdcdc;">
+            <form id="@Form_Background_ID" action="~/@Form_Background_Action" method="post" enctype="multipart/form-data">
+                <table style="width:100%;" class="text-nowrap">
+                    <tr>
+                        <td colspan="2" style="color:#6e6e6e">
+                            建议尺寸：宽600px * 高400px
+                        </td>
+                    </tr>
+                    @if (string.IsNullOrEmpty(Model.Background))
+                    {
+                        <tr>
+                            <td><input type="file" name="File_Input" style="width:100%;" /></td>
+                            <td style="width:10px;"><button type="button" onclick="Ajax_Form_Upload('@Form_Background_ID', this, Success_Fun_Callback)">上传图片</button></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td><a href="~/@Model.Background" target="_blank"><img src="~/@Model.Background" style="max-width:50%; max-height:50%;" /></a></td>
+                            <td style="width:10px;"><button type="button" onclick="Ajax_Form_Upload('@Form_Background_ID', this, Success_Fun_Callback)">删除</button></td>
+                        </tr>
+                    }
+                </table>
+            </form>
+        </td>
+    </tr>*@
+</table>
+
+
+<script>
+    function Success_Fun_Callback() {
+        @*Reload_Set_Context('@Model.AUID');*@
+        ReloadPage();
+    }
+</script>

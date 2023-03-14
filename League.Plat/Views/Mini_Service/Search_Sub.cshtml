@@ -1,0 +1,198 @@
+﻿@model Mini_Service
+@{ string Controller = ViewContext.RouteData.Values["Controller"].ToString();
+                Layout = "~/Views/Shared/_Layout.cshtml";
+
+                List<string> List = ViewData["List"] as List<string>;
+
+                string Form_Add_ID = "Mini_Add_Form";
+                string Form_Add_Action = Controller + "/Search_Sub_Add_Post/" + Model.MSID;
+                string Form_Set_Action = Controller + "/Search_Sub_Post/" + Model.MSID;
+
+                string Form_Del_ID = "Mini_Del_Form";
+                string Form_Del_Action = Controller + "/Search_Sub_Delete_Post/" + Model.MSID;
+
+                string Form_Cover_Img_ID = "Form_Cover_Img_ID";
+                string Form_Cover_Img_Action = Controller + "/Search_Sub_Cover_Img_Post/" + Model.MSID; }
+<partial name="_SubMenu" />
+<script>Change_Top_Menu('查询')</script>
+
+<script>
+    function Set_Div_width() {
+        var width = $(".Enter_Select_DIV").width();
+        $("#Member_List_Select").width(width - 1);
+    }
+
+    $(function () {
+        Set_Div_width();
+    })
+</script>
+<div style="height:100%; padding:15px; overflow:auto;">
+    <table>
+        <tr>
+            <td>
+                <form id="@Form_Add_ID" action="/@Form_Add_Action" method="post">
+                    <table class="table table-borderless text-nowrap" style="width:920px;">
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Name)</td>
+                            <td colspan="3"><input name="Name" value="@Model.Name" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Address)</td>
+                            <td colspan="3"><input name="Address" value="@Model.Address" class="form-control form-control-sm" type="text" style="width:100%;" autocomplete="off" /></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Linkman)</td>
+                            <td><input name="Linkman" value="@Model.Linkman" class="form-control form-control-sm" type="text" style="width:80%;" autocomplete="off" /></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Contact)</td>
+                            <td><input name="Contact" value="@Model.Contact" class="form-control form-control-sm" type="text" style="width:80%;" autocomplete="off" /></td>
+                            <td style="width:10px; text-align:right; vertical-align:middle;">* @Html.DisplayNameFor(m => m.Type)</td>
+                            <td>
+                                <select class="form-control form-control-sm" name="Type">
+                                    @foreach (var x in List)
+                                    {
+                                        if (Model.Type == x)
+                                        {
+                        <option selected value="@x">@x</option>
+ }
+                    else
+                    {
+    <option value="@x">@x</option>
+}
+}
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>* @Html.DisplayNameFor(m => m.Intro)</td>
+                            <td colspan="3" class="text-break-all">
+                                <script name="Intro" id="Intro" type="text/plain">
+                                    @Html.Raw(Model.Intro)
+                                </script>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>* @Html.DisplayNameFor(m => m.Main_Business)</td>
+                            <td colspan="3" class="text-break-all">
+                                <script name="Main_Business" id="Main_Business" type="text/plain">
+                                    @Html.Raw(Model.Main_Business)
+                                </script>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><button type="button" onclick="Delete_Info(this)" class="btn btn-danger btn-sm" style="width:30%;">删除</button></td>
+                            <td>&nbsp;</td>
+                            <td style="text-align:right;">
+                                @if (Model.Status == Infor_Status_Enum.待发布.ToString())
+                                {
+                    <button type="button" onclick="Publish_Info(this)" class="btn btn-primary btn-sm" style="width:50%;">确认发布</button> }
+                else
+                {
+    <button type="button" onclick="Set_Info(this)" class="btn btn-primary btn-sm" style="width:50%;">更 新</button>}
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+            <td style="vertical-align:top; padding-top:12px; padding-left:10px;">
+                <table>
+                    <tr>
+                        <td style="vertical-align:top; padding-top:8px;">封面图</td>
+                        <td style="padding-left:15px;"><div id="Img_Cover" style="border:1px solid #dcdcdc; border-radius:5px; padding:5px;"></div></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script type="text/javascript" src="~/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('Intro', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Intro').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+<script type="text/javascript">
+    var ue = UE.getEditor('Main_Business', {
+        initialFrameHeight: 800
+    });
+</script>
+
+<script type="text/javascript">
+    //这段要放在文本编辑器的实例化之后
+    function uptext() {
+        document.editForm.Remark.value = UE.getEditor('Main_Business').getContent();
+        document.editForm.submit();
+    }
+</script>
+
+
+<!--封面图片-->
+<form id="@Form_Cover_Img_ID" action="~/@Form_Cover_Img_Action" method="post" enctype="multipart/form-data"></form>
+<script>
+    function Ajax_Img_Upload(Btn_Obj) {
+        var File_OBJ = $("#File_Input");
+        $("#@Form_Cover_Img_ID").html(File_OBJ);
+        Ajax_Form_Upload("@Form_Cover_Img_ID", Btn_Obj, Ajax_Img_Upload_Callback);
+    }
+
+    function Reload_Img_Cover() {
+        $("#Img_Cover").load("/@Controller/Search_Sub_Cover_Img/" + "@Model.MSID");
+    }
+
+    function Ajax_Img_Upload_Callback() {
+        Reload_Img_Cover();
+    }
+
+    Reload_Img_Cover();
+</script>
+<!--封面图片-->
+
+<script>
+    function Publish_Info(Btn_Obj) {
+        $("#Intro").val(UE.getEditor('Intro').getContent());
+        $("#Main_Business").val(UE.getEditor('Main_Business').getContent());
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<script>
+    function Set_Info(Btn_Obj) {
+        $("#@Form_Add_ID").attr("action","/@Form_Set_Action");
+        $("#Intro").val(UE.getEditor('Intro').getContent());
+        $("#Main_Business").val(UE.getEditor('Main_Business').getContent()); 
+        Ajax_Form_Callback('@Form_Add_ID', Btn_Obj,Call_Back)
+    }
+</script>
+
+<form id="@Form_Del_ID" action="/@Form_Del_Action" method="post"></form>
+<script>
+    function Delete_Info(Btn_Obj) {
+        if (confirm("确认删除？") == false) { return false; }
+        Ajax_Form_Callback('@Form_Del_ID', Btn_Obj,Call_Back)
+    }
+
+    function Call_Back() {
+        JumpPage("/@Controller/Search")
+    }
+</script>
+
